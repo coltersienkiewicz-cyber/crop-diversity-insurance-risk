@@ -1,0 +1,47 @@
+HYPOTHESIS TESTING RESULTS
+======================================================================
+Null hypothesis (H₀): Crop diversity has no effect on insurance loss ratio
+Data: 10,397 county-year observations, 2,738 unique counties
+Years: ['1999', '2000', '2001', '2004']
+Alpha: 0.05
+
+Loss ratio distribution: skewness=3.25, kurtosis=20.9
+Shapiro-Wilk (n=5000): p=1.38e-68  → normality rejected → non-parametric tests used
+
+TEST 1: SPEARMAN CORRELATION  (primary metric: shannon_diversity)
+----------------------------------------------------------------------
+  [county-year ]  r_s = +0.1677   p = 1.9359e-66   ***
+  [county-avg  ]  r_s = +0.1266   p = 2.9600e-11   ***
+
+  All four diversity metrics (shannon, n_crops, top_crop_share, evenness):
+    shannon_diversity       r_s = +0.1266   p = 2.9600e-11   ***
+    num_unique_crops        r_s = +0.1121   p = 4.1029e-09   ***
+    top_crop_share          r_s = +0.0234   p = 2.2103e-01   ns
+    evenness                r_s = +0.0733   p = 1.2364e-04   ***
+
+TEST 2: KRUSKAL-WALLIS ANOVA ACROSS QUARTILES  (shannon_diversity, county-avg)
+----------------------------------------------------------------------
+  H = 87.7895   p = 6.5354e-19   eta² = 0.0310   ***
+  Bonferroni-corrected pairwise comparisons:
+    Q1 (low) vs Q2          p_bonf = 3.0158e-02  REJECT H₀
+    Q1 (low) vs Q3          p_bonf = 1.0000e+00  fail to reject
+    Q1 (low) vs Q4 (high)   p_bonf = 4.6142e-03  REJECT H₀
+    Q2 vs Q3          p_bonf = 3.7493e-07  REJECT H₀
+    Q2 vs Q4 (high)   p_bonf = 8.7764e-24  REJECT H₀
+    Q3 vs Q4 (high)   p_bonf = 3.9560e-07  REJECT H₀
+
+TEST 3: MANN-WHITNEY U — HIGH vs. LOW DIVERSITY  (median split, county-avg)
+----------------------------------------------------------------------
+  shannon_diversity       U = 1078907   p = 7.0197e-12   rb_r = -0.1513   ***   (HIGH > LOW)
+  num_unique_crops        U = 1043540   p = 2.7818e-08   rb_r = -0.1231   ***   (HIGH > LOW)
+  top_crop_share          U = 1046983   p = 1.0740e-07   rb_r = -0.1173   ***   (HIGH > LOW)
+  evenness                U = 1012891   p = 2.4696e-04   rb_r = -0.0809   ***   (HIGH > LOW)
+
+INTERPRETATION
+----------------------------------------------------------------------
+  H₀ REJECTED at alpha=0.05. Shannon diversity has a statistically significant POSITIVE association with loss ratio (r_s = +0.1266, p = 2.96e-11).
+  Effect size is moderate (|r_s| = 0.1266).
+  Mann-Whitney confirms: HIGH-diversity counties have a HIGHER median loss ratio (0.896 vs 0.721, p = 7.02e-12, rb_r = -0.1513).
+
+  NOTE: County-year tests include ~4 repeated observations per county (years 1999–2001, 2004).
+  County-average tests (independent observations) are the primary inference basis.

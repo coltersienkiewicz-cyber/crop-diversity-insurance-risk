@@ -1,0 +1,982 @@
+# ------------------------------------------------------------------------------------------------------
+# 
+#  Begin METADATA documentation
+#
+#  METADATA Date:    February 21, 2006
+#  METADATA Contact: Lisa H. Nowell
+#                    U.S. Geological Survey 
+#                    NAWQA Pesticide Synthesis Project
+#                    Placer Hall, 6000 J Street
+#                    Sacramento, CA 95819
+#                    voice: (916) 278-3096
+#                    fax:   (916) 278-3070
+#                    email:  lhnowell@usgs.gov
+#
+# ------------------------------------------------------------------------------------------------------
+#
+#  METADATA Data Description:  
+#
+#  Filename: appendix6d.txt
+#
+#  This file contains the data set for organochlorine pesticides in whole fish
+#  from streams sampled by the NAWQA Program, 1992-2001, and used as the basis 
+#  of the occurrence and distribution assessment, as summarized in USGS Circular 1291, 
+#  Pesticides in the Nation's Streams and Ground Water, 1992-2001: The  Quality of Our 
+#  Nation's Waters, at http://ca.water.usgs.gov/pnsp/pubs/circ1291/. The data set 
+#  contains one sample per site. All samples are composites of 5–8 individual whole
+#  fish of the same species (taxon). 
+#
+# ------------------------------------------------------------------------------------------------------
+# 
+#  METADATA Basic documentation of dataset elements:
+#
+#       Data Attributes:
+#
+#               SUID
+#               STAID
+#               PSTAID
+#               SU_YEAR
+#               SNAME
+#               LANDUSE
+#               DATETIME
+#               MEDIM
+#               TAXON
+#               P49289
+#               P49353
+#               P49355
+#               P49356
+#               P49357
+#               P49358
+#               P49359
+#               P49360
+#               P49361
+#               P49362
+#               P49363
+#               P49364
+#               P49365
+#               P49366
+#               P49367
+#               P49368
+#               P49369
+#               P49370
+#               P49371
+#               P49372
+#               P49373
+#               P49374
+#               P49375
+#               P49376
+#               P49377
+#               P49378
+#               P49379
+#               P49380
+#       
+#           Note: The row in the data file that follows the row of variable names describes the 
+#                 width of the field and the data type. "s" indicates a text variable, 
+#                 "d" indicates a date variable, and "n" indicates a numeric variable.
+#                 For example: 15s indicates a 0- to 15-character text variable whereas
+#                 9n indicates a 0- to 9-digit numeric variable.
+#
+#
+#       Attribute label: SUID 
+#
+#       Attribute description: NAWQA Study Unit identifier
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#                Code   Description
+#                -----  --------------------------------------------------
+#                acad   Acadian-Pontchartrain Drainages
+#                acfb   Apalachicola-Chattahoochee-Flint River Basin
+#                albe   Albemarle-Pamlico Drainage Basin
+#                almn   Allegheny and Monongahela River Basins
+#                cazb   Central Arizona Basins
+#                ccpt   Central Columbia Plateau
+#                cnbr   Central Nebraska Basins
+#                conn   Connecticut, Housatonic, and Thames River Basins
+#                cook   Cook Inlet Basin
+#                delr   Delaware River Basin
+#                dlmv   Delmarva Peninsula
+#                eiwa   Eastern Iowa Basins
+#                gafl   Georgia-Florida Coastal Plain
+#                grsl   Great Salt Lake Basins
+#                hdsn   Hudson River Basin
+#                kana   Kanawha-New River Basins
+#                leri   Lake Erie-Lake Saint Clair Drainages
+#                linj   Long Island-New Jersey Coastal Drainages
+#                lirb   Lower Illinois River Basin
+#                lsus   Lower Susquehanna River Basin
+#                lten   Lower Tennessee River Basin
+#                miam   Great and Little Miami River Basins
+#                mise   Mississippi Embayment
+#                mobl   Mobile River Basin
+#                necb   New England Coastal Basins
+#                nrok   Northern Rockies Intermontane Basins
+#                nvbr   Las Vegas Valley Area and the Carson and Truckee River Basins
+#                oahu   Island of Oahu
+#                ozrk   Ozark Plateaus
+#                poto   Potomac River Basin
+#                pugt   Puget Sound Basin
+#                redn   Red River of the North Basin
+#                riog   Rio Grande Valley
+#                sacr   Sacramento River Basin
+#                sana   Santa Ana Basin
+#                sanj   San Joaquin-Tulare Basins
+#                sant   Santee River Basin and Coastal Drainages
+#                sctx   South-Central Texas
+#                sofl   Southern Florida
+#                splt   South Platte River Basin
+#                trin   Trinity River Basin
+#                ucol   Upper Colorado River Basin
+#                uirb   Upper Illinois River Basin
+#                umis   Upper Mississippi River Basin
+#                usnk   Upper Snake River Basin
+#                uten   Upper Tennessee River Basin
+#                whit   White River Basin
+#                will   Willamette Basin
+#                wmic   Western Lake Michigan Drainages
+#                yaki   Yakima River Basin
+#                yell   Yellowstone River Basin
+#
+#
+#       Attribute label: STAID
+#
+#       Attribute description: Station identifier
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#
+#       Attribute label: PSTAID
+#
+#       Attribute description: Primary station identifier
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#            Note: STAID should be used for whole-fish data analysis. STAID
+#                  is the actual location of the sample. For 665 of 700 sites, 
+#                  PSTAID is equal to STAID. STAID not equal to PSTAID
+#                  occurs where either (1) the location of sample collection
+#                  changed during the 1992–2001 study period, or (2) the sample
+#                  could not be collected at PSTAID, so it was collected at
+#                  a nearby location. In either case, STAID is considered
+#                  equivalent to PSTAID.
+#
+#
+#       Attribute label: SU_YEAR
+#
+#       Attribute description: Year during which this study unit began its intensive 
+#            sampling as part of NAWQA rotational investigations, YYYY
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#
+#       Attribute label: SNAME
+#
+#       Attribute description: Name of data collection station (STAID)
+#       Source: NAWQA Data Warehouse site information retrieval 8-18-2005
+#
+#
+#       Attribute label: LANDUSE
+#
+#       Attribute description: Drainage basin land use class
+#       Source: NAWQA national classification system
+#
+#                Code   Description
+#                -----  -----------------------------------------------------------------------------------
+#                Agricultural     Greater than 50% agricultural land and less than or equal to 5% urban land
+#                Undeveloped   Less than or equal to 25% agricultural land and less than or equal to 5% urban land
+#                Urban            Greater than 25% urban land and less than or equal to 25% agricultural land
+#                Mixed            All other combinations of land use
+#
+#
+#       Attribute label: DATETIME
+#
+#       Attribute description: Date and time of fish sample collection 
+#            at this site, YYYY.MM.DD TTTT
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#
+#       Attribute label: MEDIM
+#
+#       Attribute description: Medium of sample
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#                Code   Description
+#                -----  -------------------------
+#                C       Animal tissue
+#                X      Quality control sample (replicate)-- Animal tissue
+#
+#
+#       Attribute label: TAXON
+#
+#       Attribute description: Common name of fish species (taxon) sampled. 
+#            If common name was not available, the scientific name was used. 
+#            Taxa from the National Target Taxa List were targeted for collection
+#            at NAWQA sites. 
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#
+#       Attribute label: Rnnnnn (All variables of the form Rnnnnn, where nnnnn is the 5-digit parameter
+#                         code used to identify variables in the USGS National Water Information System)
+#
+#       Attribute description: Remark code associated with each parameter value
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#                Code     Description
+#                -----    ----------------------------------------------------------------------------------
+#                <        Not detected at or above the concentration in Pnnnnn cell.
+#                >        Detected at a concentration above that in Pnnnnn cell.
+#                -         Detected at concentration equal to that in Pnnnnn cell.
+#                .         Missing data.
+#                E        Detected. Concentration is estimated. Estimated concentration may result from
+#                          any of the following reasons:
+#                          1. The compound is characterized as a "poor performer" in the method on the 
+#                             basis of laboratory QC samples. In general compounds with less than 60 %
+#                             recovery, greater than 120 % recovery, or greater than 25 % relative standard
+#                             deviation of recovery are considered poor performers. All detections of
+#                             these compounds are remarked E.
+#                          2. The compound was detected at a concentration less than the reporting level
+#                             or less than the lowest calibration standard.
+#                          3. The sample was diluted to bring the concentration into the calibration range.
+#
+#
+#       Attribute label: Pnnnnn (All variables of the form Pnnnnn, where nnnnn is the 5-digit parameter
+#                         code used to identify variables in the USGS National Water Information System)
+#
+#       Attribute description: Value of chemical analysis
+#       Source: NAWQA Data Warehouse water-quality data retrieval 7-30-2002
+#
+#       Attribute subdescription: Parameter codes, names, and units of measurement
+#                                   
+#               Parameter Code   Name                        Units
+#               ------------------------   -----------------------------   ---------------------
+#               P49289                Lipids                 Percent wet weight
+#               P49353                Aldrin                 microgram per kilogram wet weight
+#               P49355                Toxaphene           microgram per kilogram wet weight
+#               P49356                Pentachloroanisole      microgram per kilogram wet weight
+#               P49357                Oxychlordane        microgram per kilogram wet weight
+#               P49358                trans-Nonachlor        microgram per kilogram wet weight
+#               P49359                cis-Nonachlor        microgram per kilogram wet weight
+#               P49360                Mirex                  microgram per kilogram wet weight
+#               P49361                p,p´-Methoxychlor        microgram per kilogram wet weight
+#               P49362                o,p´-Methoxychlor        microgram per kilogram wet weight
+#               P49363                Lindane (gamma-HCH)     microgram per kilogram wet weight
+#               P49364                delta-HCH            microgram per kilogram wet weight
+#               P49365                beta-HCH            microgram per kilogram wet weight
+#               P49366                alpha-HCH           microgram per kilogram wet weight
+#               P49367                Hexachlorobenzene     microgram per kilogram wet weight
+#               P49368                Heptachlor epoxide     microgram per kilogram wet weight
+#               P49369                Heptachlor            microgram per kilogram wet weight
+#               P49370                Endrin             microgram per kilogram wet weight
+#               P49371                Dieldrin             microgram per kilogram wet weight
+#               P49372                p,p´-DDE             microgram per kilogram wet weight
+#               P49373                o,p´-DDE             microgram per kilogram wet weight
+#               P49374                o,p´-DDD             microgram per kilogram wet weight
+#               P49375                p,p´-DDD             microgram per kilogram wet weight
+#               P49376                p,p´-DDT             microgram per kilogram wet weight
+#               P49377                o,p´-DDT             microgram per kilogram wet weight
+#               P49378                Dacthal (DCOA)     microgram per kilogram wet weight																																																																
+#               P49379                trans-Chlordane        microgram per kilogram wet weight																																																																
+#               P49380                cis-Chlordane        microgram per kilogram wet weight																																																																
+#																																																																
+#																																																																
+#  End METADATA documentation																																																																
+#																																																																
+# ------------------------------------------------------------------------------------------------------																																																																
+SUID	STAID	PSTAID	SU_YEAR	SNAME	LANDUSE	DATETIME	MEDIM	TAXON	R49289	P49289	R49353	P49353	R49355	P49355	R49356	P49356	R49357	P49357	R49358	P49358	R49359	P49359	R49360	P49360	R49361	P49361	R49362	P49362	R49363	P49363	R49364	P49364	R49365	P49365	R49366	P49366	R49367	P49367	R49368	P49368	R49369	P49369	R49370	P49370	R49371	P49371	R49372	P49372	R49373	P49373	R49374	P49374	R49375	P49375	R49376	P49376	R49377	P49377	R49378	P49378	R49379	P49379	R49380	P49380
+4s	15s	15s	4d	50s	12s	15s	1s	25s	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n	1s	12n
+HDSN	01348995	01348995	1991	"OTSQUAGO CREEK AT VALLEY BROOK NR FORT PLAIN NY"	Agricultural	1994-09-15 1332	C	white sucker	-	1.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01349100	01349150	1991	"CANAJOHARIE CREEK AT AMES,NY"	Agricultural	1992-09-01 1001	C	common carp	-	6.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01451800	01451800	1997	"JORDAN CREEK NEAR SCHNECKSVILLE, PA"	Agricultural	1999-07-16 0930	C	white sucker	-	7.02	<	5	<	200	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	26	-	130	<	5	<	5	-	6.9	-	14	<	5	<	5	<	5	<	5
+DELR	01470779	01470779	1997	"TULPEHOCKEN CR NR BERNVILLE, PA."	Agricultural	1998-08-25 1100	C	white sucker	-	5.4	<	5	<	200	<	5	-	7.8	-	24	-	5.5	<	5	-	80	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	60	<	5	<	5	-	8.2	-	6.7	<	5	<	5	<	5	-	18
+LSUS	01555400	01555400	1991	"EAST MAHANTANGO CREEK AT KLINGERSTOWN, PA"	Agricultural	1995-06-23 1600	C	white sucker	-	8.6	<	5	<	200	<	5	<	5	<	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	8	<	5	<	5	<	5	<	9	<	5	-	330	<	5	<	5	E	30	E	59	<	7	-	78	<	5	<	5
+LSUS	01564997	01564997	1991	"KISHACOQUILLAS CREEK AT LUMBER CITY, PA"	Agricultural	1995-06-15 1200	C	white sucker	-	12	<	5	<	200	<	5	<	5	E	20	<	5	<	5	<	5	<	5	<	5	<	6	<	7	<	13	<	5	<	5	<	5	<	6	<	12	-	16	<	5	<	5	<	5	<	5	<	5	E	19	<	5	-	8.1
+LSUS	01573095	01573095	1991	"BACHMAN RUN AT ANNVILLE, PA"	Agricultural	1995-06-01 1200	C	white sucker	-	3.4	<	5	<	200	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	59	<	5	<	5	E	7.4	-	9.8	<	5	<	5	<	5	<	5
+LSUS	01577300	01577300	1991	"MUDDY CREEK AT MUDDY CREEK FORKS, PA"	Agricultural	1995-06-08 1200	C	white sucker	-	5.9	<	5	<	200	<	5	<	5	-	6	<	6	<	5	<	5	<	5	<	6	<	5	<	5	<	6	<	5	<	5	<	5	<	7	-	10	-	160	<	5	<	10	E	14	-	29	<	5	<	5	<	5	<	5
+POTO	01614500	01614500	1991	"CONOCOCHEAGUE CREEK AT FAIRVIEW, MD"	Agricultural	1992-08-25 1305	C	yellow bullhead	-	3.54	<	5	.	.	<	5	<	5	-	9.58	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.79	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+POTO	01621050	01621050	1991	"MUDDY CREEK AT MOUNT CLINTON, VA"	Agricultural	1995-07-26 1200	C	white sucker	-	7.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+POTO	01639000	01639000	1991	"MONOCACY RIVER AT BRIDGEPORT, MD"	Agricultural	1992-08-11 1435	C	yellow bullhead	-	1.58	<	5	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.94	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+POTO	01643020	01643020	1991	"MONOCACY RIV AT REICHS FORD BRIDGE NR FREDERICK,MD"	Agricultural	1995-09-12 1135	C	shorthead redhorse	-	16.8	<	5	<	330	-	13	-	26	-	34	-	7.5	<	5	<	10	<	10	<	5	<	12	<	6.8	<	60	<	5	-	7.7	-	12	<	5	-	24	-	200	-	6.9	<	5	E	18	E	30	<	10	<	5	-	13	-	28
+ALBE	02083833	02083833	1991	"PETE MITCHELL SWAMP AT SR1409 NEAR PENNY HILL, NC"	Agricultural	1993-10-04 1215	C	redbreast sunfish	-	5.6	<	5	-	210	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	22	-	130	<	5	<	5	.	.	-	44	<	5	<	5	<	5	<	5
+SOFL	02289034	02289034	1994	"U.S. SUGAR OUTFLOW CANAL NEAR CLEWISTON, FL"	Agricultural	1996-05-02 1300	C	largemouth bass	-	20	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02434000	02434000	1997	"TOWN CREEK AT TUPELO, MS"	Agricultural	1998-09-16 1030	C	channel catfish	-	2.4	<	5	<	200	<	5	<	5	-	5.7	<	5	-	8.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	210	<	5	<	5	-	22	-	16	<	5	<	5	<	5	<	5
+MIAM	03246400	03246400	1997	E F L MIAMI R NR WILLIAMSBURG OH	Agricultural	1998-09-08 1230	C	common carp	-	3.9	<	5	<	200	<	5	<	5	-	9.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.1
+LTEN	03573182	03573182	1997	"SCARHAM CREEK NEAR MCVILLE, AL"	Agricultural	1998-08-18 0915	C	redeye bass	-	5.4	<	5	<	200	<	5	<	5	E	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	-	430	<	5	<	5	-	14	-	16	<	5	<	5	<	5	<	5
+LTEN	0357479650	0357479650	1997	"HESTER CREEK NEAR PLEVNA, AL"	Agricultural	1998-08-19 1615	C	largemouth bass	-	7.2	<	5	<	200	<	5	<	5	E	5.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7.2	-	5.7	-	240	<	5	<	5	-	25	-	23	<	5.5	<	5	<	5	<	5
+LTEN	03575100	03575100	1997	"FLINT RIVER AT BROWNSBORO, AL"	Agricultural	1998-09-08 1515	C	rock bass	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	55	-	130	<	5	<	5	-	14	-	27	<	5	<	5	<	5	<	5
+LTEN	03575830	03575830	1997	"INDIAN CREEK NEAR MADISON, AL"	Agricultural	1998-08-19 0915	C	largemouth bass	-	4.8	<	5	<	200	<	5	-	17	-	59	-	24	<	5	<	5	-	22	<	5	<	5	<	5	<	5	<	5	-	17	<	5	-	27	-	32	-	1200	-	5.8	-	22	-	150	-	140	-	19	<	5	-	18	-	31
+LTEN	03590638	03590638	1997	"SINKING CREEK NEAR WOODLAND, AL"	Agricultural	1998-09-10 1115	C	largemouth bass	-	3.05	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	630	<	5	<	5	-	43	-	61	<	5	<	5	<	5	<	5
+LTEN	03598250	03598250	1997	"NORTH FORK CREEK NEAR POPLINS CROSSROADS, TN"	Agricultural	1998-08-26 1515	C	spotted bass	-	5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04072050	04072050	1991	"DUCK CREEK AT SEMINARY ROAD NEAR ONEIDA, WI"	Agricultural	1992-08-28 1045	C	white sucker	-	0.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04080798	04080798	1991	"TOMORROW RIVER NEAR NELSONVILLE, WI"	Agricultural	1992-08-24 1700	C	white sucker	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04085110	04085109	1991	"EAST RIVER @ CTH PP IN BROWN COUNTY NR DE PERE, WI"	Agricultural	1992-08-28 1430	C	white sucker	-	0.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04085139	04085139	1991	"FOX RIVER AT MOUTH AT GREEN BAY, WI"	Agricultural	1995-08-01 1600	C	white sucker	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	68	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	<	5
+WMIC	040863075	040863075	1991	"NORTH BRANCH MILWAUKEE RIVER NR RANDOM LAKE, WI"	Agricultural	1995-08-02 1700	C	white sucker	-	1.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04159492	04159492	1994	BLACK RIVER NR JEDDO MI	Agricultural	1996-07-24 1300	C	common carp	-	6.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04175600	04175600	1994	RIVER RAISIN NEAR MANCHE	Agricultural	1996-07-23 1300	C	rock bass	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04178000	04178000	1994	ST JOSEPH R NR NEWVILLE IND	Agricultural	1996-07-22 1300	C	common carp	-	20	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	.	.	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04183000	04183000	1994	MAUMEE RI AT NEWHAVEN IN	Agricultural	1996-09-05 1130	C	common carp	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04186500	04186500	1994	AUGLAIZE R NR FORT JENNINGS OH	Agricultural	1996-07-26 0950	C	common carp	-	12	<	5	<	200	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	5	<	5	<	5	-	28	-	40	<	5	<	5	E	8.2	<	5	<	5	<	5	<	5	-	9.2
+LERI	04193500	04193500	1994	MAUMEE R AT WATERVILLE OH	Agricultural	1996-08-08 1600	C	common carp	-	7.4	<	5	<	200	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	40	E	110	<	5	<	5	E	12	<	5	<	5	<	5	<	5	-	8
+REDN	05046500	05046500	1991	"OTTER TAIL RIVER AT BRECKENRIDGE, MN"	Agricultural	1992-08-20 1005	C	common carp	-	6.4	<	5	<	100	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	05051500	05051500	1991	"RED RIVER OF THE NORTH AT WAHPETON, ND"	Agricultural	1992-08-20 1405	C	common carp	-	6.9	<	5	<	200	<	5	<	5	-	27	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	32	<	5	<	5	-	25	<	5	<	5	<	5	-	23	-	36
+REDN	05054020	05054020	1991	"RED RIVER OF THE NORTH BELOW FARGO, ND"	Agricultural	1994-09-13 1230	C	common carp	-	11.2	.	.	<	50	.	.	<	10	<	10	<	10	<	10	.	.	.	.	<	10	<	10	<	10	<	10	<	10	<	10	.	.	<	10	<	10	-	150	<	10	<	10	-	57	<	10	<	10	.	.	<	10	-	11
+REDN	05058500	05058500	1991	"SHEYENNE RIVER AT VALLEY CITY, N. DAK."	Agricultural	1992-08-25 1005	C	white sucker	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	44	<	5	<	5	<	11	<	5	<	5	<	5	<	5	<	5
+REDN	05066500	05066500	1991	"GOOSE RIVER AT HILLSBORO, ND"	Agricultural	1992-08-26 1005	C	white sucker	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	05082500	05082500	1991	"RED RIVER OF THE NORTH AT GRAND FORKS, ND"	Agricultural	1994-09-15 1230	C	common carp	-	6.76	.	.	<	50	.	.	<	10	<	10	<	10	<	10	.	.	.	.	<	10	<	10	<	10	<	10	<	10	<	10	.	.	<	10	-	13	-	63	<	10	<	10	-	22	<	10	<	10	.	.	<	10	<	10
+REDN	05084000	05084000	1991	"FOREST RIVER NR FORDVILLE, ND"	Agricultural	1992-08-13 1005	C	white sucker	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	05092000	05092000	1991	"RED RIVER OF THE NORTH AT DRAYTON, ND"	Agricultural	1992-08-19 1005	C	common carp	-	3.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	46	<	5	-	5	-	12	<	5	<	5	<	5	<	5	<	5
+REDN	05104000	05104000	1991	"SOUTH FORK ROSEAU RIVER NEAR MALUNG, MN"	Agricultural	1992-08-11 1005	C	white sucker	-	1.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05270380	05270380	1994	"SAUK RIVER AT RICHMOND, MN"	Agricultural	1995-07-19 1300	C	golden redhorse	-	10	<	5	<	200	<	10	<	10	<	10	<	10	<	5	<	10	<	10	<	20	<	10	<	30	<	12	<	5	<	10	<	5	<	10	<	10	<	5	<	10	<	35	<	10	<	10	<	10	<	10	<	15	<	10
+UMIS	05276005	05276005	1994	"NORTH FORK CROW RIVER ABOVE PAYNESVILLE, MN"	Agricultural	1996-09-16 1000	C	common carp	-	1.25	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05280400	05280400	1994	"CROW RIVER BELOW STATE HWY 101 AT DAYTON, MN"	Agricultural	1995-07-18 1200	C	redhorses	-	6.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	<	5	<	5	E	5.1	<	5	<	5	<	5	<	5	<	5
+UMIS	05320270	05320270	1994	"LITTLE COBB RIVER NEAR BEAUFORD, MN"	Agricultural	1997-07-09 1100	C	common carp	-	4	<	5	<	200	<	5	<	5	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.6	-	98	<	5	-	6	-	43	<	5	<	5	<	5	<	5	-	6.6
+UMIS	05330000	05330000	1994	"MINNESOTA RIVER NEAR JORDAN, MN"	Agricultural	1995-07-10 1515	C	common carp	-	7.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	21	E	30	<	5	<	5	E	14	<	5	<	5	<	5	<	5	-	5
+UMIS	05331570	05331580	1994	"MISSISSIPPI RIVER AT NININGER, MN"	Agricultural	1995-07-11 1100	C	common carp	-	7.7	<	5	<	1900	<	11	<	5	<	10	<	10	<	5	<	25	<	10	<	15	<	5	<	10	<	5	<	5	<	5	<	5	<	10	<	11	-	33	<	10	<	10	<	10	<	25	<	10	<	5	<	5	<	10
+UMIS	05355090	05355090	1994	"CANNON RIVER AT LAKE BYLLESBY NR CANNON FALLS, MN"	Agricultural	1995-07-17 1430	C	common carp	-	9.4	<	5	<	200	<	12	<	10	<	10	<	10	<	5	<	10	<	10	<	10	<	15	<	25	<	10	<	5	<	10	<	5	<	10	<	10	E	56	<	10	<	20	<	30	<	10	<	10	<	10	<	10	<	10
+EIWA	05420680	05420680	1994	"WAPSIPINICON RIVER NEAR TRIPOLI, IA"	Agricultural	1995-09-24 1400	C	white sucker	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	10	<	10	<	10	<	5	<	5	<	5
+EIWA	05422000	05422000	1994	"WAPSIPINICON RIVER NEAR DE WITT, IA"	Agricultural	1995-09-20 1100	C	common carp	-	8.9	<	5	<	200	<	5	-	8.4	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	-	32	-	32	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	-	6.9
+EIWA	05449500	05449500	1994	"IOWA RIVER NEAR ROWAN, IA"	Agricultural	1995-09-22 1030	C	common carp	-	11.8	<	5	<	200	-	5.6	-	6.8	-	19	<	5	<	5	<	5	<	6.2	<	5	<	6.7	<	5	<	5	<	5	-	12	<	5	<	5	-	94	-	130	<	12	-	6.4	E	42	<	5	<	5	-	5.6	-	11	-	10
+EIWA	05451210	05451210	1994	"SOUTH FORK IOWA RIVER NE OF NEW PROVIDENCE, IA"	Agricultural	1995-09-21 1145	C	common carp	-	12.2	<	5	<	200	<	5	-	12	-	33	E	8.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	-	98	-	81	<	5.4	-	5.3	E	16	<	5	<	5	<	5	-	18	-	17
+EIWA	05453100	05453100	1994	"IOWA RIVER AT MARENGO, IA"	Agricultural	1995-09-20 0945	C	common carp	-	8.6	<	5	<	200	-	8.5	-	29	-	53	-	13	<	5	<	5	<	5	<	5	<	9	<	6	<	5	<	5	-	40	<	5	<	5	-	180	-	65	<	5	<	5	-	12	<	5	<	5	<	5	-	26	-	34
+EIWA	05455100	05455100	1994	"OLD MANS CREEK NEAR IOWA CITY, IA"	Agricultural	1995-09-25 1030	C	common carp	-	4.9	<	5	<	200	<	5	-	6.3	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	-	51	-	29	<	5	<	5	E	7.3	<	5	<	5	<	5	-	7.2	-	6.6
+EIWA	05457700	05457700	1994	"CEDAR RIVER AT CHARLES CITY, IA"	Agricultural	1995-09-23 0930	C	common carp	-	6.1	<	5	<	200	<	5	<	5	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	-	280	<	5	-	8.3	-	49	<	5	<	5	<	5	<	5	-	7.3
+EIWA	05461390	05461390	1994	"FLOOD CREEK NEAR POWERSVILLE, IA"	Agricultural	1995-09-24 1100	C	white sucker	-	10.8	<	5	<	200	<	5	-	10	-	23	E	5.3	-	60	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	-	89	-	86	<	5.7	-	6.7	E	39	-	13	<	5	<	5	-	16	-	12
+EIWA	05464020	05464020	1994	"CEDAR RIVER AT GILBERTVILLE, IA"	Agricultural	1995-09-21 1220	C	common carp	-	7.5	<	5	<	330	<	5	-	7.4	-	22	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	37	-	250	<	5	<	5	E	27	<	5	<	5	<	5	-	6.3	-	9.3
+EIWA	05464220	05464220	1994	"WOLF CREEK NEAR DYSART, IA"	Agricultural	1995-09-18 1500	C	common carp	-	5.5	<	5	<	200	<	5	-	6.9	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	-	54	-	85	<	5	<	5	E	28	-	5.3	<	5	<	5	-	5.3	-	7.6
+EIWA	05465000	05465000	1994	"CEDAR RIVER NEAR CONESVILLE, IA"	Agricultural	1995-09-18 1036	C	common carp	-	16.1	<	5	<	300	<	5	-	18	-	38	-	8.5	<	5	<	10	<	10	<	5	<	11	-	5.7	<	5.3	<	5	-	36	<	5	<	5	-	180	-	130	<	5	<	14	E	26	<	10	<	10	-	25	-	24	-	23
+EIWA	05465500	05465500	1994	"IOWA RIVER AT WAPELLO, IA"	Agricultural	1995-09-19 1100	C	common carp	-	9.8	<	5	<	200	<	5	-	15	-	17	-	5.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	-	88	-	39	<	5	<	5	E	13	<	5	<	5	-	6.4	-	10	-	13
+EIWA	05471500	05471500	1994	"SOUTH SKUNK RIVER NEAR OSKALOOSA, IA"	Agricultural	1995-09-19 1400	C	common carp	-	5.1	<	5	<	200	<	5	-	7.2	-	22	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	<	5	<	5	-	27	-	51	<	5	<	5	-	14	<	5	<	5	<	5	-	12	-	14
+EIWA	05473400	05473400	1994	"CEDAR CREEK NEAR OAKLAND MILLS, IA"	Agricultural	1995-09-23 1000	C	common carp	-	1.4	<	5	<	200	<	5	<	5	-	5.1	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.3	-	6.3	<	5	<	5	<	10	<	10	<	10	<	5	<	5	<	5
+EIWA	05474000	05474000	1994	"SKUNK RIVER AT AUGUSTA, IA"	Agricultural	1995-09-22 1300	C	common carp	-	8.7	<	5	<	200	<	5	<	5	-	8.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	-	59	-	22	<	5	<	5	E	9	<	5	<	5	<	5	-	5.8	-	5.7
+UIRB	05517120	05517120	1997	"PITNER DITCH AT STATE HWY 8 NEAR LA CROSSE, IN"	Agricultural	1998-08-20 1045	C	white sucker	-	1.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.3	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UIRB	05520500	05520500	1997	"KANKAKEE RIVER AT MOMENCE, IL"	Agricultural	1998-08-20 1710	C	common carp	-	5.1	<	5	<	200	<	5	<	5	E	24	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	45	-	50	<	5	<	5	-	11	<	5	<	5	<	5	-	5.5	-	17
+UIRB	05525500	05525500	1997	"SUGAR CREEK AT MILFORD, IL"	Agricultural	1999-08-17 1300	C	channel catfish	-	7.1	<	5	<	200	<	5	-	10	-	37	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	-	130	-	65	<	5	<	5	-	14	-	18	<	5	<	5	-	15	-	23
+UIRB	05526000	05526000	1997	"IROQUOIS RIVER NEAR CHEBANSE, IL"	Agricultural	1998-08-21 1100	C	channel catfish	-	9.7	<	5	<	200	<	5	E	7.3	E	47	-	9.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	17	<	5	<	5	-	230	-	44	<	5	<	5	E	5	-	6.9	<	5	<	5	-	8.2	-	25
+LIRB	05555300	05555300	1994	"VERMILION RIVER NEAR LEONORE, IL"	Agricultural	1996-07-01 1320	C	common carp	-	7.3	<	5	<	200	<	5	-	7.9	-	26	-	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	-	76	-	48	<	5	<	5	E	5.9	<	5	<	5	<	5	-	8.9	-	12
+LIRB	05567000	05567000	1994	"PANTHER CREEK NEAR EL PASO, IL"	Agricultural	1996-08-06 1220	C	white sucker	-	6.8	<	5	<	200	<	5	E	6.4	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	19	<	5	<	5	-	95	-	18	<	5	<	5	<	5	<	5	<	5	<	5	-	7.4	-	11
+LIRB	05568000	05568000	1994	"MACKINAW RIVER NEAR GREEN VALLEY, IL"	Agricultural	1997-07-16 1250	C	common carp	-	4.5	<	5	<	200	<	5	-	14	-	34	-	8.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	39	<	5	<	5	-	190	-	28	<	5	<	5	-	5.5	<	5	<	5	<	5	-	17	-	18
+LIRB	05568800	05568800	1994	"INDIAN CREEK NEAR WYOMING, IL"	Agricultural	1996-08-07 1420	C	white sucker	-	7.7	<	5	<	200	<	5	E	5.2	-	8.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	20	<	5	<	5	-	110	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.8
+LIRB	05569950	05569950	1994	"SPOON RIVER NEAR BLYTON, IL"	Agricultural	1996-08-14 1320	C	common carp	-	8.1	<	5	<	200	<	5	-	7	-	20	-	5.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	<	5	<	5	-	130	E	50	<	5	<	5	E	5.9	<	5	<	5	<	5	-	7.6	-	10
+LIRB	05572000	05572000	1994	"SANGAMON RIVER AT MONTICELLO, IL"	Agricultural	1996-07-22 1050	C	common carp	-	26	<	5	<	200	-	7.7	E	67	-	110	E	31	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.1	E	19	<	5	<	5	-	390	-	95	<	8	<	5	E	20	<	5	<	5	<	5	-	43	-	61
+LIRB	05573650	05573650	1994	"SANGAMON RIVER NEAR NIANTIC, IL"	Agricultural	1996-07-22 1520	C	common carp	-	14	<	5	<	200	-	7.1	E	15	-	140	-	39	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	42	<	5	<	5	-	240	-	120	<	11	<	5	-	40	<	5	<	5	<	5	-	30	-	59
+LIRB	05580500	05580500	1994	"KICKAPOO CREEK NEAR LINCOLN, IL"	Agricultural	1997-07-14 1220	C	common carp	-	4.1	<	5	<	200	<	5	-	12	-	51	-	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	-	66	-	29	<	5	<	5	<	5	<	5	<	5	<	5	-	41	-	41
+LIRB	05582000	05582000	1994	"SALT CREEK NEAR GREENVIEW, IL"	Agricultural	1997-07-15 1220	C	common carp	-	5	<	5	<	200	<	5	-	12	-	41	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	-	47	-	24	<	5	<	5	-	5.9	<	5	<	5	<	5	-	18	-	25
+LIRB	05582500	05582500	1994	"CRANE CREEK NEAR EASTON, IL"	Agricultural	1996-08-26 1420	C	common carp	-	12	<	5	<	200	<	5	<	5	-	18	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	-	14	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	12
+LIRB	05583000	05583000	1994	"SANGAMON RIVER NEAR OAKFORD, IL"	Agricultural	1996-08-27 0950	C	common carp	-	11	<	5	<	200	<	5	-	13	-	55	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	31	<	5	<	5	-	140	-	42	<	5	<	5	<	5	<	5	<	5	<	5	-	21	-	30
+LIRB	05584500	05584500	1994	"LA MOINE RIVER AT COLMAR, IL"	Agricultural	1997-07-17 1020	C	common carp	-	6.4	<	5	<	200	-	5.8	-	17	-	36	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	44	<	5	<	5	-	200	-	31	<	5	<	5	-	6.8	<	5	<	5	<	5	-	19	-	19
+CNBR	06773500	06773500	1991	PRAIRIE CREEK NR SILVER CREEK NEBR	Agricultural	1992-10-29 1000	C	common carp	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06795500	06795500	1991	"SHELL CREEK NEAR COLUMBUS, NEBR."	Agricultural	1993-09-19 0930	C	common carp	-	6.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	8.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06799350	06799350	1991	"ELKHORN RIVER AT WEST POINT, NEBR."	Agricultural	1992-09-15 1000	C	channel catfish	-	8.4	<	5	<	200	<	5	<	5	-	15	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.2	<	5	<	5	-	14	-	30	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7	-	8
+CNBR	06800000	06800000	1991	"MAPLE CREEK NEAR NICKERSON, NE"	Agricultural	1993-09-19 1300	C	channel catfish	-	10	<	5	<	200	<	5	<	5	-	5.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	-	42	-	9.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06800500	06800500	1991	"ELKHORN RIVER AT WATERLOO, NE"	Agricultural	1992-09-23 1000	C	common carp	-	6.6	<	5	<	200	<	5	<	5	-	14	-	7.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	-	30	<	5	<	5	<	5	<	5	<	5	<	5	-	7	-	8.4
+CNBR	06803000	06803000	1991	"SALT CREEK AT ROCA, NEBR."	Agricultural	1992-09-14 1430	C	common carp	-	7.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.5	-	5.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	06917380	06917380	1991	"MARMATON R NR MARMATON, KS"	Agricultural	1992-10-21 1730	C	longear sunfish	-	2.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	06923150	06923150	1991	"DOUSINBURY CR ON JJ NEAR WALL STREET, MO"	Agricultural	1993-10-28 1021	C	longear sunfish	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07023800	07023800	1994	OBION CREEK NEAR HICKMAN	Agricultural	1998-09-02 1000	C	common carp	-	14.45	<	5	<	200	<	5	-	9.8	-	24.1	-	10.8	<	5	<	5	<	5	<	5	<	12	<	5	<	5	-	10	<	5	<	5	<	5	-	37.6	-	42.6	<	6.4	<	5	-	11.9	<	5	<	5	<	5	-	7.2	-	18.9
+MISE	07024160	07024160	1994	SPILLWAY DITCH AT HWY 102 NEAR EAST PRAIRIE	Agricultural	1998-07-08 1530	C	largemouth bass	-	6	<	5	<	200	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	-	24	<	5	<	5	E	5.5	<	5	<	5	<	5	<	5	<	5
+MISE	07026040	07026040	1994	"OBION RIVER AT HWY 51 NEAR OBION, TN"	Agricultural	1995-09-22 1000	C	common carp	-	6.1	<	5	<	200	<	5	<	5	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	<	5	<	5	<	5	<	5	<	5	-	5.3	-	36	<	5	<	5	E	10	<	5	<	5	<	5	<	5	-	6.4
+MISE	07027050	07027050	1994	RUNNING REELFOOT BAYOU AT HWY 103	Agricultural	1998-07-08 0800	C	common carp	-	13	<	5	<	200	-	5.8	<	5	-	5.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6	-	11	-	97	<	5	<	5	E	9.6	<	5	<	5	<	5	<	5	<	5
+MISE	07040496	07040496	1994	COCKLE BURR SLOUGH DITCH NEAR MONETTE	Agricultural	1998-06-25 1000	C	common carp	-	8.1	<	5	<	200	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	-	290	<	5	<	5	-	46	-	6.9	<	5	<	5	<	5	-	8.3
+MISE	07041120	07041120	1994	MAIN DITCH AT HWY 153 NEAR WHITE OAK	Agricultural	1998-07-23 1100	C	common carp	-	8.3	<	5	<	200	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.6	-	220	<	5	<	5	E	22	<	5	<	5	<	5	<	5	-	6.8
+MISE	07042500	07042500	1994	"LITTLE RIVER DITCH 251 NEAR LILBOURN, MO."	Agricultural	1998-07-10 0800	C	common carp	-	5.2	<	5	<	200	<	5	<	5	-	6.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	-	140	-	15	<	5	-	20	<	5	<	5	<	5	<	5	<	5
+MISE	07043300	07043300	1994	ST. JOHNS DITCH NEAR SIKESTON	Agricultural	1998-07-09 1330	C	common carp	-	7.7	<	5	<	200	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07043500	07043500	1994	"LITTLE RIVER DITCH NO 1 NEAR MOREHOUSE, MO."	Agricultural	1995-10-18 1450	C	common carp	-	5.1	<	5	<	200	<	5	<	5	-	10	-	5.5	<	5	<	5	<	5	<	5	<	5.3	<	5	<	5	<	5	<	5	<	5	<	5	-	25	-	43	<	5	<	5	-	14	<	5	<	5	<	5	<	5	-	5
+MISE	07046515	07046515	1994	ELK CHUTE NEAR GOBLER	Agricultural	1998-06-25 1430	C	common carp	-	21	<	5	<	200	-	5.3	<	5	-	6.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.9	-	130	<	8	<	5	E	37	-	6.4	<	5	<	5	<	5	<	5
+MISE	07047520	07047520	1994	ST. FRANCIS RIVER AT COLDWATER	Agricultural	1998-07-07 1230	C	common carp	-	5.7	<	5	<	200	<	5	<	5	-	5.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.6	-	430	<	5	<	5	-	42	<	5	<	5	<	5	<	5	<	5
+MISE	07047700	07047700	1994	TYRONZA RIVER NEAR TWIST	Agricultural	1998-07-07 1030	C	common carp	-	9.7	<	5	<	200	<	5	<	5	-	6.9	<	5	<	5	<	5	<	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.8	-	440	<	5	<	8	<	5	-	12	<	14	<	5	-	5.1	-	5.4
+MISE	07047947	07047947	1994	"SECOND CREEK NEAR PALESTINE, AR"	Agricultural	1998-06-23 1000	C	longnose gar	-	1.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	91	<	5	<	5	-	6.5	<	5	<	5	<	5	<	5	<	5
+MISE	07047950	07047950	1994	"L`ANGUILLE RIVER AT PALESTINE, AR"	Agricultural	1996-10-15 1208	C	common carp	-	8.4	<	5	<	200	<	5	<	5	E	7.9	<	5	<	5	<	10	<	10	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	600	<	5	E	16	E	73	<	10	<	5	<	5	<	5	<	5
+OZRK	07053250	07053250	1991	"YOCUM CREEK NEAR OAK GROVE, AR"	Agricultural	1993-11-01 1421	C	northern hog sucker	-	1.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07074660	07074660	1994	VILLAGE CREEK NR SWIFTON	Agricultural	1998-06-26 1100	C	common carp	-	5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	-	87	<	5	<	5	E	13	<	5	<	5	<	5	<	5	<	5
+MISE	07077380	07077380	1994	"CACHE RIVER AT EGYPT, ARK"	Agricultural	1995-09-21 1200	C	common carp	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	-	120	<	5	<	5	-	18	<	5	<	5.1	<	5	<	5	<	5
+MISE	07077555	07077555	1994	"CACHE RIVER NEAR COTTON PLANT,AR."	Agricultural	1995-09-20 1100	C	common carp	-	8.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	-	590	<	5	<	5.3	E	42	<	5	<	5.7	<	5	<	5	<	5
+MISE	07077700	07077700	1994	"BAYOU DEVIEW AT MORTON, ARK."	Agricultural	1998-06-24 1100	C	common carp	-	5.8	<	5	<	200	-	6.1	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	-	240	<	5	<	5	-	26	<	5	<	5	<	5	<	5	<	5
+MISE	07077950	07077950	1994	BIG CREEK AT POPLAR GROVE	Agricultural	1998-06-03 1500	C	common carp	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	273.5	<	5	<	5	E	40.5	<	5	<	5	<	5	<	5	<	5
+MISE	07078040	07078040	1994	"LAGRUE BAYOU NR DEWITT, AR"	Agricultural	1996-10-16 0000	C	common carp	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	<	5	<	5	<	11	<	5	-	94	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07186480	07186480	1991	"CENTER CREEK NEAR SMITHFIELD, MO."	Agricultural	1992-10-22 1121	C	northern hog sucker	-	2.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07194947	07194947	1991	"LITTLE OSAGE CREEK AT HEALING SPRINGS, AR"	Agricultural	1994-07-12 0921	C	northern hog sucker	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07279950	07279950	1994	"COLDWATER RIVER AT MARKS, MS"	Agricultural	1998-06-04 1000	C	common carp	-	4.76	<	5	E	390	<	5	<	5	<	5	<	5	<	5	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.5	-	1300	<	5	<	5	E	300	-	24	<	5	<	5	<	5	<	5
+MISE	07280900	07280900	1994	"CASSIDY BAYOU AT WEBB, MS"	Agricultural	1995-10-16 1300	C	common carp	-	8.4	<	5	-	2000	<	5	<	5	<	50	<	5	<	5	<	50	<	50	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	50	<	50	E	7300	<	50	-	130	E	2000	-	64	<	5	<	5	<	50	<	50
+MISE	07283000	07283000	1994	"SKUNA RIVER AT BRUCE, MS"	Agricultural	1995-10-20 0930	C	common carp	-	13	<	5	<	1100	<	5	<	5	-	5.6	<	5	-	13	<	10	<	10	<	5	<	5	<	5.6	<	5	<	5	<	5	<	5	<	5	-	11	-	680	-	10	-	12	-	320	E	21	<	10	<	5	<	5	<	5
+MISE	07288500	07288500	1994	"BIG SUNFLOWER RIVER AT SUNFLOWER, MS"	Agricultural	1998-06-17 1200	C	common carp	-	6.8	<	5	E	710	<	5	<	5	<	7	<	5	<	5	<	6	<	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	15	-	20	-	1800	<	11	-	22	E	380	-	58	<	37	<	5	<	5	<	5
+MISE	07288570	07288570	1994	"QUIVER RIVER NR DODDSVILLE, MS"	Agricultural	1996-07-18 1100	C	common carp	-	3.2	<	5	E	530	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	11	E	3100	<	5	<	5	E	600	<	10	<	5	<	5	<	5	<	5
+MISE	07288650	07288650	1994	"BOGUE PHALIA NR LELAND, MS"	Agricultural	1995-08-22 1400	C	common carp	-	4.3	<	5	-	1400	<	5	<	5	<	20	<	5	-	5.1	<	9	<	12	<	5	<	11	<	10	<	5	<	5	<	5	<	13	<	220	-	19	-	5000	-	16	-	79	E	850	-	87	-	56	<	5	<	6	<	5
+MISE	07288700	07288700	1994	"BIG SUNFLOWER RIVER NR ANGUILLA, MS"	Agricultural	1995-08-21 1130	C	common carp	-	4.6	<	5	-	2100	<	5	<	5	<	10	<	7	-	5.7	<	5	<	25	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	15	-	23	-	3700	-	28	-	100	E	1100	-	87	-	35	<	5	<	5	<	6
+MISE	0728872008	0728872008	1994	"SILVER CREEK NR BAYLAND, MS"	Agricultural	1998-06-08 1200	C	common carp	-	5	<	5	E	550	-	5.1	<	5	<	5	<	5	<	5	<	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	11	-	20	-	1200	<	5	<	21	E	370	-	160	<	5	<	5	<	5	<	5
+MISE	07288770	07288770	1994	"DEER CREEK NR HOLLANDALE, MS"	Agricultural	1996-07-17 1400	C	common carp	-	9.4	<	5	E	3900	<	12	<	5	<	35	<	420	<	5	<	5	<	17	<	10	<	5	<	5	<	9	<	5	<	5	<	5	<	56	<	78	E	5400	-	64	<	5	E	1500	<	55	<	5	<	5	E	23	E	23
+MISE	07288870	07288870	1994	"STEELE BAYOU EAST PRONG NR ROLLING FORK, MS"	Agricultural	1995-08-24 1200	C	common carp	-	7.8	<	5	-	9100	<	5	<	5	<	5	<	5	<	5	<	5	<	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	-	3700	<	12	-	120	E	1100	E	140	<	5.3	<	5	<	5	<	5
+MISE	07288955	07288955	1994	"YAZOO RIVER BL STEELE BAYOU NR LONG LAKE, MS"	Agricultural	1995-09-28 1130	C	common carp	-	14.5	<	5	-	1600	-	11	<	5	-	15	-	11	<	5	<	10	<	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5.4	-	32	-	1600	-	18	-	48	-	550	E	42	<	10	<	5	-	9.9	-	14
+MISE	073676595	073676595	1994	BAYOU MACON NEAR HALLEY	Agricultural	1998-06-16 1200	C	common carp	-	3.8	<	5	E	650	<	5	<	5	<	8	<	5	<	5	<	5	<	8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.5	-	1000	<	5	-	11	E	98	-	16	<	14	<	5	<	5	<	5
+MISE	07367700	07367700	1994	BOEUF R NR ARKANSAS-LA STATE LINE	Agricultural	1998-06-16 0830	C	common carp	-	4.9	<	5	<	200	<	5	<	5	-	7.6	<	5	<	5	<	5	<	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.6	-	640	<	5	<	13	E	190	-	14	<	17	<	5	<	5	<	5
+MISE	07368580	07368580	1994	"BIG CREEK NEAR SLIGO, LA."	Agricultural	1998-06-01 1200	C	common carp	-	10.73	<	5	-	1200	<	5	<	5	<	5	<	5	-	50	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	2700	<	5	-	20	-	250	-	43	-	33	<	5	<	5	<	5
+MISE	07369500	07369500	1994	"TENSAS R @ TENDAL, LA"	Agricultural	1995-08-25 1430	C	common carp	-	9.3	<	5	-	12000	<	5	-	9.7	-	19	-	29	-	96	<	17	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	-	11	<	9.5	-	23	-	5300	-	17	E	14	E	1800	E	36	<	5	<	5.3	<	5	-	10
+MISE	07370000	07370000	1994	"BAYOU MACON NR DELHI, LA"	Agricultural	1995-09-18 1200	C	common carp	-	6.7	<	5	<	1800	<	5	<	5	-	5.6	-	7.6	-	41	<	10	<	15	<	5	<	5.4	<	5	<	5	<	5	<	5	<	5	<	6.8	-	19	-	4600	-	22	-	54	-	610	E	29	<	10	-	5.2	<	5	-	5.1
+ACAD	08010000	08010000	1997	"BAYOU DES CANNES NR EUNICE, LA"	Agricultural	1998-07-29 1000	C	warmouth	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	62	<	5	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	08012150	08012150	1997	"MERMENTAU RIVER @ MERMENTAU, LA"	Agricultural	1998-07-10 1300	C	crappies	-	5	<	5	<	200	<	5	<	5	-	7.5	<	5	-	7.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	33	.	.	<	5	<	5	<	5	<	5	<	5	<	5	-	6.8
+ACAD	08012300	08012300	1997	"BYU QUEUE DE TORTUE @ RICEVILLE, LA"	Agricultural	1998-07-10 0804	C	common carp	-	5.9	<	5	<	200	<	5	<	5	-	9.1	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	21	<	5	<	5	E	24	<	5	<	5	<	5	<	5	<	5
+ACAD	08012470	08012470	1997	"BAYOU LACASSINE NR LAKE ARTHUR, LA"	Agricultural	1998-08-19 1030	C	largemouth bass	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	08050410	08050410	1991	"ELM FK TRINITY RV NR GAINESVILLE, TX"	Agricultural	1992-10-14 1300	C	common carp	-	3.2	<	5	<	200	<	5	<	5	-	21	-	8.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.7	-	42	<	5	<	5	-	6.4	<	5	<	5	<	5	-	10	-	14
+TRIN	08058900	08058900	1991	"E FK TRINITY RV AT MCKINNEY, TX"	Agricultural	1992-10-16 1300	C	yellow bullhead	-	5	<	5	<	200	<	5	<	5	-	16	-	7.1	<	5	<	5	<	5	-	6.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.6	-	42	<	5	<	5	-	7.5	<	5	<	5	<	5	-	7.8	-	14
+TRIN	08064100	08064100	1991	"CHAMBERS CK NR RICE, TX"	Agricultural	1995-08-23 1005	C	longear sunfish	-	1.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	180	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09144200	09144200	1994	"TONGUE CREEK AT CORY, CO."	Agricultural	1995-08-24 1020	C	white sucker	-	7.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	-	73	<	6.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09149480	09149480	1994	"DRY CREEK AT BEGONIA RD, NR DELTA, CO."	Agricultural	1995-08-18 1320	C	white sucker	-	9.4	<	5	<	1500	<	5	-	6	-	17	-	7.7	<	5	<	5	<	12	<	5	<	8.6	<	5	<	5	-	9.3	-	10	<	5	<	6	-	71	-	700	-	85	-	8	-	29	-	140	-	21	-	52	<	5	-	7.9
+GRSL	10102200	10102200	1997	CUB R NR RICHMOND UTAH	Agricultural	1998-08-11 1101	C	common carp	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	37	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SANJ	11223300	11223300	1991	KINGS R BL EMPIRE WR2 NR STRATFORD CA	Agricultural	1992-10-23 2100	C	common carp	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	95	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5
+SANJ	11261100	11261100	1991	SALT SLOUGH A HWY 165 NR STEVINSON CA	Agricultural	1992-10-15 2100	C	channel catfish	-	3.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.9	-	320	<	5	<	5	-	22	<	5	<	5	<	5	<	5	<	5
+SANJ	11262900	11262900	1991	MUD SLOUGH NR GUSTINE CA	Agricultural	1992-10-15 2100	C	common carp	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	70	<	5	<	5	-	9.8	<	5	<	5	<	5	<	5	<	5
+SACR	11390890	11390890	1994	COLUSA BASIN DR A RD 99E NR KNIGHTS LANDING CA	Agricultural	1995-10-30 1121	C	common carp	-	3.3	<	5	-	220	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	-	560	<	7	-	8.9	-	56	<	5	<	5	<	5	<	5	<	5
+PUGT	12212100	12212100	1994	"FISHTRAP CREEK AT FLYNN ROAD AT LYNDEN, WA"	Agricultural	1995-09-27 1000	C	freshwater sculpins	-	3	<	5	<	200	<	5	<	5	-	14	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.2	-	27	<	5	<	5	E	8.1	-	21	<	5.5	<	5	-	5.2	-	11
+PUGT	12212500	12212500	1994	"BERTRAND CREEK NEAR LYNDEN, WA"	Agricultural	1995-09-26 1400	C	freshwater sculpins	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	30	<	5	<	5	<	5	<	6.4	<	5	<	5	<	5	<	5
+CCPT	12463500	12463500	1991	"DOUGLAS CR NR PALISADES, WASH."	Agricultural	1992-08-29 1500	C	rainbow trout	-	5.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	-	32	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CCPT	12464770	12464770	1991	"CRAB CREEK AT ROCKY FORD ROAD NEAR RITZVILLE, WA"	Agricultural	1992-08-30 1000	C	bridgelip sucker	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CCPT	12472950	12472950	1991	"SCBID SADDLE MOUNTAIN WASTEWAY NR MATTAWA, WA"	Agricultural	1992-09-02 1000	C	common carp	-	14.1	<	5	<	200	<	5	<	5	-	25	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	55	<	5	<	5	<	5	<	5	<	5	-	8.6	-	6.5	-	14
+CCPT	12513400	12513400	1991	"ESQUATZEL COULEE AT MESA, WA"	Agricultural	1992-08-31 1000	C	common carp	-	5.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	21	-	400	<	5	<	5	-	35	-	9	-	6.2	<	5	<	5	<	5
+USNK	13092733	13092747	1991	ROCK CREEK AB DAYDREAM RANCH NR TWIN FALLS ID	Agricultural	1994-07-26 1100	C	bridgelip sucker	-	7.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	520	<	5	<	5	-	16	-	46	-	6.6	<	5	<	5	<	5
+USNK	13092747	13092747	1991	ROCK CREEK AB HWY 30/93 XING AT TWIN FALLS ID	Agricultural	1993-07-15 1600	C	largescale sucker	-	8.3	<	5	-	540	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	-	1000	<	5	<	5	-	58	-	90	<	5	<	5	<	5	<	5
+USNK	13092753	13092747	1991	ROCK CREEK BLW US HWY 30/93 AT TWIN FALLS ID	Agricultural	1994-07-28 1100	C	bridgelip sucker	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	-	400	<	5	<	5	-	13	-	50	-	6.3	<	5	<	5	<	5
+CCPT	13349200	13349200	1991	"S.F. PALOUSE RIVER AT COLFAX, WA"	Agricultural	1992-08-24 1400	C	bridgelip sucker	-	16	<	5	<	200	<	50	<	50	<	50	<	50	<	5	<	5	<	5	<	50	<	50	<	50	<	50	-	16	<	50	<	5	<	50	<	50	-	340	<	50	<	50	<	100	<	100	<	100	<	50	<	50	<	50
+CCPT	13349410	13349410	1991	"PINE CREEK AT PINE CITY ROAD AT PINE CITY, WA"	Agricultural	1992-08-26 0930	C	largescale sucker	-	7.2	<	5	<	200	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	-	10	-	21	-	120	<	5	<	5	-	6.9	-	8.6	<	5	<	5	<	5	<	5
+CCPT	13351000	13351000	1991	"PALOUSE RIVER AT HOOPER, WA"	Agricultural	1997-09-25 1200	C	largescale sucker	-	7.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	E	8.7	<	5	<	5	-	16	-	330	<	5	<	5	-	12	-	29	<	5	<	5	<	5	<	5
+WILL	14201300	14201300	1991	"ZOLLNER CREEK NEAR MT ANGEL, OR"	Agricultural	1992-09-07 1600	C	freshwater sculpins	-	3.7	<	5	<	200	<	5	<	5	-	14	-	6	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	-	47	<	5	<	5	-	6	-	16	<	5	<	5	<	5	-	9.6
+SOFL	261953080462800	261953080462800	1994	MIAMI CANAL AT S-8	Agricultural	1995-08-16 1600	C	largemouth bass	-	6.6	<	5	<	230	<	5	<	5	<	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	17	-	6.8	-	170	<	8	-	20	-	56	E	6.3	<	5	<	5	<	5	<	5
+SCTX	293422097554299	293422097554299	1994	"GERONIMO CK AT HWY 90A NR SEGUIN, TX"	Agricultural	1997-11-04 1011	C	gray redhorse	-	4.13	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	315801096282999	315801096282999	1991	"RICHLAND CK AT GRAVEL RD NR RICHLAND, TX"	Agricultural	1995-08-22 1002	C	longear sunfish	-	5.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	96	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	321017096420099	321017096420099	1991	"MILL CK AT ELLIS/NAVARRO COUNTY LINE, TX"	Agricultural	1995-08-22 1003	C	common carp	-	5.4	<	5	<	200	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	420	<	5	<	5	-	18	-	11	<	5.7	<	5	<	5	<	5
+TRIN	321313096415201	321313096415201	1991	"BIG ONION CK AT FM 985 NR BARDWELL, TX"	Agricultural	1995-08-22 1001	C	longear sunfish	-	2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	110	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	321441096442601	321441096442601	1991	"CHAMBERS CK AT FM 876 NR ITALY, TX"	Agricultural	1995-08-21 1000	C	longear sunfish	-	1.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	385433121381601	385433121381601	1994	E CANAL A KIRKVILLE RD NR NICOLAUS CA	Agricultural	1995-10-31 1031	C	common carp	-	6.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	8.7	<	5	<	5	<	5	<	5	<	5	<	5	-	9.8	-	210	<	5	<	9.4	E	32	<	10	<	10	<	5	<	5	<	5
+MIAM	393259085101200	03275000	1997	"WHITEWATER RIVER NR. NULLTOWN, IN"	Agricultural	1998-09-15 1200	C	common carp	-	9.8	<	5	<	200	<	5	-	7.4	-	36	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.8	<	5	<	5	-	32	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	21
+LSUS	394220076351501	394220076351501	1991	"DEER CREEK AT GORSUCH MILLS, MD"	Agricultural	1992-09-28 1005	C	white sucker	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WHIT	394340085524601	394340085524601	1991	"SUGAR CREEK AT CO RD 400 S AT NEW PALESTINE, IN"	Agricultural	1992-10-29 1430	C	black redhorse	-	7.1	<	5	<	200	<	5	<	5	-	13	-	6.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.4	<	5	<	5	-	31	-	8.9	<	5	<	5	<	5	<	5	<	5	<	5	-	17	-	14
+LSUS	395048076011401	395048076011401	1991	"EAST BRANCH OCTORARO CREEK NEAR KIRKWOOD, PA"	Agricultural	1992-09-30 1005	C	white sucker	-	6.4	<	5	<	200	-	5.3	-	5.5	-	20	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.2	-	96	<	5	<	5	-	7.4	-	7.7	<	5	<	5	<	5	-	12
+MIAM	395433084175300	395355084173600	1997	"STILLWATER R. ON SPRINGFIELD RD NR. UNION, OH"	Agricultural	1998-09-17 1015	C	common carp	-	7.9	<	5	<	200	<	5	<	5	-	42	E	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	-	110	-	100	<	5	<	5	-	18	<	5	<	5	<	5	-	12	-	27
+MIAM	395534084091400	395457084095100	1997	"GREAT MIAMI R. NR. TIPP CITY, OH"	Agricultural	1998-09-09 1000	C	common carp	-	9	<	5	<	200	<	5	-	48.6	-	30.8	-	11.3	<	5	<	5	<	5	<	5	<	14	<	5	<	5	<	5	-	8.8	<	5	<	5	-	52.8	-	32.8	<	6.4	<	5	-	6.7	<	5	<	5	<	5	-	10.7	-	35.4
+LSUS	395619076133901	395619076133901	1991	"BIG BEAVER CREEK NEAR REFTON, PA"	Agricultural	1992-09-30 1150	C	white sucker	-	4.4	<	5	<	200	<	5	<	5	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MIAM	395650083504400	03267900	1997	"MAD R. NR HWY. 41 NR SPRINGFIELD, OH"	Agricultural	1998-09-14 1100	C	common carp	-	7.6	<	5	<	200	<	5	-	11	-	230	-	40	<	5	<	5	<	5	<	5	<	27	<	5	<	5	<	5	<	5	<	5	<	5	-	31	-	280	<	5	<	5	-	31	<	5	<	5	<	5	-	45	-	130
+LERI	413101084521301	413101084521301	1994	"FISH CREEK AT COUNTY ROAD 4A NEAR HAMILTON, IN"	Agricultural	1997-08-12 1600	C	common carp	E	10	<	5	<	200	E	2	<	5	-	9.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	1.1	<	5	<	5	<	5	-	5.7	-	41	<	5	<	5	E	5.4	<	5	<	5	<	5	E	1.9	E	4
+UMIS	442912092174201	05355250	1994	"MISSISSIPPI RIVER AT LAKE PEPIN AT CENTRAL PT, MN"	Agricultural	1995-07-13 1500	C	common carp	-	9.4	<	5	<	1800	<	12	<	5	<	10	<	10	<	5	<	25	<	10	<	12	<	5	<	8	<	6	<	5	<	5	<	5	<	10	<	15	-	160	<	10	<	10	<	10	<	25	<	10	<	5	<	5	<	10
+WILL	443138123120901	443138123120901	1991	"MUDDY CREEK NEAR PEORIA, OR"	Agricultural	1992-09-07 0841	C	sculpins	-	3.7	<	5	<	200	<	5	<	5	-	13	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	451309123041501	451309123041501	1991	"PALMER C AT DAYTON, OR"	Agricultural	1993-10-06 1301	C	freshwater sculpins	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	24	<	5	<	5	<	5	-	7.1	<	5	<	5	<	5	<	5
+REDN	461500096353001	461500096353001	1991	"BOIS DE SIOUX RIVER NEAR WAHPETON, ND"	Agricultural	1992-08-20 1605	C	common carp	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	26	<	5	<	5	-	18	<	5	<	5	<	5	<	5	<	5
+CCPT	462258119110800	462258119110800	1991	"TAYLOR FLAT CREEK ABV BIRCH RD NR PASCO, WA"	Agricultural	1992-09-01 1100	C	largemouth bass	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	465149096280401	465149096280401	1991	"BUFFALO RIVER AT BUFFALO R ST PARK NR GLYNDON, MN"	Agricultural	1992-08-24 1005	C	common carp	-	0.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	71	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CCPT	465210119211500	12472380	1991	"ROYAL LAKE NEAR OTHELLO, WA"	Agricultural	1994-07-14 1400	C	common carp	-	10	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7	<	170	<	5	<	5	-	6.1	<	5	<	5	<	5	-	35	-	2300	-	8	-	8.7	-	130	-	16	-	19	-	67	<	5	<	5
+CCPT	465950117371000	465950117371000	1991	"PALOUSE R. AT ENDICOTT-ST. JOHN RD NR COLFAX, WA"	Agricultural	1994-07-11 1600	C	largescale sucker	-	7.8	<	5	<	200	<	5	-	9	-	9.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	33	-	23	<	5	<	5	-	22	-	400	<	5	<	5	-	22	-	29	<	5	<	5	-	12	<	5
+CCPT	470100119030000	12471400	1991	"LIND COULEE AT U RD SE NR MOSES LAKE, WA"	Agricultural	1992-08-27 1430	C	common carp	-	7.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	5	-	260	-	2400	-	14	-	14	<	5	-	430	-	140	-	12	<	5	<	5
+CCPT	471313119422400	471313119422400	1991	"WINCHESTER WASTEWAY AT RD. 9NW NR QUINCY, WA"	Agricultural	1992-08-28 1400	C	common carp	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	-	53	-	190	<	5	<	5	-	14	-	5.2	<	5	<	5	<	5	<	5
+CONN	01200000	01199900	1991	TENMILE RIVER NEAR GAYLORDSVILLE CT	Mixed	1992-10-20 1101	C	white sucker	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	0136215855	0136215855	1991	ROELIFF JANSEN KILL NEAR ANCRAM NY	Mixed	1994-09-20 1232	C	white sucker	-	3.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01471980	01471980	1997	"MANATAWNY CREEK NEAR POTTSTOWN, PA."	Mixed	1998-08-26 0900	C	white sucker	-	8.4	<	5	<	200	<	5	-	6.3	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	25	-	110	<	5	<	5	-	12	-	24	<	5	<	5	<	5	-	5
+DELR	01472157	01472157	1997	"FRENCH CREEK NEAR PHOENIXVILLE, PA"	Mixed	1999-07-20 1030	C	white sucker	-	7.8	<	5	<	200	<	5	<	5	E	3.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LSUS	01540500	01540500	1991	"SUSQUEHANNA RIVER AT DANVILLE, PA"	Mixed	1992-09-15 1005	C	white sucker	-	8.5	<	5	<	200	<	5	<	5	-	8.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	39	<	5	<	5	.	.	-	8.3	<	5	<	5	<	5	<	5
+LSUS	01567000	01567000	1991	"JUNIATA RIVER AT NEWPORT, PA"	Mixed	1992-09-17 1431	C	white sucker	-	12	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALBE	02049500	02049500	1991	"BLACKWATER RIVER NEAR FRANKLIN, VA"	Mixed	1993-11-05 1215	C	redbreast sunfish	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALBE	02082731	02082731	1991	"DEVILS CRADLE CREEK AT SR1412 NEAR ALERT, NC"	Mixed	1993-10-08 1215	C	redbreast sunfish	-	2.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALBE	02083500	02083500	1991	"TAR RIVER AT TARBORO, NC"	Mixed	1993-11-04 1215	C	redbreast sunfish	-	1.8	<	5	<	200	<	5	<	5	-	8.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.6	-	52	<	5	<	5	-	14	-	7.1	<	5	<	5	<	5	<	5
+ALBE	02084160	02084160	1991	"CHICOD CR AT SR1760 NEAR SIMPSON, NC"	Mixed	1993-10-06 1215	C	redbreast sunfish	-	4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	83	<	5	<	5	-	36	-	26	<	5	<	5	<	5	<	5
+ALBE	02091500	02091500	1991	"CONTENTNEA CREEK AT HOOKERTON, NC"	Mixed	1993-11-02 1215	C	redbreast sunfish	-	0.7	<	5	<	200	<	5	<	5	-	7.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	40	<	5	<	5	-	32	<	5	<	5	<	5	<	5	<	5
+SOFL	02289040	02289040	1994	"TAMIAMI C OUTLETS L67A TO 40 MI BND NR MIAMI, FL"	Mixed	1995-12-01 0900	C	largemouth bass	-	8.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	13	<	6.4	<	5	<	5	<	6.5	<	5	<	5	<	5	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	02291000	02291000	1994	"BARRON RIVER NR EVERGLADES, FLA."	Mixed	1995-08-17 1000	C	largemouth bass	-	8.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	51	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02454500	02454500	1997	"LOCUST FORK BELOW SNEAD, AL."	Mixed	1998-08-25 1100	C	largemouth bass	-	5.3	<	5	<	200	<	5	<	5	E	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	550	<	5	<	5	<	5	-	39	<	5	<	5	<	5	<	5
+ALMN	03015000	03015000	1994	"CONEWANGO CREEK AT RUSSELL, PA"	Mixed	1996-08-21 1700	C	golden redhorse	-	10	<	5	<	200	-	5	<	5	-	7.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	42	<	5	<	5	E	5.8	<	5	<	5	<	5	<	5	<	5
+ALMN	03022000	03022000	1994	"FRENCH CREEK AT VENANGO, PA"	Mixed	1996-08-28 1130	C	golden redhorse	-	5.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	-	9.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	37	<	5	<	5	E	6.3	<	5	<	5	<	5	<	5	<	5
+ALMN	03023100	03023100	1994	"FRENCH CREEK AT MEADVILLE, PA"	Mixed	1996-08-29 1000	C	golden redhorse	-	4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	<	5	-	5.2	<	5	<	5	<	5	<	5
+ALMN	03024000	03024000	1994	"FRENCH CREEK AT UTICA, PA"	Mixed	1997-09-02 1400	C	common carp	-	11	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.8	<	5	<	5	<	5	<	5	-	100	<	5	<	6	E	7.3	<	5	<	5	<	5	<	5	-	8.8
+ALMN	03037350	03037350	1994	"SOUTH BRANCH PLUM CREEK AT FIVE POINTS, PA"	Mixed	1996-08-20 1400	C	white sucker	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	22	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALMN	03083500	03083500	1994	"YOUGHIOGHENY RIVER AT SUTERSVILLE, PA"	Mixed	1996-09-23 1130	C	common carp	-	13.5	<	5	<	200	<	7.9	<	5	-	120	-	14	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	65	<	5	<	5	-	8.2	<	5	<	5	<	5	-	29	-	95
+KANA	03167000	03167000	1994	"REED CK @ GRAHAMS FORGE, VA"	Mixed	1997-10-03 1000	C	white sucker	-	14.8	<	5	<	200	<	5	<	5	E	3.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03170000	03170000	1994	"LITTLE RIVER AT GRAYSONTOWN, VA"	Mixed	1996-10-16 1210	C	rock bass	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03176500	03176500	1994	"NEW RIVER AT GLEN LYN, VA"	Mixed	1996-10-03 1440	C	common carp	-	7.63	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	13	E	4.7	-	37	<	5	<	5	<	5	<	10	<	5	<	5	<	5	-	10
+KANA	03183000	03183000	1994	"SECOND CREEK NEAR SECOND CREEK, WV"	Mixed	1996-09-27 1600	C	rock bass	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LTEN	035825882	035825882	1997	"CANE CREEK NEAR HOWELL, TN"	Mixed	1998-08-20 1415	C	rock bass	-	3.4	<	5	<	200	<	5	-	30	E	140	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	-	100	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24
+WMIC	04059597	04059597	1991	"BARK RIVER NEAR BARK RIVER, MI"	Mixed	1992-08-27 1730	C	white sucker	-	1.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04073300	04073300	1991	"CHAFFEE CREEK AT NESHKORO, WI"	Mixed	1992-08-24 1100	C	white sucker	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LERI	04211820	04211820	1994	GRAND RI AT HARPERSFIELD OH	Mixed	1997-07-22 0930	C	common carp	-	18	<	5	<	200	E	3.2	<	5	-	21	-	7	<	5	<	5	<	7	<	5	<	5	<	5	<	5	E	3.2	<	5	<	5	<	5	-	6.9	-	100	<	5	<	5	E	22	<	5	<	5	<	5	-	13	-	20
+UMIS	05286290	05286290	1994	"CEDAR CREEK NEAR COOPERS CORNER, MN"	Mixed	1996-10-04 1000	C	white sucker	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7	<	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05287000	05287000	1994	"RUM RIVER AT ANOKA, MN"	Mixed	1995-07-21 1000	C	common carp	-	7	<	5	<	200	<	10	<	10	<	10	<	10	<	5	<	10	<	10	<	15	<	15	<	15	<	10	<	5	<	10	<	5	<	10	<	10	E	56	<	10	<	40	<	10	<	10	<	10	<	20	<	10	<	10
+UMIS	05288500	05288500	1994	"MISSISSIPPI RIVER NEAR ANOKA, MN"	Mixed	1995-07-18 1500	C	common carp	-	9.8	<	5	<	200	<	10	<	10	<	10	<	10	<	5	<	10	<	10	<	11	<	12	<	30	<	10	<	5	<	10	<	5	<	10	<	10	-	35	<	10	<	45	<	10	<	10	<	10	<	10	<	10	<	11
+UMIS	05341552	05341552	1994	"ST. CROIX RIVER AT HUDSON, WI"	Mixed	1995-07-14 0900	C	common carp	-	9.4	<	5	<	2100	<	5	<	5	<	10	<	10	<	5	<	25	<	10	<	7.2	<	18	<	8	<	5	<	5	<	5	<	5	<	10	<	10	-	26	<	10	<	10	<	10	<	25	<	10	<	5	<	5	<	10
+YELL	06208500	06208500	1997	"CLARKS FORK YELLOWSTONE RIVER AT EDGAR, MT."	Mixed	1998-08-26 1300	C	white sucker	-	8.5	<	5	<	200	E	5	<	5	<	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	-	24	<	11	<	5	-	5.4	<	5	<	5	<	5	<	5	<	5
+YELL	06214500	06214500	1997	YELLOWSTONE RIVER AT BILLINGS MT	Mixed	1998-08-25 1302	C	white sucker	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06279500	06279500	1997	"BIGHORN RIVER AT KANE, WY"	Mixed	1998-09-01 1200	C	common carp	-	4.05	<	5	<	200	<	5	<	5	<	5	<	5	<	5	-	8.4	<	5	<	5	<	17	<	17	<	5	<	5	<	5.4	<	8.7	<	5	-	8.8	-	38.8	<	5	-	6.6	<	5	<	5	<	5	<	5	-	5.1	<	5
+YELL	06285500	06285500	1997	"SAGE CREEK NEAR LOVELL, WY"	Mixed	1998-10-30 0830	C	white sucker	-	1.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06295000	06295000	1997	"YELLOWSTONE RIVER AT FORSYTH, MT."	Mixed	1998-07-27 1201	C	common carp	-	7.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06329500	06329500	1997	"YELLOWSTONE RIVER NEAR SIDNEY, MT."	Mixed	1998-07-28 1331	C	common carp	-	8.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06758500	06758500	1991	"SOUTH PLATTE RIVER NEAR WELDONA, CO."	Mixed	1992-09-23 1210	C	white sucker	-	4.4	<	5	<	200	<	5	<	5	-	6.6	-	5.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	-	150	<	5	-	5.2	-	20	-	12	-	5.1	-	5	<	5	-	5.7
+SPLT	06759910	06759910	1991	"SOUTH PLATTE RIVER AT COOPER BRIDGE, NR BALZAC, CO"	Mixed	1993-08-11 1210	C	common carp	-	7.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	110	<	5	<	5	-	9.2	<	5	<	5	-	33	<	5	<	5
+SPLT	06764000	06764000	1991	"SOUTH PLATTE RIVER AT JULESBURG, CO."	Mixed	1992-09-29 1205	C	white sucker	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	140	<	5	<	5	-	11	-	15	<	5	<	5	<	5	<	5
+SPLT	06765500	06765500	1991	"SOUTH PLATTE RIVER AT NORTH PLATTE, NE."	Mixed	1992-09-30 0905	C	common carp	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	61	<	5	-	7.7	-	14	<	5	<	5	<	5	<	5	<	5
+CNBR	06766000	06765698	1991	"PLATTE RIVER AT BRADY, NE (TOTFLO)"	Mixed	1992-09-10 1220	C	common carp	-	7.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06768000	06768000	1991	"PLATTE RIVER NEAR OVERTON, NEBR. (TOTFLO)"	Mixed	1992-09-10 0815	C	common carp	-	7.8	<	5	<	200	<	5	<	5	-	12	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	59	<	5	<	5	.	.	<	5	<	5	<	5	-	6.4	-	8.6
+CNBR	06772200	06772200	1991	WOOD RIVER NEAR GRAND ISLAND NEBR	Mixed	1992-09-09 0745	C	common carp	-	5.8	<	5	<	100	<	5	<	5	-	33	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.5	<	5	<	5	-	8.5	-	35	<	5	<	5	.	.	<	5	<	5	<	5	-	20	-	28
+CNBR	06781800	06781800	1991	"SOUTH LOUP R NR. CALLAWAY, NE."	Mixed	1992-09-10 1530	C	white sucker	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06783500	06783500	1991	"MUD CREEK NEAR SWEETWATER, NE"	Mixed	1992-09-09 1035	C	river carpsucker	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06785000	06785000	1991	"MIDDLE LOUP R. AT ST. PAUL, NEBR."	Mixed	1992-09-17 1130	C	common carp	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06790500	06790500	1991	NORTH LOUP RIVER NR ST PAUL NEBR	Mixed	1992-09-17 1500	C	common carp	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06799000	06799000	1991	ELKHORN R AT NORFOLK NE	Mixed	1992-09-15 1430	C	common carp	-	5.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06805500	06805500	1991	PLATTE R AT LOUISVILLE NE	Mixed	1992-09-24 0825	C	common carp	-	10.7	<	5	<	1000	<	5	<	5	-	18	-	6.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.8	<	5	<	5	-	31	-	62	<	5	<	5	-	16	<	5	<	5	<	5	-	8.9	-	10
+MISE	07030050	07030050	1994	"HATCHIE RIVER AT RIALTO, TN"	Mixed	1995-10-17 1100	C	common carp	-	14	<	5	<	200	<	22	<	5	-	25	-	11	<	5	<	5	<	9	<	5	<	9	<	5	<	5	<	5	<	5	<	6	<	43	-	27	-	220	<	6	<	16	.	.	-	5.5	<	6	<	7	-	10	-	15
+MISE	07030392	07030392	1994	"WOLF RIVER AT LAGRANGE, TN"	Mixed	1995-10-19 1100	C	largemouth bass	-	4.4	<	5	<	200	<	5	<	5	-	5.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	250	<	5	<	5	-	42	-	40	<	5	<	5	<	5	<	5
+MISE	07040450	07040450	1994	"ST. FRANCIS RIVER AT LAKE CITY, ARK."	Mixed	1996-10-15 0000	C	common carp	-	8.9	<	5	<	200	<	5	E	8.1	<	5	<	5	<	5	<	10	<	10	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	550	<	5	E	5.5	E	29	<	10	<	5	<	5	<	5	<	5
+OZRK	07050500	07050500	1991	"KINGS RIVER NEAR BERRYVILLE, AR"	Mixed	1993-11-03 1221	C	longear sunfish	-	5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07073800	07073800	1991	"STRAWBERRY RIVER NORTH OF POUGHKEEPSIE, AR"	Mixed	1994-07-14 1021	C	longear sunfish	-	2.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07077000	07077000	1994	"WHITE RIVER AT DEVALLS BLUFF, ARK."	Mixed	1995-09-19 1230	C	common carp	-	13.1	<	5	<	200	<	5	-	6.4	-	7.2	<	5	<	5	<	10	<	11	<	5	<	6.6	<	5	<	8	<	5	<	5	<	5	<	5	<	5	-	150	<	5.2	<	5	E	13	<	10	<	10	<	5	<	5	<	5
+ACAD	07375050	07375050	1997	"TCHEFUNCTE RIVER NEAR COVINGTON, LA"	Mixed	1998-05-28 1415	C	largemouth bass	-	3.49	<	5	<	200	<	5	<	5	-	7.2	E	4.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	2.2
+ACAD	07375170	07375170	1997	"BOGUE FALAYA @ COVINGTON, LA"	Mixed	1998-05-28 1100	C	largemouth bass	-	4.4	<	5	<	200	<	5	<	5	-	18	-	7.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.2
+ACAD	07375500	07375500	1997	"TANGIPAHOA RIVER AT ROBERT,LA"	Mixed	1998-06-09 1300	C	largemouth bass	-	3.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	07375800	07375800	1997	"TICKFAW RIVER AT LIVERPOOL, LA"	Mixed	1998-06-03 1330	C	longear sunfish	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	07380300	07380300	1997	"BYU DES ALLEMANDS @ DES ALLEMANDS, LA"	Mixed	1998-05-21 1045	C	largemouth bass	-	4.49	<	5	<	200	<	5	<	5	E	1.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	08012000	08012000	1997	"BAYOU NEZPIQUE NR BASILE, LA"	Mixed	1998-07-20 1300	C	crappies	-	3.7	<	5	<	200	<	5	<	5	<	5	<	5	E	5.2	<	7	<	5	<	5	<	5	<	5	<	5	E	6.2	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	08050800	08050800	1991	"TIMBER CK NR COLLINSVILLE, TX"	Mixed	1993-05-12 1030	C	bluegill	-	3.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	48	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+TRIN	08051500	08051500	1991	"CLEAR CK NR SANGER, TX"	Mixed	1997-09-12 1003	C	largemouth bass	-	14.45	<	5	<	200	E	4.6	<	10	-	220	-	90	-	9.3	<	5	<	5	-	5.6	<	5	<	5	<	5	E	1.4	-	16	<	5	<	5	-	78	-	470	<	34	<	5	-	54	<	5	-	160	-	12	-	100	-	160
+SCTX	08180640	08180640	1994	"MEDINA RV AT LA COSTE, TX"	Mixed	1997-12-10 1308	C	common carp	-	8.45	<	5	<	200	<	5	<	5	-	8.6	-	5.8	<	5	<	5	<	5	<	5	<	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	44.2	<	5	<	5	-	5.4	<	5	<	5	<	5	<	5	-	10.4
+RIOG	08358300	08358300	1991	"RIO GRANDE CONVEYANCE CHANNEL AT SAN MARCIAL, NM"	Mixed	1993-02-17 1200	C	common carp	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09153290	09153290	1994	"REED WASH NEAR MACK, CO."	Mixed	1995-11-21 1020	C	flannelmouth sucker	-	6	<	5	-	300	<	5	-	14	-	36	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5.1	<	5	<	5	<	5	<	5	<	5	-	6	-	290	<	5	<	5	E	7.5	E	27	<	10	<	5	-	11	-	19
+GRSL	10126000	10126000	1997	"BEAR RIVER NEAR CORINNE, UT"	Mixed	1998-08-07 1401	C	common carp	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SANJ	11274570	11274570	1991	SAN JOAQUIN R A PATTERSON BR NR PATTERSON CA	Mixed	1992-11-03 2100	C	common carp	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	480	<	5	<	5	-	24	-	5.9	<	5	-	23	<	5	<	5
+NROK	12352500	12352500	1997	BITTERROOT RIVER NEAR MISSOULA MT	Mixed	1998-08-10 1700	C	largescale sucker	-	7.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	17	<	5	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13055000	13055000	1991	TETON RIVER NR ST ANTHONY ID	Mixed	1993-09-09 1500	C	Paiute sculpin	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13073000	13073000	1991	PORTNEUF RIVER AT TOPAZ ID	Mixed	1993-08-04 1400	C	common carp	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	25	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13154500	13154500	1991	SNAKE RIVER AT KING HILL ID	Mixed	1992-08-24 1030	C	largescale sucker	-	15	<	5	<	200	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	160	-	5.1	<	5	<	5	-	6	<	5	<	5	<	5	<	5
+CCPT	13346000	13346000	1991	"PALOUSE RIVER NEAR COLFAX, WASH."	Mixed	1992-08-25 1430	C	largescale sucker	-	5.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	26	<	5	<	5	<	5	-	32	-	160	<	5	<	5	<	5	-	24	<	5	<	5	<	5	<	5
+OAHU	16350000	16350000	1997	"OPAEULA STR NR HALEIWA, OAHU, HI"	Mixed	2000-10-23 1100	C	jewelfishes	-	1.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	213407158065801	213407158065801	1997	"POAMOHO STREAM NR WAIALUA, OAHU, HI"	Mixed	1998-09-17 1400	C	jewelfishes	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	180	<	5	<	5	-	23	-	11	<	5	<	5	<	5	<	5
+OAHU	213810157552901	213810157552901	1997	"KOLOA GULCH ABV KAMEHAMEHA HWY NR LAIE, OAHU, HI"	Mixed	2000-09-19 1000	C	blackchin tilapia	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	254945080370800	254945080370800	1994	L-67A CANAL	Mixed	1995-12-01 1301	C	largemouth bass	-	3.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6.5	<	8	<	5	<	5	<	5	<	5	<	5	<	5	-	6.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	261537081135500	261537081135500	1994	OKALOACOOCHEE SLOUGH AT SR 858	Mixed	1995-08-14 1600	C	longnose gar	-	7.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	271748080594300	271748080594300	1994	KISSIMMEE RIVER NEAR S-65E	Mixed	1995-09-06 1145	C	largemouth bass	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+RIOG	372124105510601	372124105510601	1991	"LA JARA CR AT ALAMOSA CO LINE, CO"	Mixed	1992-09-24 0830	C	white sucker	-	7.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	48	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5
+LSUS	400144076310701	400144076310701	1991	"SUSQUEHANNA R AT COLUMBIA, PA"	Mixed	1992-11-04 1405	C	smallmouth bass	-	3.2	<	5	<	200	<	5	<	5	-	14	-	6.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	61	<	5	<	5	<	5	-	6.1	<	5	<	5	<	5	<	5
+LSUS	402549078213001	402549078213001	1991	"FRANKSTOWN BR JUNIATA R NEAR HOLLIDAYSBURG, PA"	Mixed	1992-09-22 1020	C	white sucker	-	4.4	<	5	<	200	-	8.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	31	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LSUS	403626077340401	403626077340401	1991	"KISHACOQUILLAS CR AT LEWISTOWN, PA"	Mixed	1992-09-21 0935	C	white sucker	-	5.8	<	5	<	200	<	5	<	5	-	7.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.9	<	5	-	6.9	-	6.6	<	5	<	5	<	5	<	5	-	5.1
+LSUS	403847076575201	403847076575201	1991	"W. MAHANTANGO CREEK NEAR LIVERPOOL, PA"	Mixed	1992-09-17 1035	C	white sucker	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	37	<	5	<	5	.	.	-	5.2	<	5	<	5	<	5	<	5
+LSUS	405121077342701	405121077342701	1991	"PENNS CREEK AT SPRING MILLS, PA"	Mixed	1992-09-18 0940	C	white sucker	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	420049111490201	420049111490201	1997	"CUB RIVER AT IDAHO-UTAH BORDER, NEAR FRANKLIN, ID"	Mixed	1999-07-20 1230	C	common carp	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	445110108102901	445110108102901	1997	"BIGHORN LAKE AT HIGHWAY 14A, NEAR KANE, WY"	Mixed	1998-09-02 1500	C	common carp	-	5.9	<	5	<	200	<	5	-	5.3	-	6.4	<	5	<	5	<	5	<	5	<	5	<	23	<	5	<	5	<	5	<	5	<	5	<	5	-	7.6	-	43	<	7.7	<	5	-	7.2	<	5	<	5	<	5	<	5	<	5
+YELL	445221108122601	445221108122601	1997	"SHOSHONE RIVER AT MOUTH, NEAR KANE, WY"	Mixed	1998-09-02 1030	C	common carp	-	4.95	<	5	<	200	<	5	<	47	-	6.7	<	5	<	5	-	6.2	<	5	<	5	<	49	<	5	<	5	<	5	<	7	<	8.2	<	5	-	16.7	-	50.7	<	5	<	5	-	5.8	<	5	<	5	<	5	<	5	-	5.2
+YELL	455905108081301	455905108081301	1997	"ARROW CREEK NEAR WORDEN, MT"	Mixed	1998-08-24 1301	C	white sucker	-	5.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	-	7.8	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5
+LINJ	01398000	01398000	1994	NESHANIC RIVER AT REAVILLE NJ	Mixed	1997-09-30 1000	C	white sucker	-	2.65	<	5	<	200	<	5	<	5	-	8.7	E	2.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.7	-	10	<	5	<	5	<	5	<	5	<	5	<	5	E	2.2	-	7
+DELR	01451425	01451420	1997	"LITTLE LEHIGH CREEK NEAR EAST TEXAS, PA."	Mixed	1998-08-27 1000	C	white sucker	-	8.3	<	5	<	200	<	5	-	5.5	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.8	-	98	<	5	<	5	-	6.7	-	7.6	<	5	<	5	<	5	<	5
+DELR	01477120	01477120	1997	RACCOON CREEK NEAR SWEDESBORO NJ	Mixed	1998-09-02 1130	C	white sucker	-	4.6	<	5	<	200	<	5	<	5	-	5.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	-	140	<	5	-	15	-	66	-	11	<	5	<	5	<	5	<	5
+LSUS	01576540	01576540	1991	"MILL CREEK AT ESHELMAN MILL ROAD NEAR LYNDON, PA"	Mixed	1992-09-23 1105	C	white sucker	-	3	<	5	<	200	<	5	<	5	-	13	-	6.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6	-	100	<	5	<	5	-	16	-	6	<	5	<	5	<	5	-	9.9
+POTO	01625000	01625000	1991	"MIDDLE RIVER NEAR GROTTOES, VA"	Mixed	1992-08-19 1105	C	yellow bullhead	-	3.56	<	5	.	.	<	5	<	5	-	33.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.89	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.35	-	13.1
+ALBE	0208925200	0208925200	1991	"BEAR CREEK AT MAYS STORE, NC"	Mixed	1993-10-26 1215	C	redbreast sunfish	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	02290769	02290769	1994	"CANAL 111 AT S-18-C NEAR FLORIDA CITY, FL"	Mixed	1995-11-29 1035	C	largemouth bass	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	<	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MIAM	03245500	03245500	1997	L MIAMI R AT MILFORD OH	Mixed	1998-09-16 1000	C	common carp	-	7.8	<	5	<	200	<	5	-	11	-	110	-	27	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.4	<	5	<	5	-	88	-	53	<	5	<	5	-	12	<	5	<	5	<	5	-	28	-	77
+WHIT	03374100	03374100	1991	"WHITE RIVER AT HAZLETON, IN"	Mixed	1997-08-26 1210	C	common carp	-	12.59	<	5	<	200	<	5	-	6.9	-	36	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	-	66	-	17	<	5	<	5	<	5	<	5	<	5	<	5	-	8.1	-	15
+WMIC	04087000	04087000	1991	"MILWAUKEE RIVER AT MILWAUKEE, WI"	Mixed	1995-09-06 1500	C	white sucker	-	4.8	<	5	<	200	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	46	<	5	-	5.5	E	31	-	5.8	<	5	<	5	<	5	-	7.4
+UMIS	05345000	05345000	1994	"VERMILLION RIVER NEAR EMPIRE, MN"	Mixed	1995-07-12 1100	C	white sucker	-	5	<	5	<	200	<	5	<	5	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	8	<	5	-	42	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.3
+UIRB	05527800	05527800	1997	"DES PLAINES RIVER AT RUSSELL, IL"	Mixed	1998-08-17 1130	C	common carp	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	26	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LIRB	05543500	05553500	1994	"ILLINOIS RIVER AT MARSEILLES, IL"	Mixed	1996-10-15 1520	C	common carp	-	7	<	5	<	200	<	5	E	6.3	E	28	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	29	-	390	<	6	E	13	E	150	<	10	<	5	E	5.8	E	17	E	36
+UIRB	05544200	05544200	1997	"MUKWONAGO RIVER AT MUKWONAGO, WIS."	Mixed	1998-08-26 1030	C	white sucker	-	7.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UIRB	05548105	05548105	1997	"NIPPERSINK CREEK ABOVE WONDER LAKE, IL"	Mixed	1998-08-17 1700	C	common carp	-	8.1	<	5	<	200	<	5	<	5	E	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	25	-	86	E	13	-	8.5	-	40	<	5	<	5	<	5	<	5	-	11
+LIRB	05553500	05553500	1994	"ILLINOIS RIVER AT OTTAWA, IL"	Mixed	1998-08-19 1030	C	common carp	-	6.5	<	5	<	200	<	5	<	5	-	16	-	6.1	<	5	<	5	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	-	100	<	5	-	7.7	-	49	<	5	<	5	<	5	-	9.6	-	16
+LIRB	05558300	05558300	1994	"ILLINOIS RIVER AT HENRY, IL"	Mixed	1996-10-24 1120	C	common carp	-	7.8	<	5	<	200	<	5	E	7.3	E	24	-	7.6	<	10	<	8	<	5	<	14	<	5	.	.	<	5	.	.	<	5	<	5	<	5	-	42	-	100	<	5	<	5	E	44	<	5	<	5	<	5	E	12	E	22
+LIRB	05568500	05568500	1994	"ILLINOIS RIVER AT KINGSTON MINES, IL"	Mixed	1996-10-25 1050	C	common carp	-	12	<	15	<	200	<	5	E	7.4	E	27	-	10	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	<	5	<	5	<	5	-	54	-	71	<	5	<	5	E	27	<	5	<	5	<	5	E	14	E	27
+LIRB	05570500	05570500	1994	"ILLINOIS RIVER AT HAVANA, IL"	Mixed	1996-10-23 1120	C	common carp	-	10	<	5	<	200	<	6	<	5	E	35	-	12	<	10	<	5	<	5	<	5	<	5	.	.	<	7	.	.	<	5	<	5	<	5	-	60	-	64	<	5	<	5	E	9.8	<	5	<	5	<	5	E	20	E	36
+LIRB	05576190	05576190	1994	"SUGAR CREEK NEAR GLENARM, IL"	Mixed	1996-08-21 0920	C	white sucker	-	4.2	<	5	<	200	-	7.3	-	16	-	58	-	19	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	17	<	5	<	5	-	83	-	12	<	5	<	5	E	5.5	<	5	<	5	<	5	-	25	-	49
+LIRB	05586100	05586100	1994	ILLINOIS RIVER AT VALLEY CITY	Mixed	1996-10-21 1520	C	common carp	-	15	<	5	<	200	<	10	E	9.4	E	33	-	14	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	E	16	<	5	<	5	E	96	-	65	<	5	<	5	E	21	<	5	<	5	<	5	E	17	E	27
+LIRB	05587060	05587060	1994	"ILLINOIS RIVER AT HARDIN, IL"	Mixed	1996-10-22 1420	C	common carp	-	7.9	<	5	<	200	<	5	<	5	E	41	-	14	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	<	5	<	5	<	5	-	55	-	81	<	5	<	5	E	20	<	5	<	5	<	5	E	21	E	31
+SPLT	06731000	06731000	1991	"ST. VRAIN CREEK AT MOUTH, NEAR PLATTEVILLE, CO."	Mixed	1993-08-18 1400	C	common carp	-	4.7	<	5	<	200	<	5	<	5	-	7.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	270	<	5	<	5	-	17	<	5	<	5	-	6.5	<	5	<	5
+SPLT	06754000	06754000	1991	"SOUTH PLATTE RIVER NEAR KERSEY, CO."	Mixed	1992-09-18 1140	C	common carp	-	6	<	5	<	200	<	5	<	5	-	17	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.8	<	5	<	13	-	39	-	1100	<	5	<	26	-	38	-	14	<	5	-	63	-	8.7	-	16
+OZRK	07196500	07196500	1991	"ILLINOIS RIVER NEAR TAHLEQUAH, OK"	Mixed	1993-08-11 1300	C	longear sunfish	-	3.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MISE	07265099	07265099	1994	"BAYOU METO NEAR BAYOU METO, ARK."	Mixed	1998-06-02 1400	C	common carp	-	7.3	<	5	E	640	<	5	<	5	<	5	<	5	<	5	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	1700	<	5	<	21	E	120	-	13	<	5	<	5	<	5	<	5
+ACAD	07381440	07381440	1997	"BYU GROSSE TETE @ ROSEDALE, LA"	Mixed	1998-06-26 1315	C	common carp	-	12	<	5	<	200	-	5.3	<	5	-	12	<	5	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	120	<	5	<	5	E	7.8	<	5	<	5	<	5	-	5.6	-	10
+ACAD	07385700	07385700	1997	"BYU TECHE @ KEYSTONE LOCK NR ST. MARTINVILLE, LA"	Mixed	1998-07-01 1045	C	largemouth bass	-	2.7	<	5	<	200	<	5	<	5	-	38	-	14	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	-	320	<	5	<	5	E	24	-	12	<	5	<	5	<	5	-	11
+ACAD	07386980	07386980	1997	"VERMILION RIVER @ PERRY, LA"	Mixed	1998-06-29 1145	C	common carp	-	4.1	<	5	<	200	<	5	<	5	-	22	-	9.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.3	-	41	<	5	<	5	E	19	<	5	<	5	<	5	-	18	-	20
+TRIN	08065350	08065350	1991	"TRINITY RV NR CROCKETT, TX"	Mixed	1992-12-02 1300	C	blue catfish	-	2.5	<	5	<	200	<	5	<	5	-	23	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.1	-	130	<	5	<	5	<	5	<	5	<	5	<	5	-	6.6	-	11
+SANJ	11260815	11260815	1991	SAN JOAQUIN R NR STEVINSON CA	Mixed	1992-10-16 1130	C	bluegill	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	-	50	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CCPT	13346990	13346990	1991	"PARADISE CREEK AT PULLMAN, WASH."	Mixed	1992-08-24 0930	C	bridgelip sucker	-	14	<	5	<	200	<	50	<	50	<	50	<	50	<	5	<	50	<	50	<	50	<	50	<	50	<	50	-	11	<	50	<	5	<	50	<	50	-	120	<	50	<	50	-	58	<	100	<	100	<	50	<	50	<	50
+SOFL	252414080333200	252414080333200	1994	C-111 CANAL 100 FT ABV S-177 NR HOMESTEAD	Mixed	1995-11-29 1301	C	largemouth bass	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	332136112434201	09517000	1994	BUCKEYE CANAL NR HASSAYAMPA	Mixed	1996-06-07 0900	C	red shiner	-	8.1	<	5	E	7200	<	5	<	5	-	13	<	130	<	5	<	30	<	52	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	28	-	17	-	7200	<	45	<	14	<	50	<	19	<	51	<	5	-	9.6	-	13
+MIAM	392246084340100	03274000	1997	"GREAT MIAMI RIVER BELOW HAMILTON, OH"	Mixed	1998-09-01 1500	C	common carp	-	16	E	10	<	200	-	8.4	-	12	E	70	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	-	17	<	5	<	5	-	43	-	89	<	6.5	<	15	-	20	<	5	<	5	<	5	-	25	-	55
+LSUS	395614076231401	395614076231401	1991	"CONESTOGA RIVER AT SAFE HARBOR, PA"	Mixed	1992-09-29 1105	C	white sucker	-	5	<	5	<	200	-	7	<	5	-	13	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	54	<	5	<	5	-	8.7	-	5.7	<	5	<	5	<	5	-	11
+LSUS	400037076423701	400037076423701	1991	"CODORUS CREEK NEAR PLEASUREVILLE, PA"	Mixed	1992-09-24 1005	C	white sucker	-	6	<	5	<	200	-	15	-	10	-	18	-	9.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	<	5	<	5	-	9.5	-	140	<	5	<	5	-	18	-	20	<	5	<	5	-	10	-	21
+LSUS	402108076363701	402108076363701	1991	"QUITTAPAHILLA CREEK NEAR PALMYRA, PA"	Mixed	1992-09-25 0835	C	white sucker	-	6.9	<	5	<	200	-	5.5	-	17	-	37	-	11	<	5	<	5	<	5	-	6.7	<	5	<	5	<	5	-	8.8	<	5	<	5	<	5	-	32	-	1600	-	130	-	360	-	1200	-	120	-	17	<	5	-	17	-	38
+CONN	01184490	01184490	1991	"BROAD BK AT BROAD BROOK, CT."	Mixed	1992-10-23 0931	C	white sucker	-	4.1	<	5	<	200	<	5	-	12	-	20	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.5	-	140	<	5	-	5.1	.	.	-	33	<	5	<	5	-	6.3	-	17
+HDSN	01342602	01342602	1991	MOHAWK RIVER NEAR UTICA NY	Mixed	1992-09-11 0901	C	common carp	-	10.3	<	5	<	200	<	5	-	13	-	30	-	17	<	16	<	5	<	5	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.6	<	140	<	260	-	11	-	54	<	5	<	50	<	5	-	17	-	30
+HDSN	01342702	01342702	1991	MOHAWK RIVER AT FRANKFORT NY	Mixed	1994-09-28 1431	C	common carp	-	9.6	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	200	<	5	-	8.6	-	48	<	5	<	5	<	5	-	6.6	-	11
+HDSN	01347000	01347000	1991	MOHAWK RIVER NEAR LITTLE FALLS NY	Mixed	1992-09-09 1031	C	common carp	-	7.6	<	5	<	200	<	5	<	5	-	13	-	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	150	<	5	<	5	-	13	<	5	<	5	<	5	<	5	-	6.7
+HDSN	01357500	01357500	1991	MOHAWK RIVER AT COHOES NY	Mixed	1997-09-09 1101	C	common carp	-	28	<	5	<	200	<	5	<	5	-	12	E	3.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	-	89	<	5	<	5	-	23	<	5	<	5	<	5	-	6.6	-	11
+HDSN	01371500	01371500	1991	WALLKILL RIVER AT GARDINER NY	Mixed	1992-08-27 0903	C	yellow bullhead	-	4.4	<	5	<	200	<	5	-	5.3	-	17	-	6.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	-	250	<	5	-	13	-	170	-	25	<	5	<	5	-	8.7	-	14
+LINJ	01401000	01401000	1994	STONY BROOK AT PRINCETON NJ	Mixed	1997-10-10 1300	C	white sucker	-	4.75	<	5	<	200	E	2.1	-	30	-	92	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	11	E	2.6	<	5	-	22	-	130	<	5	<	5	E	47	-	41	<	5	<	5	-	59	-	120
+LINJ	01403300	01403300	1994	RARITAN R AT QUEENS BRIDGE AT BOUND BROOK NJ	Mixed	1997-10-07 1100	C	white sucker	-	12	<	5	<	200	<	5	<	40	-	43	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	-	6.2	<	5	<	5	-	34	-	130	<	5	<	5	-	45	-	45	<	5	<	7	-	20	-	51
+DELR	01474500	01474500	1997	"SCHUYLKILL RIVER AT PHILADELPHIA, PA"	Mixed	1998-07-28 1005	C	common carp	-	11	<	5	<	200	<	5	-	17	-	200	-	31	<	5	<	5	<	5	<	5	<	100	<	5	<	5	-	5.4	-	13	<	5	<	5	-	67	E	790	<	5	<	5	-	130	-	5.2	<	5	<	5	-	53	-	160
+LSUS	01573560	01573560	1991	"SWATARA CREEK NEAR HERSHEY, PA"	Mixed	1992-09-25 1035	C	white sucker	-	7.6	<	5	<	200	<	5	<	5	-	12	<	5	<	5	<	5	<	5	-	5.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	-	300	-	21	-	53	-	220	-	19	<	5	<	5	-	5.1	-	12
+POTO	01634000	01634000	1991	"NORTH FORK SHENANDOAH RIVER NEAR STRASBURG, VA"	Mixed	1992-08-18 1235	C	yellow bullhead	-	3.95	<	5	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+POTO	01657000	01657000	1991	"BULL RUN NEAR MANASSAS, VA"	Mixed	1992-08-17 1505	C	yellow bullhead	-	2.5	<	5	.	.	<	5	-	22.9	-	30.5	-	9.71	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12.4	<	5	<	5	<	5	-	6.35	<	5	<	5	<	5	-	20.5	-	29.5
+SANT	02145112	02145112	1994	"SOUTH FORK CATAWBA RIVER AT MCADENVILLE, NC"	Mixed	1997-06-18 0900	C	common carp	-	9.2	<	5	<	200	<	5	<	5	-	19	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.1	-	41	<	5	<	5	-	5.1	<	5	<	5	<	5	-	9.6	-	14
+SOFL	02296750	02296750	1994	"PEACE RIVER AT ARCADIA, FLA."	Mixed	1995-09-07 1030	C	largemouth bass	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.2	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5
+ALMN	03049646	03049646	1994	"DEER CREEK NEAR DORSEYVILLE, PA"	Mixed	1996-08-19 1500	C	white sucker	-	7.5	<	5	<	200	<	5	-	5.4	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	5	-	25	<	5	<	5	E	7.2	-	11	<	5	<	5	-	6.1	-	13
+ALMN	03078818	03078818	1994	"COXES CREEK ABOVE WILSON CREEK AT ROCKWOOD, PA"	Mixed	1996-09-10 1500	C	white sucker	-	8.4	<	5	<	200	<	5	<	5	-	8.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.2	-	16	<	5	<	5	E	12	<	5	<	5	<	5	<	5	<	5
+TRIN	08057410	08057410	1991	"TRINITY RV BL DALLAS, TX"	Mixed	1996-09-24 1000	C	largemouth bass	-	11.4	<	5	E	160	-	48	-	39	-	200	-	55	-	5.6	<	5	<	5	-	20	<	5	<	5	<	5	-	8.9	-	22	<	5	<	5	-	180	-	240	<	5	<	8	-	39	-	9.9	<	5	<	5	-	110	-	170
+TRIN	08062500	08062500	1991	"TRINITY RV NR ROSSER, TX"	Mixed	1992-12-01 1030	C	blue catfish	-	6.5	<	5	<	200	-	22	-	11	-	64	-	29	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	-	15	<	5	<	5	-	41	-	150	<	5	<	5	-	12	-	7.2	<	5	<	7	-	20	-	43
+RIOG	08331000	08331000	1991	"RIO GRANDE AT ISLETA, NM"	Mixed	1993-03-25 1400	C	common carp	-	10.2	<	5	<	200	<	5	<	5	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	-	79	<	5	<	5	-	15	<	5	<	5	<	5	-	5	-	6.9
+RIOG	08364000	08364000	1991	"RIO GRANDE AT EL PASO, TX"	Mixed	1997-10-27 1000	C	common carp	-	5.45	<	5	<	200	E	2.2	<	5	-	12	E	2.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	1.8	-	490	<	5	<	5	E	21	<	5	<	5	E	4.6	E	4.2	-	5.8
+PUGT	12108500	12108500	1994	"NEWAUKUM CREEK NEAR BLACK DIAMOND, WASH."	Mixed	1995-09-22 1300	C	freshwater sculpins	-	2.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14207500	14207500	1991	"TUALATIN RIVER AT WEST LINN,OREG."	Mixed	1992-08-31 1110	C	freshwater sculpins	-	8.1	<	5	<	200	-	23	<	5	-	41	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	-	47	<	5	<	5	-	6.3	-	6.2	<	5	<	5	-	7.6	<	5
+OAHU	16208000	16208000	1997	"SF KAUKONAHUA STR AT E PUMP, NR WAHIAWA, OAHU, HI"	Mixed	2000-10-31 1000	C	smallmouth bass	-	13.8	<	5	<	200	E	34	E	3.3	-	74	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.2	<	5	<	5	-	9.2	-	42	<	5	<	5	-	7.8	E	3.5	<	5	<	5	<	5	-	7.7
+OAHU	16210500	16210500	1997	"KAUKONAHUA STR AT WAIALUA, OAHU, HI"	Mixed	2000-10-03 1000	C	blackchin tilapia	-	8.2	<	5	<	200	<	5	E	33	-	36	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.4	<	5	<	5	<	5	-	46	<	5	<	5	-	10	-	11	<	5	<	5	<	5	E	3.4
+OAHU	16212700	16212700	1997	"WAIKAKALAUA STR NR WAHIAWA, OAHU, HI"	Mixed	2000-07-12 0930	C	green swordtail	-	4.1	<	5	<	200	<	5	-	6.9	-	27	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	E	3.8	<	5	<	5	-	20	-	54	<	5	<	5	-	280	-	27	<	5	<	5	-	6.7	-	14
+OAHU	16216000	16216000	1997	"WAIAWA STR NR PEARL CITY, OAHU, HI"	Mixed	2000-06-28 1225	C	black molly	-	7	<	5	<	200	<	5	E	3.8	<	5	E	4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.2	<	5	<	5	-	25	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7
+OAHU	16240500	16240500	1997	"WAIAKEAKUA STR AT HONOLULU, OAHU, HI"	Mixed	2000-07-19 1000	C	green swordtail	-	3.1	<	5	<	200	<	5	<	5	-	13	E	4.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.4
+OAHU	16249000	16249000	1997	"WAIMANALO STR AT WAIMANALO, OAHU, HI"	Mixed	2000-08-22 1000	C	black molly	-	3	<	5	<	200	<	5	<	5	E	8.1	E	4.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	3.4	<	5	<	5	<	5	E	11	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16260500	16260500	1997	"MAUNAWILI STREAM AT HWY 61 NR KAILUA, OAHU, HI"	Mixed	2000-09-13 1000	C	jewelfishes	-	1.2	<	5	<	200	<	5	<	5	-	9.1	E	3.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	3.7	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16270900	16270900	1997	"LULUKU STR AT ALT 220 FT NR KANEOHE, OAHU, HI"	Mixed	2000-10-11 1000	C	green swordtail	-	4.2	<	5	<	200	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.5
+TRIN	324345096454698	324345096454698	1991	"TRINITY RV DWS OF CENTRAL WWTP, DALLAS, TX"	Mixed	1995-08-29 1002	C	common carp	-	6.8	<	5	<	200	-	14	-	15	-	48	-	20	<	5	<	5	<	5	-	15	<	6	<	5	<	5	<	5	-	8.5	<	5	<	5	-	52	-	170	<	5	-	7.5	-	21	<	5	<	5	<	5	-	38	-	62
+TRIN	324500097163097	324500097163097	1991	W FK TRINITY UPS OF VILLAGE CK WWTP	Mixed	1995-08-24 1400	C	longear sunfish	-	4	<	5	<	200	<	5	-	12	-	37	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	25	-	63	<	5	<	5	-	10	<	5	<	5	<	5	-	5.4	-	15
+TRIN	324500097163098	324500097163098	1991	W FK TRINITY RV DWS OF VILLAGE CK WWTP	Mixed	1995-08-24 1402	C	longear sunfish	-	3.3	<	5	<	230	-	7.2	-	17	-	51	-	21	<	5	<	5	<	5	-	8.5	<	5	<	5	<	5	<	5	-	6.1	<	5	<	5	-	34	-	74	<	5	<	5	-	13	-	5.8	<	5	<	5	-	8.7	-	24
+TRIN	324643096561397	324643096561397	1991	W FK TRINITY RV UPS OF TRA CENTRAL WWTP	Mixed	1995-08-25 1000	C	longear sunfish	-	4.4	<	5	<	200	-	5.6	-	9.5	-	15	-	6.4	<	5	<	5	<	5	-	8.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	-	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9
+TRIN	324643096561398	324643096561398	1991	W FK TRINITY RV DWS OF TRA CENTRAL WWTP	Mixed	1995-08-25 1001	C	longear sunfish	-	4.5	<	5	<	200	-	14	-	18	-	30	-	10	<	5	<	5	<	5	-	17	<	5	<	5	<	5	<	5	-	11	<	5	<	5	-	35	-	39	<	5	<	5	-	5.8	<	5	<	5	<	5	-	5	-	15
+DELR	01464907	01464907	1997	LITTLE NESHAMINY C AT VALLEY ROAD NR NESHAMINY PA	Mixed	1998-09-01 1410	C	common carp	-	10	<	5	<	200	-	5	-	14	E	87	-	16	<	5	<	5	<	5	<	5	<	65	<	5	<	5	<	5	-	11	<	5	<	5	-	56	E	310	<	5	<	5	-	50	<	5	<	5	<	5	-	18	-	59
+LERI	04161820	04161820	1994	CLINTON RIVER AT STERLIN	Mixed	1996-09-04 1400	C	common carp	-	3.8	<	5	<	200	<	5	<	5	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	56	<	5	<	5	E	12	-	8.8	<	5	<	5	<	5	<	5
+LERI	04208504	04208504	1994	CUYAHOGA R AT LTV STEEL CLEVELAND OH	Mixed	1996-10-08 1200	C	common carp	-	19	<	5	<	200	<	5	E	6.2	E	51	E	12	<	5	<	10	<	10	<	6	<	5	<	5	<	5	<	5	E	10	<	5	<	5	E	17	-	200	<	14	<	5	E	72	<	10	.	.	<	5	E	29	E	59
+UIRB	05532500	05532500	1997	"DES PLAINES RIVER AT RIVERSIDE, IL"	Mixed	1998-08-18 1530	C	common carp	-	7.8	<	5	<	200	<	5	<	5	E	45	-	9.2	-	5.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	520	<	10	-	60	-	380	-	15	-	15	<	5	-	20	-	57
+TRIN	08057200	08057200	1991	"WHITE ROCK CK AT GREENVILLE AVE, DALLAS, TX"	Mixed	1997-09-10 1001	C	river carpsucker	-	7	<	5	<	200	<	5	<	5	-	52	-	26	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	-	33	-	120	<	5	<	5	-	10	<	5	<	5	<	5	-	25	-	42
+OAHU	16213000	16213000	1997	"WAIKELE STR AT WAIPAHU, OAHU, HI"	Mixed	1998-09-23 1400	C	green swordtail	-	3.3	<	5	<	200	<	5	<	5	-	7.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	-	43	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	253400080215700	253400080215700	1994	BLACK CREEK CANAL NEAR S-21	Mixed	1995-11-30 0800	C	largemouth bass	-	4.6	<	5	<	200	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	6.5	<	5	<	5	<	5	<	5	<	5	<	5	-	55	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	332516111562001	332516111562001	1994	48TH STREET DRAIN NR INTERSTATE 10	Mixed	1996-06-06 1100	C	redbelly tilapia	-	4.8	<	5	<	200	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	22	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MIAM	393944084120700	393944084120700	1997	"HOLES CK IN HUFFMAN PARK AT KETTERING, OH"	Mixed	1998-09-10 1130	C	common carp	-	2.8	<	5	<	200	<	5	-	7	-	55	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	<	5	<	5	-	11	-	43	<	5	<	5	<	5	<	5	<	5	<	5	-	17	-	51
+NECB	01095220	01095220	1997	"STILLWATER RIVER NEAR STERLING, MA"	Mixed	1998-09-14 1100	C	white sucker	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NECB	01100000	01100000	1997	"MERRIMACK RIVER BL CONCORD RIVER AT LOWELL, MA"	Mixed	1999-06-25 1201	C	smallmouth bass	-	3.6	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	40	<	5	<	5	-	7.3	<	5	<	5	<	5	<	5	<	5
+NECB	01112900	01112900	1997	"BLACKSTONE RIVER AT MANVILLE, RI"	Mixed	1999-06-30 1001	C	white sucker	-	4.3	<	5	<	200	<	5	<	5	-	11	E	4.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	-	36	<	5	<	6	-	23	<	5	<	5	<	5	-	6.2	-	12
+NECB	01114500	01114500	1997	"WOONASQUATUCKET RIVER AT CENTERDALE, RI"	Mixed	1998-09-17 0900	C	white sucker	-	2.7	<	5	<	200	<	5	<	5	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	-	9.5	-	6.1	<	5	<	5	-	9.6	-	17
+CONN	01125100	01125100	1991	"FRENCH R AT N GROSVENORDALE, CT."	Mixed	1994-08-04 1101	C	white sucker	-	8.2	<	5	<	200	-	19	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	250	<	5	-	5.3	-	38	-	11	<	5	<	5	<	5	-	11
+CONN	01126850	01127000	1991	"QUINEBAUG RIVER (ASPINOOK POND) AT CLAYVILLE, CT"	Mixed	1993-07-20 1001	C	white sucker	-	6.7	<	5	<	200	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	57	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5
+CONN	01163200	01163200	1991	"OTTER RIVER AT OTTER RIVER, MA"	Mixed	1994-08-01 1701	C	white sucker	-	6.6	<	5	<	200	-	24	<	5	-	7.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	48	<	5	<	5	-	15	<	5	<	5	<	5	<	5	-	5.7
+CONN	01171500	01171500	1991	"MILL RIVER AT NORTHAMPTON, MA"	Mixed	1994-08-15 1601	C	white sucker	-	3.6	<	5	<	200	<	5	-	7	-	40	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	100	<	5	-	5.1	-	39	-	24	<	5	<	5	-	16	-	53
+CONN	01192883	01192883	1991	"COGINCHAUG RIVER AT MIDDLEFIELD, CT"	Mixed	1994-08-10 1501	C	white sucker	-	9	<	5	<	200	<	5	<	5	-	9.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	66	<	5	<	5	-	13	-	8.6	<	5	<	5	<	5	<	5
+CONN	01192990	01193000	1991	"CONNECTICUT RIVER NEAR PORTLAND, CT"	Mixed	1993-07-13 1101	C	white sucker	-	8.4	<	5	<	200	<	5	<	5	-	26	-	8.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7	-	110	<	5	<	5	-	26	-	26	<	5	<	5	-	9.2	-	20
+CONN	01201335	01200600	1991	"HOUSATONIC RIVER NEAR TOWN HILL, CT"	Mixed	1993-07-21 0901	C	white sucker	-	10.5	<	5	<	200	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	140	<	5	-	5.7	-	27	-	14	<	5	<	5	<	5	-	9.4
+HDSN	01333763	01333763	1991	HOOSIC RIVER NEAR HOOSICK FALLS NY	Mixed	1992-09-10 0912	C	white sucker	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	39	<	5	<	5	-	20	-	11	<	5	<	5	<	5	<	5
+HDSN	01361200	01361200	1991	CLAVERACK CREEK AT CLAVERACK NY	Mixed	1992-08-31 0912	C	white sucker	-	6.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	58	-	260	<	5	<	5	-	41	-	40	-	5.2	<	5	<	5	<	5
+HDSN	01372043	01372043	1991	HUDSON RIVER NEAR POUGHKEEPSIE NY	Mixed	1992-09-16 1001	C	common carp	-	12.1	<	5	<	200	<	5	<	5	-	14	-	6.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.2	<	200	<	100	-	14	-	120	<	5	<	5	<	5	-	5.6	-	18
+HDSN	01372050	01372050	1991	FALL KILL AT POUGHKEEPSIE AT ARLINGTON NY	Mixed	1992-08-25 0902	C	white sucker	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	31	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5
+HDSN	01372051	01372051	1991	FALL KILL AT POUGHKEEPSIE NY	Mixed	1994-09-20 1532	C	white sucker	-	2.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	<	5	<	5	-	20	-	9.1	<	5	<	5	<	5	<	5
+HDSN	01372800	01372800	1991	FISHKILL CREEK AT HOPEWELL JUNCTION NY	Mixed	1994-09-21 1633	C	rock bass	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	39	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5
+DELR	01442110	01442110	1997	"BRODHEAD CREEK AT STROUDSBURG, PA"	Mixed	1999-08-03 1425	C	white sucker	-	5.9	<	5	<	200	<	5	<	5	E	4.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	<	5	<	5	E	5.6	E	3.5	<	5	<	5	<	5	<	5
+DELR	01454700	01454700	1997	"LEHIGH RIVER AT GLENDON, PA."	Mixed	1998-08-04 1100	C	common carp	-	6.4	<	5	<	200	<	5	-	17	-	38	-	6.4	<	5	<	5	<	5	<	5	<	75	<	5	<	5	-	8.9	<	5	<	5	<	5	-	13	E	400	<	7.7	<	5	-	23	<	5	<	5.5	<	5	-	13	-	30
+DELR	01463500	01463500	1997	DELAWARE RIVER AT TRENTON NJ	Mixed	1998-07-29 1005	C	common carp	-	8.5	<	5	<	200	<	5	-	16	-	37	-	5.9	<	5	<	5	<	5	<	5	<	120	<	5	<	5	<	5	<	5	<	5	<	5	-	8.6	-	810	-	21	-	9.7	-	58	-	12	-	39	<	5	-	6	-	19
+SANT	02148000	02148000	1994	"WATEREE RIVER NR. CAMDEN, SC"	Mixed	1997-06-20 1500	C	common carp	-	4.8	<	5	<	200	<	5	<	5	-	7.7	E	4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	84	<	5	<	5	<	5	<	5	<	5	<	5	E	3.2	-	5.7
+SANT	02169000	02169000	1994	"SALUDA RIVER NEAR COLUMBIA, SC"	Mixed	1997-07-15 1000	C	common carp	-	11.28	<	5	<	200	<	5	<	5	-	18	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	-	6.2	<	5	<	5	-	8.9	-	54	<	5	<	5	-	6.9	<	5	<	5	-	5.8	-	9.2	-	15
+MOBL	02418264	02418264	1997	SOUGAHATCHEE CREEK ABOVE REELTOWN AL	Mixed	1998-08-12 1100	C	suckers	-	4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	0242354750	0242354750	1997	"CAHABA VALLEY CREEK AT CROSS CR RD AT PELHAM, AL."	Mixed	1998-08-21 1100	C	longear sunfish	-	1.8	<	5	<	200	<	5	<	5	-	8.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02424000	02424000	1997	CAHABA RIVER AT CENTREVILLE AL	Mixed	1998-09-11 1210	C	smallmouth buffalo	-	5.05	<	5	<	200	E	4.8	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.1	-	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.8
+KANA	03178000	03178000	1994	"BLUESTONE R NR SPANISHBURG, WV"	Mixed	1996-09-20 1300	C	rock bass	-	3.6	<	5	<	200	<	5	<	5	-	6.4	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06711500	06711500	1991	"BEAR CREEK AT MOUTH, AT SHERIDAN, CO."	Mixed	1992-10-02 1035	C	white sucker	-	3	<	5	<	200	<	5	-	9.6	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.7
+ACAD	07380120	07380120	1997	"AMITE RIVER AT PORT VINCENT, LA"	Mixed	1998-05-14 1010	C	largemouth bass	-	4.87	<	5	<	200	<	5	.	.	-	18	-	6.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	2.9	<	5	<	5	<	5	-	16	<	5	<	5	E	2.6	<	5	<	5	<	5	E	2.4	-	6.1
+SCTX	08181800	08181800	1994	"SAN ANTONIO RV NR ELMENDORF, TX"	Mixed	1997-12-08 1309	C	common carp	-	4.6	<	5	<	200	<	5	-	9.1	-	19.6	-	9.1	<	5	<	5	<	5	-	8.2	<	18	<	5	<	5	<	5	-	7.8	<	5	<	5	-	16.2	-	99.8	<	5	<	5	-	24.2	<	5	<	5	<	5	-	9.6	-	21
+CAZB	09502960	09502960	1994	"GRANITE CREEK AT PRESCOTT, AZ."	Mixed	1996-06-18 0900	C	fathead minnow	-	4.1	<	5	<	200	<	5	<	5	-	9.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.9	-	20	<	5	<	5	E	6.2	<	5	<	5	<	5	-	6.9	-	9.3
+GRSL	10171000	10171000	1997	"JORDAN RIVER @ 1700 SOUTH @ SALT LAKE CITY, UT"	Mixed	1998-08-03 1301	C	common carp	-	8.6	<	5	<	200	<	5	-	13	-	35	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	31	<	5	-	290	<	5	<	5	E	22	<	5	<	5	<	5	-	20	-	20
+GRSL	10172600	10172600	1997	"JORDAN RIVER @ CUDAHY LANE NR SALT LAKE CITY, UT"	Mixed	1998-08-05 1011	C	common carp	-	11	<	5	<	200	<	5	<	5	E	26	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.2	-	89	<	5	<	5	-	22	<	5	<	5	<	5	-	9.7	-	29
+PUGT	12113390	12113390	1994	"DUWAMISH R AT GOLF COURSE AT TUKWILA, WA"	Mixed	1995-09-20 1100	C	freshwater sculpins	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12118500	12118500	1994	"ROCK CREEK NEAR MAPLE VALLEY, WASH."	Mixed	1995-09-25 1100	C	freshwater sculpins	-	2.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16229000	16229000	1997	"KALIHI STR NR HONOLULU, OAHU, HI"	Mixed	2000-10-17 1000	C	antenna armored catfishes	-	2.4	<	5	<	200	<	5	<	5	-	7.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7
+OAHU	212938158023801	212938158023801	1997	"WAHIAWA RES AT SWG. OUTFALL AT WAHIAWA, OAHU, HI"	Mixed	2000-10-24 1000	C	blackchin tilapia	-	2.8	<	5	<	200	<	5	<	5	-	12	E	3.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	-	19	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACFB	302837085000000	02358700	1991	APALACHICOLA R @ SWEETWATER TXECT NAV MI 86	Mixed	1992-11-11 1030	C	eastern mosquitofish	-	3.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACFB	304219084520800	02358000	1991	"APALACHICOLA RIVER FLOOD PLAIN NR CHATTAHOOCHEE,FL"	Mixed	1992-11-12 1200	C	eastern mosquitofish	-	5.3	<	5	<	200	<	5	-	30	-	44	-	9.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	-	38	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	375041081054201	375041081054201	1994	"PINEY CREEK NEAR MCCREERY, WV"	Mixed	1996-09-24 1100	C	rock bass	-	4.85	<	5	<	200	<	5	-	6.2	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.6	<	5	<	5	-	5.2	-	6.5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.8	-	12
+SACR	385821121323201	385821121323201	1994	BEAR R A HWY 70 NR RIO OSO CA	Mixed	1995-10-19 1201	C	carps and minnows	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	7.4	<	5	<	6.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	414640073071001	414640073071001	1991	WEST BRANCH NAUGATUCK RIVER NR TORRINGTON CT	Mixed	1994-08-17 1601	C	white sucker	-	4.8	<	5	<	200	-	24	-	5.2	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	-	8.1	-	6	<	5	-	15	<	5	<	5	<	5	-	12	-	21
+CONN	415645073025001	415645073025001	1991	STILL RIVER AT NELSONS CORNER CT	Mixed	1994-08-17 1201	C	white sucker	-	4.9	<	5	<	200	-	6.9	<	5	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	-	24	<	5	<	5	-	10	-	5.8	<	5	<	5	<	5	-	6.7
+CONN	420420072010001	420420072010001	1991	"QUINEBAUG R BED AT SANDERSDALE, MA"	Mixed	1994-08-08 1401	C	white sucker	-	5.9	<	5	<	200	-	6.7	<	5	-	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	130	-	8.4	<	5	-	42	-	31	<	5	<	5	<	5	-	9.3
+CONN	420910072200001	420910072200001	1991	"QUABOAG R BED AT PALMER, MA"	Mixed	1994-08-02 1601	C	white sucker	-	6.1	<	5	<	200	<	5	<	5	-	9.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	53	<	5	<	5	-	9.4	-	7.3	<	5	<	5	<	5	-	6
+CONN	422102073142201	422102073142201	1991	"HOUSATONIC RIVER (WOODS POND) AT LENOX, MA"	Mixed	1994-09-13 0901	C	white sucker	-	2.5	<	5	<	200	<	5	<	5	<	7	<	5	<	5	<	5	<	40	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	160	<	8	<	8	-	100	<	5	<	5	<	5	<	5	<	6
+CONN	422640073144501	422640073144501	1991	"E.BR.HOUSATONIC R BED IN PITTSFIELD, MA"	Mixed	1994-08-16 1001	C	white sucker	-	2.8	<	5	<	200	-	8.9	-	7.4	-	14	<	5	<	5	<	5	<	50	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	-	38	<	250	-	5.1	-	24	-	11	<	5	<	5	<	5	<	5
+WILL	453329122425201	453547122463000	1991	"WILLAMETTE RIVER AT SWAN ISLAND, OR"	Mixed	1992-09-01 1600	C	common carp	-	9.7	<	5	<	200	<	5	<	5	-	21	-	8.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	-	180	<	5	-	19	-	79	-	6.3	-	5.2	<	5	-	12	-	18
+WILL	453547122463000	453547122463000	1991	"WILLAMETTE RIVER AT LINNTON, OR"	Mixed	1992-09-09 1200	C	largescale sucker	-	7.1	<	5	<	200	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	210	<	5	-	30	-	130	-	160	-	30	<	5	<	5	-	9.3
+NECB	01049265	01049265	1997	"KENNEBEC RIVER AT NORTH SIDNEY, ME"	Undeveloped	1999-06-23 1301	C	smallmouth bass	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	51	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NECB	01059300	01059300	1997	"ANDROSCOGGIN RIVER NEAR LISBON FALLS, MAINE"	Undeveloped	1999-06-24 1101	C	white sucker	-	8.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	01121000	01121000	1991	"MOUNT HOPE R NR WARRENVILLE, CT."	Undeveloped	1994-08-03 1101	C	white sucker	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	01131400	01131400	1991	"CONNECTICUT RIVER NEAR LANCASTER,NH"	Undeveloped	1993-07-22 0901	C	white sucker	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	01135300	01135300	1991	"SLEEPERS RIVER (SITE W-5) NEAR ST. JOHNSBURY, VT"	Undeveloped	1993-08-05 1101	C	longnose sucker	-	8.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	01153150	01153150	1991	"CONNECTICUT RIVER AT SOUTH CHARLESTOWN, NH"	Undeveloped	1993-07-16 1101	C	white sucker	-	10	<	5	<	200	<	5	<	5	-	8.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	52	<	5	<	5	-	14	-	14	<	5	<	5	<	5	-	5.7
+CONN	01170500	01170500	1991	"CONNECTICUT RIVER AT MONTAGUE CITY, MA"	Undeveloped	1993-07-15 1101	C	white sucker	-	12.3	<	5	<	200	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	110	<	5	<	5	-	12	-	20	<	5	<	5	<	5	<	5
+CONN	01175500	01175500	1991	"SWIFT RIVER AT WEST WARE, MA"	Undeveloped	1994-08-02 1101	C	white sucker	-	9	<	5	<	200	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	87	<	5	<	5	-	5.7	<	5	-	18	<	5	<	5	-	5.9
+CONN	01183850	01184000	1991	"CONNECTICUT RIVER NEAR LONGMEADOW, MA"	Undeveloped	1993-07-14 1301	C	white sucker	-	10.9	<	5	<	200	<	5	-	5.3	-	27	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	210	<	5	<	5	-	18	-	30	<	5	<	5	-	7.9	-	16
+CONN	01198000	01198000	1991	"GREEN RIVER NEAR GREAT BARRINGTON, MA"	Undeveloped	1994-08-16 1601	C	white sucker	-	5.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	01198200	01198200	1991	"KONKAPOT RIVER AT ASHLEY FALLS, MA"	Undeveloped	1994-08-17 0901	C	white sucker	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01325010	01325010	1991	HUDSON RIVER SOUTH OF LAKE LUZERNE NY	Undeveloped	1995-05-23 1301	C	common carp	-	4.7	.	.	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	54	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5
+HDSN	01351332	01351450	1991	SCHOHARIE CREEK EAST OF CENTRAL BRIDGE NY	Undeveloped	1992-09-02 1004	C	rock bass	-	5.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	49	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01360515	01360515	1991	KINDERHOOK CREEK NEAR BRAINARD NY	Undeveloped	1994-09-12 1333	C	rock bass	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	31	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01361500	01361500	1991	CATSKILL CREEK AT OAK HILL NY	Undeveloped	1994-09-09 1032	C	white sucker	-	2.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01362200	01362200	1991	ESOPUS CREEK AT ALLABEN NY	Undeveloped	1994-09-06 1032	C	white sucker	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	85	<	5	<	5	-	7.3	-	10	<	5	<	5	<	5	<	5
+HDSN	01367500	01367500	1991	RONDOUT CREEK AT ROSENDALE NY	Undeveloped	1992-08-28 0834	C	rock bass	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	180	<	5	<	5	-	14	-	17	<	5	<	5	<	5	<	5
+HDSN	0137203960	0137203960	1991	CRUM ELBOW CREEK NR HYDE PARK NY	Undeveloped	1992-08-24 0932	C	white sucker	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	54	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5
+HDSN	01372306	01372306	1991	WAPPINGER CREEK NEAR SALT POINT NY	Undeveloped	1994-09-21 1243	C	rock bass	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+HDSN	01374494	01374494	1991	HAVILAND HOLLOW BROOK NEAR PUTNAM LAKE NY	Undeveloped	1994-09-22 1132	C	white sucker	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01423000	01423000	1997	"WEST BRANCH DELAWARE RIVER AT WALTON, N. Y."	Undeveloped	1999-08-16 1430	C	white sucker	-	6.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01431500	01431500	1997	LACKAWAXEN RIVER AT HAWLEY PA	Undeveloped	1999-08-02 1615	C	white sucker	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01434000	01434000	1997	DELAWARE RIVER AT PORT JERVIS NY	Undeveloped	1998-07-30 0800	C	white sucker	-	12	<	5	<	200	<	5	<	5	<	5	E	5.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	62	<	5	<	5	<	5	E	6.2	<	5	<	5	<	5	<	5
+DELR	01435000	01435000	1997	NEVERSINK RIVER NEAR CLARYVILLE NY	Undeveloped	1999-08-17 1045	C	white sucker	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01437500	01437500	1997	"NEVERSINK RIVER AT GODEFFROY, N. Y."	Undeveloped	1999-08-17 1645	C	white sucker	-	9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	E	3.5	E	4	<	5	<	5	<	5	<	5
+DELR	01439550	01439500	1997	"BUSH KILL AT BUSHKILL, PA"	Undeveloped	1999-08-04 1130	C	white sucker	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01440000	01440000	1997	FLAT BROOK NEAR FLATBROOKVILLE NJ	Undeveloped	1999-07-22 1410	C	white sucker	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	39	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+DELR	01471668	01471668	1997	HAY CREEK NEAR BIRDSBORO PA	Undeveloped	1998-08-26 1400	C	white sucker	-	3.3	<	5	<	200	<	5	<	5	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.6
+LSUS	01553500	01553500	1991	"WEST BRANCH SUSQUEHANNA RIVER AT LEWISBURG, PA"	Undeveloped	1992-09-16 1005	C	white sucker	-	14	<	5	<	200	<	5	<	5	-	12	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	<	5	<	5	.	.	-	12	<	5	<	5	<	5	-	8.4
+POTO	01608000	01608000	1991	"SOUTH FORK SB POTOMAC RIVER NEAR MOOREFIELD, WV"	Undeveloped	1992-08-27 1330	C	yellow bullhead	-	3.8	<	5	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALBE	02047000	02047000	1991	"NOTTOWAY RIVER NEAR SEBRELL, VA"	Undeveloped	1993-11-06 1215	C	redbreast sunfish	-	2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SANT	021393755	021393755	1994	"IRISH CREEK NEAR MORGANTON, NC"	Undeveloped	1995-09-27 1000	C	white sucker	-	1.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SANT	02143040	02143040	1994	"JACOB FORK AT RAMSEY, NC"	Undeveloped	1995-10-19 1000	C	striped jumprock	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5
+MOBL	02397000	02397000	1997	"COOSA RIVER NEAR ROME, GA"	Undeveloped	1998-11-17 0830	C	common carp	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	97	<	5	<	5	-	9.2	<	5	<	5	<	5	<	5	<	5
+MOBL	02398300	02398300	1997	CHATTOOGA RIVER ABOVE GAYLESVILLE AL	Undeveloped	1998-09-24 1230	C	scarlet sunfish	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7	<	5	-	47	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02421115	02421115	1997	"PINTLALLA CR. @ LIBERTY CHURCH RD NR PINTLALLA, AL"	Undeveloped	1998-08-20 1030	C	longear sunfish	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02429500	02429500	1997	ALABAMA RIVER AT CLAIBORNE AL	Undeveloped	1998-11-18 1305	C	largemouth bass	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	75	<	5	<	5	-	9.3	<	5	<	5	<	5	<	5	<	5
+MOBL	02454055	02454055	1997	"LOST CREEK ABOVE PARRISH, AL."	Undeveloped	1998-09-23 1130	C	longear sunfish	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02462501	02462501	1997	BLACK WARRIOR R BL BANKHEAD L&D NEAR BESSEMER AL	Undeveloped	1998-10-29 1300	C	bluegill	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	25	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02463500	02463500	1997	HURRICANE CREEK NEAR HOLT AL	Undeveloped	1998-08-28 1120	C	largemouth bass	-	5.2	<	5	<	200	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	<	5	<	5	-	18	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02469762	02469762	1997	TOMBIGBEE R BL COFFEEVILLE L&D NEAR COFFEEVILLE	Undeveloped	1998-11-19 1130	C	largemouth bass	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	96	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5
+MOBL	02469800	02469800	1997	SATILPA CREEK NEAR COFFEEVILLE AL	Undeveloped	1998-09-02 1220	C	longear sunfish	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+MOBL	02471001	02471001	1997	CHICKASAW CREEK NEAR KUSHLA AL	Undeveloped	1998-09-01 1100	C	longear sunfish	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALMN	03010500	03010500	1994	"ALLEGHENY RIVER AT ELDRED, PA"	Undeveloped	1996-08-22 1230	C	golden redhorse	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALMN	03015795	03015795	1994	"EAST HICKORY CREEK NEAR QUEEN, PA"	Undeveloped	1996-09-05 1300	C	white sucker	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALMN	03029000	03029000	1994	"CLARION RIVER AT RIDGWAY, PA"	Undeveloped	1996-08-23 1200	C	common carp	-	5.6	<	5	<	200	<	5	<	5	-	8.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ALMN	03049625	03049625	1994	"ALLEGHENY RIVER AT NEW KENSINGTON, PA"	Undeveloped	1996-09-16 1200	C	common carp	-	6.2	<	5	<	200	<	5	<	5	-	69	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	228	<	5	-	8.9	-	39	-	9	-	18	<	5	-	36	-	57
+ALMN	03062000	03062000	1994	"MONONGAHELA RIVER AT LOCK 15 AT HOULT, WV"	Undeveloped	1996-09-25 1300	C	common carp	-	8.2	<	5	<	200	<	5	<	5	-	42	-	12	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	-	6.2	<	5	<	5	<	5	-	26	-	46
+ALMN	03070350	03070350	1994	"CHEAT RIVER NEAR MOUNT NEBO, WV"	Undeveloped	1997-08-27 1100	C	golden redhorse	-	10	<	5	<	200	<	5	<	5	E	4.8	E	2.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.7	<	5	<	5	<	5	<	5	<	5	<	5	E	1.7	E	3.9
+ALMN	03072000	03072000	1994	"DUNKARD CREEK AT SHANNOPIN, PA"	Undeveloped	1997-08-06 1200	C	golden redhorse	-	8.5	<	5	<	200	<	5	E	3.2	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.5	<	5	<	5	<	5	<	5	<	5	<	5	E	3.6	-	7.8
+ALMN	03085000	03085000	1994	"MONONGAHELA RIVER AT BRADDOCK, PA"	Undeveloped	1996-09-19 1100	C	common carp	-	18.9	<	5	<	200	-	5.4	<	5	-	220	-	44	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	-	150	<	5	<	5	-	26	<	5	<	5	<	5	-	140	-	230
+KANA	03161000	03161000	1994	"SOUTH FORK NEW RIVER NEAR WEST JEFFERSON, NC"	Undeveloped	1996-10-10 1305	C	rock bass	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	45	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03164000	03164000	1994	"NEW RIVER NR GALAX, VA"	Undeveloped	1996-10-09 1700	C	rock bass	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03183500	03183500	1994	"GREENBRIER RIVER AT ALDERSON, WV"	Undeveloped	1996-10-08 1530	C	rock bass	-	2.05	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03184500	03184500	1994	"NEW RIVER AT HINTON, WV"	Undeveloped	1997-10-07 1230	C	common carp	-	23.25	<	5	<	200	<	5	<	5	-	26	-	8.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	37	<	5	<	5	-	7.6	<	5	<	5	<	5	-	6.4	-	11
+KANA	03185400	03185400	1994	"NEW RIVER AT THURMOND, WV"	Undeveloped	1996-10-04 1530	C	rock bass	-	2.35	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03186500	03186500	1994	"WILLIAMS RIVER AT DYER, WV"	Undeveloped	1997-08-27 1200	C	rock bass	-	3.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03187500	03187500	1994	"CRANBERRY RIVER NEAR RICHWOOD, WV"	Undeveloped	1996-09-26 1100	C	rock bass	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03191500	03191500	1994	"PETERS CREEK NEAR LOCKWOOD, WV"	Undeveloped	1996-09-25 1240	C	rock bass	-	3.75	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03193000	03193000	1994	"KANAWHA RIVER AT KANAWHA FALLS, WV"	Undeveloped	1996-10-02 1200	C	common carp	-	6.2	<	5	<	200	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	-	11
+KANA	03198350	03198350	1994	"CLEAR FORK AT WHITESVILLE, WV"	Undeveloped	1996-09-23 1530	C	rock bass	-	3.35	<	5	<	200	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+KANA	03201300	03201300	1994	"KANAWHA RIVER AT WINFIELD, WV"	Undeveloped	1996-10-01 1200	C	common carp	-	5.7	<	5	<	200	<	5	-	8.2	-	36	-	11	<	5	<	5	<	5	<	5	<	6.2	<	5	<	5	<	5	<	5	<	5	<	6	-	5.8	-	30	<	6	<	5	-	6.1	<	10	<	5	<	5	-	20	-	30
+LTEN	03571000	03571000	1997	"SEQUATCHIE RIVER NEAR WHITWELL, TN"	Undeveloped	1998-08-21 0915	C	largemouth bass	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LTEN	03574550	03574550	1997	"LITTLE PAINT CREEK NEAR WOODVILLE, AL"	Undeveloped	1998-08-18 1520	C	largemouth bass	-	2.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	33	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+LTEN	03604000	03604000	1997	"BUFFALO RIVER NEAR FLAT WOODS, TN"	Undeveloped	1998-08-26 1015	C	largemouth bass	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04057529	04057529	1991	"WEST BRANCH WHITEFISH RIVER NEAR DIFFIN, MI"	Undeveloped	1992-08-27 1200	C	white sucker	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04058120	04058120	1991	"GREEN CREEK NEAR PALMER, MI"	Undeveloped	1992-08-26 1730	C	white sucker	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04061050	04061050	1991	"SOUTH BRANCH PAINT RIVER NEAR GIBBS CITY, MI"	Undeveloped	1992-08-26 0930	C	white sucker	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04063700	04063700	1991	"POPPLE RIVER NEAR FENCE, WI"	Undeveloped	1992-08-25 1620	C	white sucker	-	6.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04067500	04067500	1991	"MENOMINEE RIVER NEAR MC ALLISTER, WI"	Undeveloped	1995-07-31 1600	C	shorthead redhorse	-	6.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WMIC	04070640	04070640	1991	"SECOND SOUTH BRANCH OCONTO RIVER NR MOUNTAIN, WI"	Undeveloped	1992-08-25 1045	C	white sucker	-	7.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	05030000	05030000	1991	"OTTER TAIL RIVER NEAR DETROIT LAKES, MN"	Undeveloped	1992-08-27 1005	C	white sucker	-	1.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05211000	05211000	1994	"MISSISSIPPI RIVER AT GRAND RAPIDS, MN"	Undeveloped	1995-07-24 1400	C	white sucker	-	5.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05263500	05267000	1994	"MISSISSIPPI RIVER BELOW LITTLE FALLS, MN"	Undeveloped	1995-07-20 1400	C	shorthead redhorse	-	7.5	<	5	<	400	<	16	<	10	<	10	<	10	<	5	<	10	<	10	<	15	<	10	<	15	<	10	<	5	<	11	<	5	<	10	<	10	-	11	<	10	<	10	<	10	<	10	<	10	<	10	<	10	<	10
+UMIS	05331833	05331833	1994	"NAMEKAGON RIVER AT LEONARDS, WI"	Undeveloped	1995-07-25 0930	C	white sucker	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05331873	05331873	1994	"NAMEKAGON RIVER ABOVE SPRING LAKE CK NR HAYWARD,WI"	Undeveloped	1996-10-26 1000	C	white sucker	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	.	.	<	5	.	.	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05333500	05333500	1994	"ST. CROIX RIVER NEAR DANBURY, WI"	Undeveloped	1995-09-27 0900	C	shorthead redhorse	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05336180	05336180	1994	"KETTLE RIVER NEAR KETTLE RIVER, MN"	Undeveloped	1995-09-27 1600	C	white sucker	-	2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05339770	05340500	1994	"ST. CROIX RIVER NEAR SUNRISE, MN"	Undeveloped	1995-07-14 1400	C	river redhorse	-	4.6	<	5	<	700	<	5	<	5	<	10	<	10	<	5	<	25	<	10	<	8	<	9	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	10	<	10	<	10	<	25	<	10	<	5	<	5	<	10
+YELL	06186500	06186500	1997	"YELLOWSTONE RIVER AT YELLOWSTONE LK OUTLET, YNP"	Undeveloped	1998-09-04 1200	C	cutthroat trout	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	45.6	<	5	<	5	<	5	<	5	<	5	<	5	-	51.3	<	5	<	12	-	6.9	-	6.3	<	5	<	5	<	5	-	5.3
+YELL	06187915	06187915	1997	SODA BUTTE CR AT PARK BNDRY AT SILVER GATE	Undeveloped	1998-09-03 1300	C	cutthroat trout	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	8.8	<	14.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.4	<	11.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06191500	06191500	1997	"YELLOWSTONE RIVER AT CORWIN SPRINGS, MT"	Undeveloped	1998-08-27 1300	C	brown trout	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	19	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06279795	06279795	1997	"CROW CREEK AT MOUTH, AT PAHASKA, WY"	Undeveloped	1998-10-29 1200	C	brook trout	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06289000	06289000	1997	"LITTLE BIGHORN RIVER AT STATE LINE, MT"	Undeveloped	1998-09-22 1000	C	brown trout	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06298000	06298000	1997	"TONGUE RIVER NEAR DAYTON, WY"	Undeveloped	1998-09-23 1000	C	brown trout	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06305700	06305700	1997	"GOOSE CREEK NR ACME, WY"	Undeveloped	1998-09-21 0900	C	common carp	-	4.8	<	5	<	200	<	5	<	5	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	58	<	5	<	5	-	8.6	<	5	<	5	<	5	<	5	<	5
+YELL	06306300	06306300	1997	TONGUE R AT STATE LINE NR DECKER MT	Undeveloped	1998-10-07 1800	C	white sucker	-	7.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06316400	06316400	1997	"CRAZY WOMAN CREEK AT UPPER STA, NEAR ARVADA, WYO"	Undeveloped	1998-07-31 1600	C	white sucker	-	1.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	06324970	06324970	1997	"L POWDER RIVER AB DRY C NR WESTON, WY"	Undeveloped	1998-10-09 0800	C	white sucker	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06709610	06709610	1991	"SOUTH PLATTE RIVER BELOW CHATFIELD LAKE, CO."	Undeveloped	1992-10-01 1205	C	white sucker	-	1.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06721500	06721500	1991	"NORTH ST. VRAIN CREEK NEAR ALLENS PARK, CO."	Undeveloped	1992-09-16 1105	C	brown trout	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06752000	06752000	1991	"CACHE LA POUDRE R A MO OF CN, NR FT COLLINS, CO."	Undeveloped	1992-09-16 1535	C	brown trout	-	5.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06752500	06752500	1991	"CACHE LA POUDRE RIVER NEAR GREELEY, CO."	Undeveloped	1992-09-22 1030	C	common carp	-	9.3	<	5	-	950	<	5	<	5	-	31	-	8.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	-	10	<	5	-	21	-	79	-	2000	<	5	-	39	-	71	-	24	-	14	-	46	-	15	-	24
+SPLT	06753400	06753400	1991	"LONETREE CREEK AT CARR, CO."	Undeveloped	1993-08-20 1000	C	white sucker	-	4.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	06755700	06755700	1991	"CROW CREEK BELOW NORTH FORK, AT SILVER CROWN, WY"	Undeveloped	1992-09-14 1505	C	white sucker	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06770500	06770500	1991	"PLATTE RIVER NEAR GRAND ISLAND, NEBR."	Undeveloped	1992-09-08 1215	C	common carp	-	6.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06775900	06775900	1991	"DISMAL RIVER NEAR THEDFORD, NE"	Undeveloped	1993-09-15 1200	C	white sucker	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06782000	06782000	1991	"SOUTH LOUP RIVER NR. CUMRO, NEBR."	Undeveloped	1992-09-09 1540	C	river carpsucker	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06785200	06785200	1991	"NORTH LOUP R NORTH OF MULLEN, NE"	Undeveloped	1992-09-11 1015	C	white sucker	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06787000	06787000	1991	"CALAMUS RIVER NR HARROP, NE"	Undeveloped	1992-09-16 1430	C	common carp	-	5.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06791150	06791150	1991	"LOUP RIVER NEAR PALMER, NE"	Undeveloped	1993-09-29 1100	C	common carp	-	9.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.3	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CNBR	06791500	06791500	1991	"CEDAR RIVER NEAR SPALDING, NE"	Undeveloped	1992-09-16 0920	C	white sucker	-	5.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	06929315	06929315	1991	"PADDY CREEK ABOVE SLABTOWN SPRING, MO"	Undeveloped	1992-10-30 1021	C	longear sunfish	-	3.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07055646	07055646	1991	BUFFALO RIVER NEAR BOXLEY	Undeveloped	1993-11-04 1121	C	longear sunfish	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07055875	07055875	1991	"RICHLAND CREEK NEAR WITTS SPRING, AR"	Undeveloped	1992-08-19 1421	C	longear sunfish	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07060710	07060710	1991	"NORTH SYLAMORE CREEK NEAR FIFTY SIX, AR"	Undeveloped	1993-12-14 1621	C	longear sunfish	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07061170	07061170	1991	"MIDDLE FORK BLACK RIVER NEAR LESTERVILLE, MO"	Undeveloped	1993-10-27 1021	C	longear sunfish	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07061400	07061600	1991	"BLACK RIVER NEAR LESTERVILLE, MO"	Undeveloped	1993-10-26 1021	C	longear sunfish	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07065040	07065040	1991	"BIG CREEK AT MAUSER MILL, MO"	Undeveloped	1993-10-25 1321	C	longear sunfish	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OZRK	07065495	07065495	1991	"JACKS FORK RIVER AT ALLEY SPRING, MO"	Undeveloped	1993-10-19 1421	C	longear sunfish	-	6.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	08014500	08014500	1997	"WHISKEY CHITTO CK NR OBERLIN, LA"	Undeveloped	1998-08-04 1200	C	longear sunfish	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACAD	08015500	08015500	1997	"CALCASIEU RIVER NR KINDER, LA"	Undeveloped	1998-08-18 1300	C	longear sunfish	-	2.8	<	5	<	200	<	5	<	5	<	5	<	5	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SCTX	08167500	08167500	1994	"GUADALUPE RV NR SPRING BRANCH, TX"	Undeveloped	1997-10-14 1012	C	common carp	-	16.58	<	5	<	200	<	5	<	5	E	3.7	E	1.5	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	32	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	1.6
+SCTX	08169500	08169500	1994	"GUADALUPE RV AT NEW BRAUNFELS, TX"	Undeveloped	1998-02-12 1301	C	gray redhorse	-	3.2	<	5	<	200	<	5	<	5	-	7.8	<	5	<	5	<	5	<	5	<	5	<	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	35.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.6
+SCTX	08171000	08171000	1994	"BLANCO RV AT WIMBERLEY, TX"	Undeveloped	1997-12-08 1305	C	gray redhorse	-	4.55	<	5	<	200	<	5	<	5	-	7.4	<	5	<	5	<	5	<	5	<	5	-	19.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SCTX	08173900	08173900	1994	"GUADALUPE RV AT GONZALES, TX"	Undeveloped	1997-11-03 1013	C	smallmouth buffalo	-	11	<	5	<	200	<	5	<	5	-	14	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	66	<	5	<	5	E	5.8	<	5	<	5	<	5	<	5	-	8.7
+RIOG	08227000	08227000	1991	"SAGUACHE CREEK NEAR SAGUACHE, CO"	Undeveloped	1992-09-22 0830	C	white sucker	-	2.52	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+RIOG	08276300	08276300	1991	"RIO PUEBLO DE TAOS BELOW LOS CORDOVAS, NM"	Undeveloped	1992-11-12 1300	C	white sucker	-	8.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	26	<	5	<	5	-	7.2	<	5	<	5	<	5	<	5	<	5
+RIOG	08276500	08276500	1991	"RIO GRANDE BLW TAOS JUNCTION BRIDGE NEAR TAOS, NM"	Undeveloped	1992-11-13 1000	C	white sucker	-	3.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+RIOG	08323000	08323000	1991	"RIO GUADALUPE AT BOX CANYON NEAR JEMEZ, NM"	Undeveloped	1992-11-05 1000	C	brown trout	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	51	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5
+UCOL	09010500	09010500	1994	"COLORADO R BELOW BAKER GULCH, NR GRAND LAKE, CO."	Undeveloped	1995-08-14 1300	C	brown trout	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	14	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	11	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09066510	09066510	1994	"GORE CREEK AT MOUTH, NEAR MINTURN, CO."	Undeveloped	1995-08-15 0920	C	brown trout	-	8.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.2	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09070500	09070500	1994	"COLORADO RIVER NEAR DOTSERO, CO."	Undeveloped	1995-08-23 1020	C	white sucker	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09095500	09095500	1994	"COLORADO RIVER NEAR CAMEO, CO."	Undeveloped	1995-08-23 1520	C	bluehead sucker	-	11.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09112200	09112200	1994	"EAST RIVER BL CEMENT CREEK NR CRESTED BUTTE, CO."	Undeveloped	1995-10-16 1320	C	brown trout	-	5.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09128000	09128000	1994	"GUNNISON RIVER BELOW GUNNISON TUNNEL, CO."	Undeveloped	1995-09-21 1620	C	brown trout	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09146200	09146200	1994	"UNCOMPAHGRE RIVER NEAR RIDGWAY, CO."	Undeveloped	1995-10-17 1020	C	white sucker	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	09152500	09152500	1994	"GUNNISON RIVER NEAR GRAND JUNCTION, CO."	Undeveloped	1995-08-16 1320	C	bluehead sucker	-	13	<	5	<	200	<	5	<	5	<	9	<	5	<	5	<	5	<	5	<	5	<	8	<	8	<	6	<	5	<	5	<	5	<	5	-	22	-	130	<	5	<	5	.	.	-	16	<	5	-	32	<	5	<	5
+UCOL	09163500	09163500	1994	COLORADO RIVER NEAR COLORADO-UTAH STATE LINE	Undeveloped	1996-08-28 1220	C	common carp	-	6	<	5	<	200	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.9	-	110	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5
+CAZB	09471000	09471000	1994	"SAN PEDRO RIVER AT CHARLESTON, ARIZ."	Undeveloped	1996-05-08 1330	C	desert sucker	-	6.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	09474000	09474000	1994	GILA R AT KELVIN ARIZ	Undeveloped	1996-05-09 1700	C	desert sucker	-	11	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	09498500	09498500	1994	"SALT RIVER NEAR ROOSEVELT, ARIZ."	Undeveloped	1996-05-10 1330	C	red shiner	-	6.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	09505570	09505570	1994	"VERDE RIVER ABV W. CLEAR CREEK, NR CAMP VERDE, AZ"	Undeveloped	1996-05-22 1000	C	desert sucker	-	15	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	09505800	09505800	1994	"WEST CLEAR CREEK NEAR CAMP VERDE, ARIZ."	Undeveloped	1996-06-04 1100	C	desert sucker	-	8.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CAZB	09508500	09508500	1994	"VERDE RIVER BLW TANGLE CR AB HORSESHOE DAM, AZ"	Undeveloped	1996-06-19 0900	C	red shiner	-	6.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10020100	10020100	1997	"BEAR RIVER ABOVE RESERVOIR, NEAR WOODRUFF, UT"	Undeveloped	1998-09-08 1701	C	redside shiner	-	7.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10038000	10038000	1997	"BEAR RIVER BELOW SMITHS FORK, NEAR COKEVILLE, WY"	Undeveloped	1998-08-12 1001	C	Utah sucker	-	6.6	.	.	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	55	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10130500	10130500	1997	"WEBER RIVER NEAR COALVILLE, UT"	Undeveloped	1998-09-08 1221	C	mountain whitefish	-	7.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	43	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10163000	10163000	1997	"PROVO RIVER AT PROVO, UT"	Undeveloped	1999-07-26 1200	C	Coregonus schinzi	-	8.8	<	5	<	200	<	5	<	5	E	4.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	49	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10167230	10167230	1997	JORDAN RIVER @ 90TH S NR MIDVALE	Undeveloped	1999-07-29 1145	C	common carp	-	8.9	<	5	<	200	<	5	<	5	E	3.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	298	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5
+GRSL	10172200	10172200	1997	"RED BUTTE CREEK AT FORT DOUGLAS, NEAR SLC, UT"	Undeveloped	1998-08-10 1501	C	cutthroat trout	-	5.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SANJ	11266500	11266500	1991	MERCED R A POHONO BRIDGE NR YOSEMITE CA	Undeveloped	1995-09-06 1300	C	Sacramento sucker	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	11367808	11367808	1994	MCCLOUD R BL LADYBUG C NR MCCLOUD CA	Undeveloped	1995-10-11 1000	C	riffle sculpin	-	4.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	11376000	11376000	1994	COTTONWOOD C NR COTTONWOOD CA	Undeveloped	1995-10-12 1100	C	Sacramento sucker	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	11383500	11383500	1994	DEER C NR VINA CA	Undeveloped	1995-10-18 1040	C	riffle sculpin	-	2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5
+SACR	11388000	11388000	1994	STONY C BL BLACK BUTTE DAM NR ORLAND CA	Undeveloped	1995-10-17 1131	C	Sacramento sucker	-	8.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	11421000	11421500	1994	YUBA R NR MARYSVILLE CA	Undeveloped	1995-11-02 1100	C	riffle sculpin	-	25	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12056500	12056500	1994	"NF SKOKOMISH R BLW STRCSE RPDS NR HDSPRT, WASH."	Undeveloped	1995-09-28 1000	C	freshwater sculpins	-	4.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12061500	12061500	1994	"SKOKOMISH RIVER NEAR POTLATCH, WASH."	Undeveloped	1998-09-08 0900	C	freshwater sculpins	-	4.3	<	5	<	200	-	5.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12103380	12103380	1994	"GREEN RIVER ABV TWIN CAMP CREEK NR LESTER, WA"	Undeveloped	1995-09-25 1500	C	freshwater sculpins	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12117695	12117695	1994	"ROCK CR AT CEDAR FALLS RD NR LANDSBURG, WA"	Undeveloped	1995-09-29 1000	C	freshwater sculpins	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12210700	12210700	1994	"NOOKSACK RIVER AT NORTH CEDARVILLE, WASH."	Undeveloped	1995-09-27 1400	C	freshwater sculpins	-	7.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12213140	12213140	1994	"NOOKSACK RIVER AT BRENNAN, WASH."	Undeveloped	1995-09-26 1000	C	freshwater sculpins	-	2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12334510	12334510	1997	ROCK CREEK NEAR CLINTON MT	Undeveloped	1998-08-11 1320	C	mountain whitefish	-	9.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12334550	12334550	1997	CLARK FORK AT TURAH BRIDGE NR BONNER MT	Undeveloped	1998-08-12 1300	C	largescale sucker	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12335100	12335100	1997	BLACKFOOT R AB NEVADA CR NR HELMVILLE MT	Undeveloped	1998-08-18 1200	C	largescale sucker	-	5.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12354500	12354500	1997	CLARK FORK AT ST. REGIS MT	Undeveloped	1998-09-08 1500	C	largescale sucker	-	4.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12358500	12358500	1997	MIDDLE FORK FLATHEAD RIVER NR WEST GLACIER MT	Undeveloped	1998-07-21 1300	C	mountain whitefish	-	7.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12388700	12388700	1997	FLATHEAD RIVER AT PERMA MT	Undeveloped	1998-10-16 0100	C	largescale sucker	-	6.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12395000	12395000	1997	PRIEST RIVER NR PRIEST RIVER ID	Undeveloped	1998-09-10 1400	C	largescale sucker	-	3.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5.4	<	5	<	5	<	5
+NROK	12413000	12413000	1997	NF COEUR D ALENE RIVER AT ENAVILLE ID	Undeveloped	1998-06-16 1605	C	mountain whitefish	-	9.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12413470	12413470	1997	SF COEUR D ALENE RIVER NR PINEHURST ID	Undeveloped	1998-06-17 1625	C	rainbow trout	-	7.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12413875	12413875	1997	ST JOE RIVER AT RED IVES RANGER STATION ID	Undeveloped	1998-07-07 1340	C	cutthroat trout	-	8.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12414500	12414500	1997	ST JOE RIVER AT CALDER ID	Undeveloped	1998-07-08 1400	C	largescale sucker	-	3.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12419000	12419000	1997	SPOKANE RIVER NR POST FALLS ID	Undeveloped	1999-07-12 1200	C	largescale sucker	-	2.95	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12419500	12419500	1997	SPOKANE R AB LIBERTY BRIDGE NR OTIS ORCHARD WA	Undeveloped	1999-07-27 1200	C	largescale sucker	-	5.69	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12420800	12420800	1997	SPOKANE R AT SULLVIAN BRIDGE NR TRENTWOOD WA	Undeveloped	1999-07-28 1200	C	largescale sucker	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CCPT	12472000	12472000	1991	"CRAB CREEK AT MORGAN LAKE ROAD NEAR OTHELLO, WA"	Undeveloped	1994-07-13 1530	C	common carp	-	3.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13010065	13010065	1991	SNAKE RIVER AB JACKSON LAKE AT FLAGG RANCH WY	Undeveloped	1992-09-10 1200	C	Utah sucker	-	5.7	<	5	<	200	<	5	<	5	-	5.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	130	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13023700	13023700	1991	SALT RIVERV NR FISH CK ABOVE SMOOT	Undeveloped	1993-08-12 1000	C	Paiute sculpin	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13027500	13027500	1991	SALT RIVER AB RESERVOIR NR ETNA WY	Undeveloped	1992-09-22 0930	C	Utah sucker	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13054300	13054300	1991	BITCH CREEK NR LAMONT ID	Undeveloped	1993-09-14 1545	C	mountain whitefish	-	7.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13056500	13056500	1991	HENRYS FORK NR REXBURG ID	Undeveloped	1992-10-06 1000	C	Utah sucker	-	5.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	310	<	5	<	5	-	18	-	17	<	5	<	5	<	5	<	5
+USNK	13063000	13063000	1991	BLACKFOOT RIVER AB RESERVOIR NR HENRY ID	Undeveloped	1992-09-22 1530	C	common carp	-	14	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	14	<	5	<	5	<	5	<	5	<	5	<	5	-	11	-	31	<	5	<	5	-	22	<	5	<	5	<	5	<	5	<	5
+USNK	13069500	13069500	1991	SNAKE RIVER NR BLACKFOOT ID	Undeveloped	1993-09-08 1100	C	common carp	-	9.8	<	5	<	200	<	5	<	5	-	8.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	370	<	5	<	5	.	.	<	5	<	5	<	5	<	5	<	5
+USNK	13075500	13075500	1991	PORTNEUF RIVER AT POCATELLO ID	Undeveloped	1992-09-16 1630	C	Utah sucker	-	4.4	<	5	<	200	<	5	<	5	-	7.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	120	<	30	<	5	-	7.7	-	12	<	10	<	5	<	5	-	5.4
+USNK	13075800	13075800	1991	PORTNEUF RIVER ABV BATISTE SPRINGS NR POCATELLO ID	Undeveloped	1994-08-11 0900	C	Utah sucker	-	6.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	27	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13075983	13075983	1991	SPRING CREEK AT SHEEPSKIN RD NR FORT HALL ID	Undeveloped	1993-08-02 1700	C	Utah sucker	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13081500	13081500	1991	SNAKE R NR MINIDOKA ID (AT HOWELLS FERRY)	Undeveloped	1992-08-26 1100	C	Utah sucker	-	11	<	5	<	200	>	6.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	>	5.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	69	<	5	<	5	<	5	<	5	<	6.1	<	5	<	5	<	5
+USNK	13089490	13089490	1991	DEVILS WASHBOWL SPRING AT HEAD NEAR KIMBERLY ID	Undeveloped	1994-06-03 1030	C	largescale sucker	-	6.9	<	5	<	200	<	5	<	5	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	290	<	5	<	5	<	5	-	38	<	5	<	5	<	5	<	5
+USNK	13090000	13090000	1991	SNAKE RIVER NR KIMBERLY ID	Undeveloped	1992-08-25 1515	C	Utah sucker	-	6.6	<	5	<	200	<	5	<	5	-	7.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	520	<	5	<	5	-	18	-	52	<	5	<	5	<	5	<	5
+USNK	13091995	13091995	1991	"ROCK CK AT USFS FOOTBRIDGE, NR ROCK CREEK"	Undeveloped	1993-07-06 1400	C	mountain sucker	-	6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13094000	13094000	1991	SNAKE RIVER NR BUHL ID	Undeveloped	1993-07-19 1400	X	common carp	-	23	<	5	<	200	<	5	<	5	-	25	-	7.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	-	1300	<	5	<	5	.	.	-	7.1	<	5	<	5	-	6.9	-	12
+USNK	13095175	13095175	1991	BRIGGS SP AT HD NR BUHL ID  09S 14E 03CBB1S	Undeveloped	1994-04-20 1530	C	mottled sculpin	-	1.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13095500	13095500	1991	BOX CANYON SPRINGS NR WENDELL ID	Undeveloped	1994-04-18 1030	C	largescale sucker	-	4.8	<	5	<	200	<	5	<	5	-	5.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	300	<	5	<	5	-	14	-	8.4	<	5	<	5	<	5	<	5
+USNK	13120500	13120500	1991	BIG LOST RIVER AT HOWELL RANCH NR CHILLY ID	Undeveloped	1993-08-24 1030	C	Paiute sculpin	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13135350	13135350	1991	BIG WOOD RIVER BLW BOULDER CK NR KETCHUM	Undeveloped	1993-07-26 1500	C	Wood River sculpin	-	5.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+USNK	13152500	13152500	1991	MALAD RIVER NR GOODING ID	Undeveloped	1992-08-19 1030	C	largescale sucker	-	14.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.4	<	5	<	5	<	5	<	5	<	5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14138870	14138870	1991	"FIR CREEK NEAR BRIGHTWOOD, OR"	Undeveloped	1993-09-27 1101	C	freshwater sculpins	-	2.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14152500	14152500	1991	"COAST FORK WILLAMETTE RIVER AT LONDON, OREG."	Undeveloped	1992-09-04 1026	C	freshwater sculpins	-	4.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14190500	14190500	1991	"LUCKIAMUTE RIVER NEAR SUVER, OR"	Undeveloped	1993-10-05 1500	C	freshwater sculpins	-	1.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14200400	14200400	1991	"LITTLE ABIQUA CREEK NEAR SCOTTS MILLS, OR"	Undeveloped	1993-09-15 1201	C	freshwater sculpins	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14203750	14203750	1991	"GALES CREEK NEAR GLENWOOD, OR"	Undeveloped	1992-09-09 1031	C	freshwater sculpins	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15241600	15241600	1997	NINILCHIK R AT NINILCHIK AK	Undeveloped	1998-07-08 1030	C	slimy sculpin	-	4.85	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15266010	15266010	1997	KENAI R BL RUSSIAN R NR COOPER LANDING AK	Undeveloped	1998-05-29 1030	C	slimy sculpin	-	3.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15266020	15266020	1997	KENAI R AT JIMS LANDING NR COOPER LANDING AK	Undeveloped	1998-05-30 1400	C	slimy sculpin	-	4.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15266110	15266110	1997	KENAI R BL SKILAK LK OUTLET NR STERLING AK	Undeveloped	1998-05-06 1000	C	slimy sculpin	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15266300	15266300	1997	KENAI R AT SOLDOTNA AK	Undeveloped	1998-05-05 0915	C	slimy sculpin	-	2.59	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15267160	15267160	1997	SWANSON R NR KENAI AK	Undeveloped	1998-07-07 1400	C	slimy sculpin	-	8.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15274000	15274000	1997	SF CAMPBELL C NR ANCHORAGE AK	Undeveloped	1998-05-12 1115	C	slimy sculpin	-	2.75	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9	<	5	<	5	<	5	-	6.1	<	5	<	5	<	5	<	5
+COOK	15292700	15292700	1997	TALKEETNA R NR TALKEETNA AK	Undeveloped	1998-06-15 1700	C	slimy sculpin	-	4.55	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	15294100	15294100	1997	DESHKA R NR WILLOW AK	Undeveloped	1998-06-18 1200	C	slimy sculpin	-	4.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16212800	16212800	1997	"KIPAPA STR NR WAHIAWA, OAHU, HI"	Undeveloped	2000-09-27 1100	C	antenna armored catfishes	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16232000	16232000	1997	"NUUANU STR BL RES 2 WASTEWAY NR HONOLULU,OAHU,HI"	Undeveloped	2001-02-21 1000	C	smallmouth bass	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16284200	16284200	1997	"WAIHEE STR NR KAHALUU, OAHU, HI"	Undeveloped	1998-10-06 1400	C	green swordtail	-	4.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16304200	16304200	1997	"KALUANUI STREAM NR PUNALUU, OAHU, HI"	Undeveloped	2000-09-12 0900	C	green swordtail	-	5.5	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16345000	16345000	1997	"OPAEULA STR NR WAHIAWA, OAHU, HI"	Undeveloped	2000-09-26 1100	C	green swordtail	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	212511157574701	212511157574701	1997	"WAIMANO STREAM NR PEARL CITY, OAHU, HI"	Undeveloped	2000-07-25 1000	C	green swordtail	-	3.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SOFL	254714081055700	254714081055700	1994	"ROBERTS LAKE STRAND OFF LOOP ROAD NR MONROE ST, FL"	Undeveloped	1995-08-15 1000	C	largemouth bass	-	6.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+ACFB	295620085011500	02359170	1991	"APALACHICOLA FP @ SITE 12 NR SUMATRA,FLA"	Undeveloped	1992-11-10 1300	C	eastern mosquitofish	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+RIOG	351921106332710	351921106332710	1991	"RIO GRANDE AT HWY 44 AT BERNALILLO, NM"	Undeveloped	1993-03-09 1200	C	common carp	-	5.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	66	<	5	<	5	.	.	<	5	<	5	<	5	<	5	<	5
+RIOG	354511106151010	354511106151010	1991	"RITO DE LOS FRIJOLES BELOW FRIJOLES FALLS, N. MEX."	Undeveloped	1992-11-09 1203	C	rainbow trout	-	3.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	110	<	5	<	5	-	35	-	28	-	5.6	<	5	<	5	<	5
+RIOG	372334105470001	372334105470001	1991	"RIO GRANDE AT ALAMOSA REFUGE, CO"	Undeveloped	1992-09-22 1700	C	common carp	-	4.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	64	<	5	<	5	-	17	<	5	<	5	<	5	<	5	<	5
+RIOG	374922106542901	374922106542901	1991	"RIO GRANDE NEAR CREEDE, CO"	Undeveloped	1992-10-19 1000	C	white sucker	-	8.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UCOL	383103106594200	383103106594200	1994	"GUNNISON RIVER AT CNTY RD 32 BELOW GUNNISON, CO"	Undeveloped	1995-10-16 1620	C	brown trout	-	6.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6	<	5	-	6.3	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5
+SACR	384942122105601	384942122105601	1994	CACHE C A GUINDA CA	Undeveloped	1995-10-27 1051	C	Sacramento sucker	-	12.7	<	5	<	200	<	5	-	8.8	<	5	<	5	<	5	<	10	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	42	<	5	<	8.7	E	15	<	10	<	10	<	5	<	5	<	5
+UCOL	392944106024400	392944106024400	1994	BLUE RIVER NR BRECKENRIDGE NR CTY RD. 3	Undeveloped	1995-08-25 1120	C	brown trout	-	2.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	402114105350101	402114105350101	1991	"BIG THOMPSON BL MORAINE PARK NR ESTES PARK, CO."	Undeveloped	1996-08-20 1030	C	brown trout	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	402134111534700	402134111534700	1997	JORDAN RIVER AT UTAH LAKE NEAR PUMPING PLANT	Undeveloped	1999-07-27 1200	C	common carp	-	9.9	<	5	<	200	<	5	<	5	E	3.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	85	<	5	<	5	-	7.1	<	5	<	5	<	5	<	5	<	5
+YELL	435602109095301	435602109095301	1997	"WOOD RIVER ABOVE MIDDLE FORK NEAR MEETEETSE, WY"	Undeveloped	1998-08-06 1211	C	brook trout	-	7.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	441310122095801	441310122095801	1991	"MACK CREEK NEAR BLUE RIVER, OR"	Undeveloped	1992-09-03 1010	C	cutthroat trout	-	7.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	443321123155201	443321123155201	1991	"MARYS RIVER AT CORVALLIS, OR"	Undeveloped	1992-09-06 1513	C	freshwater sculpins	-	3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+YELL	451753110334301	451753110334301	1997	"WEST FORK MILL CREEK NEAR PRAY, MT"	Undeveloped	1998-08-27 1700	C	cutthroat trout	-	6.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	35	<	5	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5
+WILL	453056122213701	453056122213701	1991	"SANDY RIVER NEAR TROUTDALE, OR"	Undeveloped	1993-09-28 1200	C	freshwater sculpins	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	40	<	5	<	5	<	5	-	33	<	5	<	5	<	5	<	5
+CCPT	465637116381400	465637116381400	1991	"PALOUSE RIVER AT LAIRD PARK NR HARVARD, ID"	Undeveloped	1992-08-25 1000	C	freshwater sculpins	-	5.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+REDN	471243095514301	471243095514301	1991	"WHITE EARTH RIVER NEAR WAUBUN, MN"	Undeveloped	1992-08-26 1405	C	white sucker	-	2.2	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+COOK	631018149323700	631018149323700	1997	COSTELLO C NR COLORADO AK	Undeveloped	1998-08-13 1100	C	slimy sculpin	-	5.1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NECB	01102345	01102345	1997	"SAUGUS R AT SAUGUS IRON WORKS AT SAUGUS, MA"	Urban	1998-09-22 1100	C	white sucker	-	0.8	<	5	<	200	<	5	<	5	-	19	-	8.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	34	<	5	<	5	-	38	-	9.7	<	5	<	5	-	15	-	29
+NECB	01114000	01114000	1997	"MOSHASSUCK RIVER AT PROVIDENCE, RI"	Urban	1998-09-17 1300	C	white sucker	-	2.3	<	5	<	200	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	<	5	<	5	-	22	-	12	<	5	<	5	-	6.4	-	15
+CONN	01208869	01208873	1991	"ROOSTER RIVER NEAR FAIRFIELD, CT"	Urban	1993-06-29 1001	C	white sucker	-	9.1	<	5	<	200	<	5	-	22	-	120	-	37	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	<	5	<	5	-	140	-	42	<	5	<	5	-	31	-	25	<	5	<	5	-	40	-	150
+CONN	01209710	01209710	1991	"NORWALK RIVER AT WINNIPAUK,CT."	Urban	1992-10-21 1031	C	white sucker	-	4.1	<	5	<	200	<	5	<	5	-	11	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	<	5	<	5	.	.	-	5.6	<	5	<	5	-	5.3	-	11
+HDSN	01356200	01356190	1991	LISHA KILL AT NISKAYUNA NY	Urban	1992-09-04 1132	C	white sucker	-	3.6	<	5	<	200	<	5	-	8.1	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	56	<	5	<	5	-	16	-	7.3	<	5	<	5	<	5	-	12
+HDSN	01359131	01359131	1991	PATROON CREEK AT CENTRAL AVE IN ALBANY NY	Urban	1994-09-14 1232	C	white sucker	-	3	<	5	<	200	<	5	<	5	-	6.6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9	<	5	<	5	-	7.6	<	5	<	5	<	5	-	5.3	-	11
+HDSN	01376500	01376500	1991	SAW MILL RIVER AT YONKERS NY	Urban	1992-08-26 0812	C	white sucker	-	7.6	<	5	<	200	<	5	-	17	-	46	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	-	31	-	51	-	22	<	5	-	42	-	15	<	5	<	5	-	29	-	76
+LINJ	01390500	01390500	1994	SADDLE R AT RIDGEWOOD NJ	Urban	1997-10-08 1100	C	white sucker	-	3.6	<	5	<	200	<	5	-	26	-	90	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	<	5	<	5	-	65	-	150	<	14	<	5	-	29	-	80	<	5	<	5	-	32	-	100
+LINJ	01394200	01394200	1994	RAHWAY RIVER AT MORRIS AVE AT SPRINGFIELD NJ	Urban	1997-10-10 1000	C	white sucker	-	1.15	<	5	<	200	<	5	-	12	-	59	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	2.2	<	5	<	5	<	5	-	21	-	75	<	5	<	7.2	E	41	-	35	<	5	<	5	-	31	-	100
+LINJ	01403900	01403900	1994	BOUND BK AT MIDDLESEX NJ	Urban	1997-10-09 1400	C	white sucker	-	3.4	<	5	<	200	<	5	<	13	-	83	-	26	E	3.5	<	5	<	5	<	5	<	5	<	5	<	5	E	3.7	<	5	<	5	<	8	<	5	-	50	<	7	<	5	-	50	-	41	<	5	<	5	<	5	-	100
+DELR	01467040	01467040	1997	"PENNYPACK CREEK AT PAPER MILL, PA"	Urban	1999-07-26 1449	C	white sucker	-	6.2	<	5	<	200	-	9.8	E	8.5	-	15	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	10	<	5	<	5	-	56	-	16	<	5	<	5	-	6.6	-	5.1	<	5	<	5	-	9.6	-	20
+DELR	01467081	01467081	1997	SOUTH BRANCH PENNSAUKEN CREEK AT CHERRY HILL NJ	Urban	1999-07-27 1745	C	white sucker	-	10	<	5	<	200	<	5	-	21	-	29	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	<	5	<	5	-	180	-	140	<	5	<	21	-	120	-	34	<	5	<	5	-	28	-	50
+DELR	01467150	01467150	1997	COOPER RIVER AT HADDONFIELD NJ	Urban	1999-07-14 1535	C	common carp	-	4.1	<	5	<	200	<	5	E	43	-	23	-	8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	10	-	88	<	5	<	5	<	5	<	5	<	5	<	5	-	15	-	34
+DELR	01473990	01473990	1997	"WISSAHICKON CREEK BL WALNUT LANE NR MANAYUNK, PA"	Urban	1999-07-28 1830	C	white sucker	-	8.12	<	5	<	200	<	5	-	33	-	53	-	18	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24	<	5	<	5	-	120	-	80	<	5	E	6.7	E	34	E	34	<	5	<	5	-	26	-	58
+DELR	01475510	01475510	1997	"DARBY CREEK NEAR DARBY, PA."	Urban	1999-07-28 0930	C	white sucker	-	8.3	<	5	<	200	<	5	E	34	-	62	-	21	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	62	<	5	<	5	-	530	-	56	E	10	<	5	-	19	-	19	<	5	<	5	-	33	-	120
+POTO	01654000	01654000	1991	"ACCOTINK CREEK NEAR ANNANDALE, VA"	Urban	1992-08-28 1330	C	yellow bullhead	-	2.99	<	5	.	.	<	5	-	30	-	38.5	-	11.6	<	5	<	5	<	5	<	5	<	5	-	5.86	<	5	<	5	-	15.8	<	5	<	5	-	13.8	<	5	<	5	<	5	-	7.59	<	5	<	5	-	5.89	-	11.7	-	35.1
+MOBL	02419977	02419977	1997	"THREE MILE BRANCH @ NORTH BLVD AT MONTGOMERY, AL"	Urban	1998-08-19 1045	C	western mosquitofish	-	4.6	<	5	<	200	<	5	-	51	-	65	-	19	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	85	<	5	<	5	-	240	-	100	<	5	<	5	-	37	-	35	<	5	<	5	-	12	-	36
+MOBL	02423581	02423581	1997	"SHADES CREEK AT SAMFORD UNIV AT HOMEWOOD, AL."	Urban	1998-08-27 1100	C	longear sunfish	-	4.3	<	5	<	200	<	5	-	31	E	130	-	29	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	18	<	5	<	5	-	84	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	24
+MOBL	02461500	02461500	1997	"VALLEY CREEK NEAR BESSEMER, AL"	Urban	1998-08-26 1100	C	yellow bullhead	-	4	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	15	-	6.4	<	5	<	5	<	5	<	5	<	5	<	5	-	8.8	-	12
+MOBL	02465288	02465288	1997	CRIBBS MILL CREEK AT GREENSBORO AVE AT TUSCALOOSA	Urban	1998-09-10 0900	C	largemouth bass	-	2.2	<	5	<	200	<	5	-	26	-	100	-	24	<	5	<	6	<	5	<	5	<	5	<	5	<	5	<	5	-	220	<	5	<	5	-	720	-	68	<	5	<	5	-	12	-	5.6	<	5	<	5	-	43	-	72
+WMIC	040869415	040869415	1991	"LINCOLN CREEK AT 47TH STREET AT MILWAUKEE, WI"	Urban	1995-09-06 0930	C	common sunfishes	-	6.4	<	5	<	200	<	5	-	9.7	-	19	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.3	-	5.3	<	5	<	5	-	7.2	-	56	<	5	<	5	-	33	-	27	<	5	<	5	-	5.9	-	16
+UMIS	05288695	05288695	1994	"SHINGLE CREEK AT ZANE AVE. AT BROOKLYN PARK, MN"	Urban	1996-09-19 1000	C	white sucker	-	1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+UMIS	05288705	05288705	1994	"SHINGLE CREEK AT QUEEN AVE IN MINNEAPOLIS, MN"	Urban	1996-09-17 1100	C	common carp	-	2.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	6	<	10	<	5	<	5	<	5	<	5	<	5	<	5	-	43	<	5	-	7	E	37	<	5	<	5	<	5	<	5	-	14
+UMIS	05288710	05288710	1994	"SHINGLE CREEK AT 46TH ST. IN MINNEAPOLIS, MN"	Urban	1995-08-28 1000	C	white sucker	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	82	<	5	<	5	-	62	-	8.1	<	5	<	5	<	5	-	8.2
+UMIS	05330902	05330902	1994	"NINE MILE CREEK NR JAMES CIRCLE AT BLOOMINGTON, MN"	Urban	1995-07-26 1000	C	white sucker	-	4.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	7	<	5	<	5	<	5	<	5	<	5	-	140	<	5	-	16	-	81	-	11	<	5	<	5	<	5	-	6.6
+EIWA	05464490	05464490	1994	"MC CLOUD RUN AT CEDAR RAPIDS, IA"	Urban	1995-09-25 1000	C	white sucker	-	3.4	<	5	<	210	<	5	-	7.6	-	18	-	7.3	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.1	-	23	<	5	<	5	E	14	-	9.5	<	5	<	5	-	6.5	-	22
+UIRB	05531500	05531500	1997	"SALT CREEK AT WESTERN SPRINGS, IL"	Urban	1998-08-18 1130	C	white sucker	-	5.1	<	5	<	200	<	5	E	6.7	E	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	450	E	13	-	22	-	220	-	36	E	9.1	<	5	<	5	-	23
+SPLT	06713500	06713500	1991	"CHERRY CREEK AT DENVER, CO."	Urban	1993-08-09 1220	C	white sucker	-	3.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	22	<	5	<	5	-	9.1	<	5	<	5	<	5	<	5	<	5
+CAZB	09512407	09512407	1994	"91ST AVE WWTP OUTFALL NR PHOENIX, AZ"	Urban	1996-06-05 0900	C	redbelly tilapia	-	4.8	<	5	E	1800	<	5	<	5	<	14	<	29	<	5	<	7	<	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	17	E	2200	<	9	<	5	<	9	<	24	<	7	<	5	<	5	<	5
+PUGT	12091300	12091300	1994	"LEACH CR NR STEILACOOM, WA"	Urban	1995-09-20 1500	C	freshwater sculpins	-	4.2	<	5	<	200	<	5	<	5	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.2
+PUGT	12103326	12103326	1994	"MILLER CREEK NR DES MOINES, WA"	Urban	1995-09-21 1400	C	freshwater sculpins	-	3.6	<	5	<	200	<	5	<	5	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.9	-	7.5	<	5	<	5	<	5	-	7.5	<	5	<	5	<	5	-	9.1
+PUGT	12119850	12119850	1994	"WEST BRANCH KELSEY CREEK AT BELLEVUE, WA"	Urban	1995-09-19 1500	C	freshwater sculpins	-	4.1	<	5	<	200	<	5	<	5	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.9	-	18	<	5	<	5	E	17	<	5	<	5	<	5	-	7.2	-	12
+PUGT	12120490	12120490	1994	"JUANITA CREEK AT JUANITA, WA"	Urban	1995-09-18 1630	C	freshwater sculpins	-	9	<	5	<	200	<	5	-	9	-	15	-	5.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	7.1	<	5	<	5	<	5	-	10	-	18	<	5	<	5	<	5	<	5.8	<	5.6	<	5	<	5	-	14
+PUGT	12125900	12125900	1994	"NORTH CREEK BLW PENNY CR NEAR BOTHELL, WASH."	Urban	1995-09-19 1100	C	freshwater sculpins	-	2.4	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.1	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+PUGT	12128000	12128000	1994	"THORNTON CREEK NEAR SEATTLE, WASH."	Urban	1995-09-18 1100	C	freshwater sculpins	-	5.3	<	5	<	200	<	5	-	12	-	32	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	-	27	-	97	<	5	<	5	E	55	-	64	<	5	<	5	-	14	-	30
+WILL	14169500	14169500	1991	"AMAZON CREEK NEAR EUGENE, OR"	Urban	1992-09-02 1605	C	largemouth bass	-	1.5	<	5	<	200	<	5	<	5	-	14	-	5.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+WILL	14206950	14206950	1991	"FANNO CREEK AT DURHAM, OR"	Urban	1992-09-01 1500	C	freshwater sculpins	-	5	<	5	<	200	-	5	<	5	-	27	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	-	9	<	5	<	5	<	5	-	5.6	<	5	<	5	-	9.1	<	5
+WILL	14211550	14211550	1991	"JOHNSON CREEK AT MILWAUKIE,OREG."	Urban	1992-09-01 0915	C	sculpins	-	6.1	<	5	<	200	<	5	<	5	-	27	-	12	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	-	68	<	5	<	5	<	5	-	35	<	5	<	5	<	5	<	5
+COOK	15275100	15275100	1997	CHESTER C AT ARCTIC BOULEVARD AT ANCHORAGE AK	Urban	1998-05-13 1200	C	slimy sculpin	-	2.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	10	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16224500	16224500	1997	"KALAUAO STR AT MOANALUA RD, AT AIEA, OAHU, HI"	Urban	2000-09-06 1100	C	black molly	-	10	<	5	<	200	<	5	E	250	E	640	E	210	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	12	E	270	<	5	<	5	E	430	-	31	<	5	<	5	<	5	E	38	<	5	<	5	E	210	E	460
+OAHU	16229300	16229300	1997	"KALIHI STR AT KALIHI, OAHU, HI"	Urban	2000-07-18 0900	C	green swordtail	-	3.4	<	5	<	200	<	5	-	25	-	118	-	45	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	14	-	43	<	5	<	5	-	480	-	13	<	5	<	5	-	8.2	-	16	<	5	<	5	-	40	-	120
+OAHU	16235100	16235100	1997	"NUUANU STR ABV WAOLANI ST. AT HONOLULU, OAHU, HI"	Urban	1998-09-16 1430	C	black molly	-	6.4	<	5	<	200	<	5	<	5	-	210	-	78	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	-	110	<	5	<	5	-	1200	-	12	<	5	<	5	-	22	-	8.3	<	5	<	5	-	35	-	100
+OAHU	16242500	16242500	1997	"MANOA STR AT KANEWAI FIELD, HONOLULU, OAHU, HI"	Urban	1998-08-26 1800	C	green swordtail	-	3.5	<	5	<	200	<	5	<	5	-	360	-	130	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.2	-	55	<	5	<	5	-	870	-	38	<	5	<	5	-	12	-	20	<	5	<	5	-	75	-	320
+OAHU	16274100	16274100	1997	"KANEOHE STR BLW KAMEHAMEHA HWY, OAHU, HI"	Urban	1998-09-02 1000	C	black molly	-	5.3	<	5	<	200	<	5	-	110	-	180	-	46	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	23	-	54	<	5	<	5	-	600	<	5	<	5	<	5	<	5	-	7.2	<	5	<	5	-	36	-	63
+OAHU	211712157494801	211712157494801	1997	"ALA WAI CANAL AT HONOLULU, HI"	Urban	1998-09-29 0845	C	blackchin tilapia	-	4.3	<	5	<	200	<	5	-	7.9	-	38	-	26	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	50	-	57	<	5	<	5	-	15	<	5	<	5	<	5	-	9	-	17
+NECB	010965852	010965852	1997	"BEAVER BROOK AT NORTH PELHAM, NH"	Urban	1998-09-24 1000	C	white sucker	-	1.8	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NECB	01101500	01101500	1997	"IPSWICH RIVER AT SOUTH MIDDLETON, MA"	Urban	1998-09-23 1000	C	white sucker	-	1.7	<	5	<	200	<	5	<	5	-	7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6	<	5	<	5	-	12	-	12	<	5	<	5	<	5	<	5
+NECB	01104615	01104615	1997	"CHARLES RIVER ABOVE WATERTOWN DAM AT WATERTOWN, MA"	Urban	1999-07-21 0901	C	white sucker	-	15	<	5	<	200	<	5	<	7.5	-	81	-	24	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	29	-	230	<	5	<	5	-	160	-	30	<	5	<	5	-	40	-	130
+NECB	01105000	01105000	1997	"NEPONSET RIVER AT NORWOOD, MA"	Urban	1998-09-16 1000	C	white sucker	-	1	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	28	<	5	<	5	-	17	-	6.7	<	5	<	5	<	5	<	5
+CONN	01189000	01189000	1991	"PEQUABUCK R AT FORESTVILLE, CT."	Urban	1992-11-17 0831	C	white sucker	-	5.1	<	5	<	200	-	14	-	10	-	18	-	9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	11	-	15	<	5	<	5	-	7.6	-	10	<	5	<	5	-	6.7	-	21
+CONN	01191000	01191000	1991	"NORTH BRANCH PARK R AT HARTFORD, CT."	Urban	1994-08-11 1001	C	white sucker	-	4.8	<	5	<	200	<	5	E	12	-	35	-	11	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	8.3	-	110	<	5	-	9	-	46	-	21	<	5	<	5	-	20	-	49
+CONN	01192500	01192500	1991	"HOCKANUM R NR EAST HARTFORD, CT."	Urban	1992-10-22 0911	C	white sucker	-	2.4	<	5	<	200	<	5	-	8.3	-	18	-	8.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	5.6	-	51	<	5	<	5	.	.	-	7.4	<	5	<	5	<	5	-	11
+CONN	01196580	01196580	1991	"MUDDY R NR NORTH HAVEN, CT"	Urban	1994-08-09 1001	C	white sucker	-	4.7	<	5	<	200	<	5	-	12	-	28	-	9.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.1	<	5	<	5	<	5	-	40	-	190	<	5	<	5	-	22	-	27	-	5.2	<	5	-	8.2	-	23
+LINJ	01379000	01379000	1994	PASSAIC RIVER NEAR MILLINGTON NJ	Urban	1997-10-09 1000	C	white sucker	-	4.7	<	5	<	200	<	5	<	5	-	9.4	-	6.8	E	4.7	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	68	<	5	<	5	-	19	-	18	<	5	<	5	-	6.8	-	23
+LINJ	01410784	01410784	1994	GREAT EGG HARBOR R NR SICKLERVILLE NJ	Urban	1997-10-14 1200	C	creek chubsucker	-	2.2	<	5	<	200	<	5	<	5	E	2.4	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	1.7	-	20	<	5	<	5	E	10	E	2.9	<	5	<	5	<	5	E	1.7
+DELR	01471520	01471520	1997	WYOMISSING CR. @ WEST READING PA	Urban	1999-07-29 1015	C	white sucker	-	8.7	<	5	<	200	<	5	E	12	-	14	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	5.6	<	5	<	5	-	12	-	48	<	5	<	5	-	8.5	-	17	<	5	<	5	-	9.7	-	23
+SANT	02169570	02169570	1994	"GILLS CREEK AT COLUMBIA, SC"	Urban	1997-08-20 1000	C	common carp	-	12.14	<	5	<	200	-	10	-	6.5	-	28	-	13	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.9	<	5	<	5	-	31	-	95	<	5	-	8.6	-	44	E	4	-	16	<	5	-	27	-	33
+SPLT	06714000	06714000	1991	"SOUTH PLATTE RIVER AT DENVER, CO."	Urban	1993-08-17 1215	C	common carp	-	7.8	<	5	<	200	<	5	<	5	-	27	-	7.9	<	5	-	8.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	160	<	5	<	5	-	24	<	5	<	5	<	5	-	17	-	23
+SPLT	06720500	06720500	1991	"SOUTH PLATTE RIVER AT HENDERSON, CO."	Urban	1992-09-17 0935	C	common carp	-	8.4	<	5	<	200	-	31	<	5	-	10	<	5	<	5	<	5	<	5	-	14	<	5	<	5	<	5	-	7	<	5	<	5	<	5	-	26	-	160	<	5	-	9.4	-	21	<	8	<	5	-	8.5	-	9.3	-	16
+SCTX	08178800	08178800	1994	"SALADO CK AT LOOP 13 AT SAN ANTONIO, TX"	Urban	1997-12-11 1101	C	gray redhorse	-	4.4	<	5	<	200	E	0.8	<	5	-	20	-	6.5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	E	4.7	-	71	<	5	<	5	E	17	-	7.2	<	5	<	5	-	5.9	-	13
+SCTX	08181480	08181480	1994	"LEON CK AT IH 35 AT SAN ANTONIO, TX"	Urban	1997-12-10 1201	C	common carp	-	1.75	<	5	<	200	<	5	<	5	E	2.9	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	36	<	5	E	3.2	E	21	<	5	<	5	<	5	<	5	E	2.5
+CAZB	09481740	09481740	1994	"SANTA CRUZ RIVER AT TUBAC, AZ."	Urban	1996-05-07 1300	C	desert sucker	-	12	<	5	<	200	<	5	<	5	-	23	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	9	<	5	-	46	<	5	<	5	-	20	<	5	<	5	<	5	<	5	-	12
+GRSL	10167800	10167800	1997	"LITTLE COTTONWOOD CREEK @ CRESTWOOD PARK, SLC, UT"	Urban	1998-08-25 1131	C	common suckers	-	5.7	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+GRSL	10168000	10168000	1997	LITTLE COTTONWD CR @ JORDAN RIVER NR S L CITY	Urban	1998-08-04 1301	C	white sucker	-	5.6	<	5	<	200	<	5	<	5	-	9.8	E	5.8	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	6.4	<	5	<	5	<	5	<	5	-	91	<	5	<	5	<	5	E	13	<	5	<	5	<	5	-	5.8
+PUGT	12112600	12112600	1994	"BIG SOOS CREEK ABV HATCHERY, NR AUBURN, WA"	Urban	1995-09-22 1030	C	freshwater sculpins	-	2.3	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+NROK	12424000	12424500	1997	HANGMAN CREEK AT SPOKANE WA	Urban	1998-06-19 1500	C	largescale sucker	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	38	<	5	<	5	<	5	-	6.6	<	5	<	5	<	5	<	5
+NROK	12424500	12424500	1997	SPOKANE R AT 7 MILE BRIDGE NR SPOKANE WA	Urban	1998-08-05 1100	C	largescale sucker	-	2.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	20	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+OAHU	16274499	16274499	1997	"KEAAHALA STR AT KAMEHAMEHA HWY, KANEOHE, OAHU, HI"	Urban	2000-07-26 0830	C	black molly	-	6.5	<	5	<	200	<	5	E	140	E	180	E	48	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	9.4	E	130	<	5	<	5	E	740	-	10	<	5	<	5	-	6	<	5	E	21	<	5	-	48	E	110
+ACAD	294957090095300	294957090095300	1997	"BYU SEGNETTE 4.6 MI S OF WESTWEGO, LA"	Urban	1998-06-17 1200	C	largemouth bass	-	2.9	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+SPLT	394839104570300	394839104570300	1991	"SAND CREEK AT MOUTH NR COMMERCE CITY,CO"	Urban	1992-10-07 1300	C	white sucker	-	7.6	<	5	<	200	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	-	38	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5
+CONN	413345072531001	413345072531001	1991	"QUINNIPIAC RIVER NEAR STILLMANS CORNER, CT"	Urban	1994-08-09 1601	C	white sucker	-	5.9	<	5	<	200	<	5	-	6.4	-	17	-	6	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	16	-	22	-	7.5	<	5	-	20	-	6.4	<	5	<	5	-	8.4	-	21
+CONN	413615072423001	413615072423001	1991	"MATTABASSET RIVER NEAR LITTLE RIVER, CT"	Urban	1994-08-10 1101	C	white sucker	-	5.8	<	5	<	200	<	5	-	5.7	-	26	-	9.2	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	<	5	-	50	-	6.9	-	9.8	-	41	-	11	<	5	<	5	<	5	-	35

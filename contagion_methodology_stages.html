@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contagion / Systemic Risk Mapping — Methodology</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a18;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+  svg { width: 100%; max-width: 860px; height: auto; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #1c1c1a; }
+    h1 { color: #e8e6de; }
+  }
+
+  .c-teal   rect, .c-teal   circle { fill: #E1F5EE; stroke: #0F6E56; }
+  .c-teal   text { fill: #085041; }
+  .c-purple rect, .c-purple circle { fill: #EEEDFE; stroke: #534AB7; }
+  .c-purple text { fill: #3C3489; }
+  .c-coral  rect, .c-coral  circle { fill: #FAECE7; stroke: #993C1D; }
+  .c-coral  text { fill: #712B13; }
+  .c-blue   rect, .c-blue   circle { fill: #E6F1FB; stroke: #185FA5; }
+  .c-blue   text { fill: #0C447C; }
+
+  @media (prefers-color-scheme: dark) {
+    .c-teal   rect, .c-teal   circle { fill: #085041; stroke: #5DCAA5; }
+    .c-teal   text { fill: #9FE1CB; }
+    .c-purple rect, .c-purple circle { fill: #3C3489; stroke: #AFA9EC; }
+    .c-purple text { fill: #CECBF6; }
+    .c-coral  rect, .c-coral  circle { fill: #712B13; stroke: #F0997B; }
+    .c-coral  text { fill: #F5C4B3; }
+    .c-blue   rect, .c-blue   circle { fill: #0C447C; stroke: #85B7EB; }
+    .c-blue   text { fill: #B5D4F4; }
+  }
+
+  .th { font-size: 14px; font-weight: 500; font-family: inherit; }
+  .ts { font-size: 12px; font-family: inherit; }
+  .arr { stroke: #888780; stroke-width: 1.5; fill: none; }
+  .note-box { fill: none; stroke: #B4B2A9; stroke-width: 1; stroke-dasharray: 4 3; }
+  .note-title { font-size: 14px; font-weight: 500; fill: #2C2C2A; font-family: inherit; }
+  .note-sub   { font-size: 12px; fill: #5F5E5A; font-family: inherit; }
+  .connector  { stroke: #B4B2A9; stroke-width: 1; fill: none; }
+
+  @media (prefers-color-scheme: dark) {
+    .arr        { stroke: #888780; }
+    .note-box   { stroke: #5F5E5A; }
+    .note-title { fill: #D3D1C7; }
+    .note-sub   { fill: #B4B2A9; }
+    .connector  { stroke: #5F5E5A; }
+  }
+</style>
+</head>
+<body>
+<h1>Contagion / systemic risk mapping — methodology</h1>
+<svg viewBox="0 0 680 540" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- Stage 1 -->
+<g class="c-teal">
+  <rect x="30" y="30" width="290" height="100" rx="10" stroke-width="0.5"/>
+  <text class="th" x="175" y="58" text-anchor="middle" dominant-baseline="central">Stage 1 — loss ratio panel</text>
+  <text class="ts" x="175" y="80" text-anchor="middle" dominant-baseline="central">County × crop × year from SOB coverage file</text>
+  <text class="ts" x="175" y="98" text-anchor="middle" dominant-baseline="central">~3,100 counties, 35 years → correlation matrix</text>
+  <text class="ts" x="175" y="116" text-anchor="middle" dominant-baseline="central">Input: indemnity / total premium per cell</text>
+</g>
+
+<!-- Stage 2 -->
+<g class="c-purple">
+  <rect x="360" y="30" width="290" height="100" rx="10" stroke-width="0.5"/>
+  <text class="th" x="505" y="58" text-anchor="middle" dominant-baseline="central">Stage 2 — correlation network</text>
+  <text class="ts" x="505" y="80" text-anchor="middle" dominant-baseline="central">Pearson / Spearman corr. per county pair</text>
+  <text class="ts" x="505" y="98" text-anchor="middle" dominant-baseline="central">Threshold edges (r &gt; 0.6), adjacency matrix</text>
+  <text class="ts" x="505" y="116" text-anchor="middle" dominant-baseline="central">Detrend first — remove national crop cycles</text>
+</g>
+
+<line x1="320" y1="80" x2="358" y2="80" class="arr" marker-end="url(#arrow)"/>
+
+<!-- Stage 3 -->
+<g class="c-coral">
+  <rect x="30" y="200" width="290" height="100" rx="10" stroke-width="0.5"/>
+  <text class="th" x="175" y="228" text-anchor="middle" dominant-baseline="central">Stage 3 — cluster detection</text>
+  <text class="ts" x="175" y="250" text-anchor="middle" dominant-baseline="central">Community detection on network (Louvain)</text>
+  <text class="ts" x="175" y="268" text-anchor="middle" dominant-baseline="central">Or spatial DBSCAN on correlated county pairs</text>
+  <text class="ts" x="175" y="286" text-anchor="middle" dominant-baseline="central">Output: named contagion zones</text>
+</g>
+
+<!-- Routing connector Stage 2 → Stage 3 -->
+<line x1="505" y1="130" x2="505" y2="168" class="connector"/>
+<line x1="175" y1="168" x2="505" y2="168" class="connector"/>
+<line x1="175" y1="168" x2="175" y2="198" class="arr" marker-end="url(#arrow)"/>
+
+<!-- Stage 4 -->
+<g class="c-blue">
+  <rect x="360" y="200" width="290" height="100" rx="10" stroke-width="0.5"/>
+  <text class="th" x="505" y="228" text-anchor="middle" dominant-baseline="central">Stage 4 — risk quantification</text>
+  <text class="ts" x="505" y="250" text-anchor="middle" dominant-baseline="central">Systemic risk score per cluster (avg. corr.)</text>
+  <text class="ts" x="505" y="268" text-anchor="middle" dominant-baseline="central">Tail event analysis: years loss ratio &gt; 1.5</text>
+  <text class="ts" x="505" y="286" text-anchor="middle" dominant-baseline="central">Implied reinsurance loading by zone</text>
+</g>
+
+<line x1="320" y1="250" x2="358" y2="250" class="arr" marker-end="url(#arrow)"/>
+
+<!-- Detrending note -->
+<rect class="note-box" x="30" y="340" width="620" height="76" rx="10"/>
+<text class="note-title" x="340" y="364" text-anchor="middle" dominant-baseline="central">Critical step: detrending before correlation</text>
+<text class="note-sub" x="340" y="386" text-anchor="middle" dominant-baseline="central">Raw loss ratios share national cycles (2012 drought hit everything) — subtract FRR mean</text>
+<text class="note-sub" x="340" y="404" text-anchor="middle" dominant-baseline="central">each year to isolate local co-movement from macro shocks before computing pairwise correlations</text>
+
+<!-- Cause of loss enrichment -->
+<rect class="note-box" x="30" y="446" width="620" height="76" rx="10"/>
+<text class="note-title" x="340" y="470" text-anchor="middle" dominant-baseline="central">Enrichment: cause of loss breakdown per cluster</text>
+<text class="note-sub" x="340" y="492" text-anchor="middle" dominant-baseline="central">Join cause-of-loss SOB to clusters — is the contagion drought-driven? Flood? Freeze?</text>
+<text class="note-sub" x="340" y="510" text-anchor="middle" dominant-baseline="central">Different perils imply different reinsurance structures (cat bond vs. quota share)</text>
+</svg>
+</body>
+</html>
