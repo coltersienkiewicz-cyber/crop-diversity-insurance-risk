@@ -1,3 +1,5 @@
+📄 **[Read the full report (PDF)](./crop_diversity_report.pdf)**
+
 # Crop Diversity as an Insurance Risk Metric
 ### Does geographic crop diversity predict agricultural insurance loss ratios?
 
